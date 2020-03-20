@@ -1,6 +1,6 @@
 ---
 id: games
-title: Which games are supported ?
+title: Which games are supported?
 ---
 
 Which games can be splitscreened using Nucleus Co-Op?
