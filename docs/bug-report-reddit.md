@@ -1,6 +1,6 @@
 ---
-id: bug-report-reddit.md
-title: How to report a bug(reddit)?
+id: bug-report-reddit
+title: How to report a bug (reddit)?
 ---
 
 How to report a bug on reddit?
