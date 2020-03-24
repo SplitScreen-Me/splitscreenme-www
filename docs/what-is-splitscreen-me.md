@@ -32,8 +32,12 @@ Lucas had long been struggling with mental health problems, and personal matters
 
 On the surface it seemed like NucleusCoop had died, and there was little to no information regarding where the project was at, and where it was headed. But behind the scenes two enthusiasts had started working induvidually on making splitscreen handlers/scripts, for the app. They soon found out about each other, and they made a private discord server called "SplitscreenDreams" April 24, 2019. 
 
-One of the two enthusiasts, called talos91, invited another enthusiast called dr.oldboi(dr.oldboi#8752 on Discord) to the server very shortly after. These three started working together on making splitscreen scripts for NucleusCoop. The splitscreen server started growing, and talos91 would often post guides on reddit, on how to play new games in splitscreen with Nucleus. By the end of 2019 they had over (number) working, and at the time of writing this, the group has made handlers for over 250 games, exactly 150 of which are published on the hub. These handlers have been made by cooperations between over 200 people, but the majority of them was made by co-creator of SplitscreenDreams talos91.
+One of the two enthusiasts, called talos91, invited another enthusiast called dr.oldboi(dr.oldboi#8752 on Discord) to the server very shortly after. These three started working together on making splitscreen scripts for NucleusCoop. The splitscreen server started growing, and talos91 would often post guides on reddit, on how to play new games in splitscreen with Nucleus. By the end of 2019 they had over (number) working, and at the time of writing this, the group has made handlers for over 250 games, 162 of which are published on the hub. These handlers have been made by cooperations between over 200 people, but the majority of them was made by co-creator of SplitscreenDreams talos91.
 
 Most of todays supported games however, would not be possible if it weren't for Zerofox bringing new life into the project, with his fork of the Alpha 8 version, called "Alpha 8 Zerofox mod".
 
 #### More coming soon...
+
+#### A big thanks to all the people(listed below) who helped write about the history of Splitscreen.me, this would not have been possible without you guys!
+
+Written by *Snailed lt* in association with: *Talos91*, *dr.oldboi*, *Lucas Assislar*, *Zerofox*, *r-mach*, *Gaz*, *Ilyaki*, *anonymous SplitscreenDreams creator*
