@@ -57,5 +57,6 @@ Join the revolution!
 
 #### A big thanks to all the people(listed below) who helped put piece together the history of Splitscreen.me, this would not have been possible without you guys!
 
-> Written by *Snailed lt* <br> 
+> Written by *Snailed lt*
+>
 > In association with: *Talos91*, *dr.oldboi*, *Lucas Assislar*, *Zerofox*, *r-mach*, *Gaz*, *Ilyaki*, *anonymous SplitScreenDreams creator*
