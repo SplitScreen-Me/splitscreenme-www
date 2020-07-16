@@ -55,7 +55,7 @@ Join the revolution!
 
 #### More coming soon...
 
-#### A big thanks to all the people(listed below) who helped put piece together the history of Splitscreen.me, this would not have been possible without you guys!
+#### A big thanks to all the people(listed below) who helped piece together the history of Splitscreen.me, this would not have been possible without you guys!
 
 > Written by *Snailed lt*
 >
