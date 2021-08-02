@@ -16,7 +16,7 @@ module.exports = {
       items: [
         {
           href: 'https://hub.splitscreen.me',
-          label: 'Game\'s Hub',
+          label: 'Games Hub',
           position: 'left',
         },
         {
@@ -58,7 +58,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/c59KwSH',
+              href: 'https://discord.gg/a9ssM5pxTW',
             },
           ],
         },
