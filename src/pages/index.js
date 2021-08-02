@@ -113,7 +113,8 @@ function Home() {
                             styles.getStarted,
                         )}
 
-                        to="https://hub.splitscreen.me">
+                        to="https://hub.splitscreen.me"
+                        target="_self">
                         Explore all the games...
                     </Link></div>
                 </div></div>

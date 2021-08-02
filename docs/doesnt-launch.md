@@ -11,4 +11,4 @@ Splitscreen.me doesn't launch, How to fix it?
 3. Make sure your antivirus program or firewall is not blocking Splitscreen.me.
 4. Restart your PC, and try again.
 
-If none of the above work for you, please ask for help in our [discord](https://discord.gg/EfFSwkJ) or on our [reddit](https://www.reddit.com/r/nucleuscoop). If you're posting on reddit, please write follow this 
+If none of the above work for you, please ask for help in our [discord](https://discord.gg/a9ssM5pxTW) or on our [reddit](https://www.reddit.com/r/nucleuscoop). If you're posting on reddit, please write follow this 
