@@ -32,7 +32,7 @@ Lucas had long been struggling with mental health problems, and personal matters
 
 On the surface it seemed like NucleusCoop had died, and there was little to no information regarding where the project was at, and where it was headed. But behind the scenes two enthusiasts had started working induvidually on making splitscreen handlers/scripts, for the app. They soon found out about each other, and they made a private Discord server called "SplitScreenDreams" April 24, 2019. 
 
-One of the two enthusiasts, called talos91, invited another enthusiast called dr.oldboi(dr.oldboi#8752 on Discord) to the server very shortly after. These three started working together on making splitscreen scripts for NucleusCoop. The splitscreen server started growing, and talos91 would often post guides on reddit, about how to play new games in splitscreen with Nucleus. At the time of writing this, SplitScreenDreams has made handlers for over 250 games, almost 200 of which are published on the hub. These handlers have been made by cooperations between over 200 people, but the majority of them was made by co-creator of SplitScreenDreams talos91.
+One of the two enthusiasts, called talos91, invited another enthusiast called dr.oldboi(dr.oldboi#8752 on Discord) to the server very shortly after. These three started working together on making splitscreen scripts for NucleusCoop. The splitscreen server started growing, and talos91 would often post guides on reddit, about how to play new games in splitscreen with Nucleus. At the time of writing this, SplitScreenDreams has made handlers for over 250 games, almost 200 of which are published on the hub. These handlers have been made by cooperations between almost 100 people, but the majority of them was made by co-creator of SplitScreenDreams talos91.
 
 Most of todays supported games however, would not be possible if it weren't for Zerofox bringing new life into the project, with his fork of the Alpha 8 version, called "Alpha 8 Zerofox mod".
 
@@ -55,7 +55,7 @@ Join the revolution!
 
 #### More coming soon...
 
-#### A big thanks to all the people(listed below) who helped put piece together the history of Splitscreen.me, this would not have been possible without you guys!
+#### A big thanks to all the people(listed below) who helped piece together the history of Splitscreen.me, this would not have been possible without you guys!
 
 > Written by *Snailed lt*
 >
