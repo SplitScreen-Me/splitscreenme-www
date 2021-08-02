@@ -13,7 +13,7 @@ module.exports = {
         alt: 'SplitScreen.Me Logo',
         src: 'img/splitscreen-me-logo.png',
       },
-      links: [
+      items: [
         {
           href: 'https://hub.splitscreen.me',
           label: 'Game\'s Hub',
