@@ -1,5 +1,5 @@
 ---
-id: hello-world
+slug: hello-world
 title: Hello splitscreeners !
 author: r-mach
 author_title: Core SplitScreen.Me Developer

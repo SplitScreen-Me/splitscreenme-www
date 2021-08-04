@@ -61,6 +61,10 @@ module.exports = {
               label: 'Discord',
               href: 'https://discord.gg/a9ssM5pxTW',
             },
+            {
+              label: 'Steam',
+              href: 'https://steamcommunity.com/groups/nucleuscoop',
+            },
           ],
         },
         {
@@ -86,6 +90,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           editUrl:
             'https://github.com/SplitScreen-Me/splitscreenme-www/edit/master/',
         },
