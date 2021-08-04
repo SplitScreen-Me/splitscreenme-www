@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/undraw_splitscreen_mountain.svg',
     description: (
       <>
-        Simply download the Windows application, start it, pick a game, plug your controllers, grab some friends, and enjoy!
+          Simply <a href={"https://github.com/ZeroFox5866/nucleuscoop/releases/"}>download the Windows application</a>, start it, pick a game, plug your controllers, grab some friends, and enjoy!
       </>
     ),
   },
@@ -22,7 +22,7 @@ const features = [
     description: (
       <>
         We created tutorials to assist you in adding new games, and our amazing community is always willing to help & share.
-        Join our Discord and read the <code>docs</code>.
+        Join our <a href={"https://discord.gg/a9ssM5pxTW"}>Discord</a> and read the <a href={"/docs/installation"}>docs</a>.
       </>
     ),
   },
@@ -31,7 +31,7 @@ const features = [
     imageUrl: 'img/undraw_splitscreen_computer.svg',
     description: (
       <>
-        We're being backed by a lot of talented developers and always welcoming new ones! Jump into the Discord and get in touch with us.
+        We're being backed by a lot of talented developers and always welcoming new ones! Jump into the <a href={"https://discord.gg/a9ssM5pxTW"}>Discord</a> and get in touch with us.
       </>
     ),
   },

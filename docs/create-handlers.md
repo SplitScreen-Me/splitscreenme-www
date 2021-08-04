@@ -12,3 +12,5 @@ Desc
 ## Step 2
 
 More desc...
+
+For more advanced tutorials on handlers and scripting, please check [Scripting](/docs/kbm-setup)
