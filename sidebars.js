@@ -5,6 +5,6 @@ module.exports = {
     'Handlers': ['handlers', 'create-handlers'],
     'Games': ['games'],
 	'Scripting': ['kbm-setup'],
-    'Bugs and Support': ['doesnt-launch', 'bug-report-reddit']
+    'Bugs and Support': ['doesnt-launch', 'bug-report-reddit'],
   },
 };
