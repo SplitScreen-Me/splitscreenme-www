@@ -90,7 +90,7 @@ co-creator of SplitScreenDreams, Talos91.
 
 ## The Nucleus Co-op Zerofox Mod
 
-Most of todays supported games however, would not be possible if it weren't for Zerofox bringing new life into the
+Most of [todays supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/) however, would not be possible if it weren't for Zerofox bringing new life into the
 project, with his fork of the Alpha 8 version, called "Alpha 8 Zerofox mod".
 
 Zerofox had first seen the split screen project back in it's infancy just before it's rebranding from SplitPlay to

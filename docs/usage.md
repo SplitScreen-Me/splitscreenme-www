@@ -9,7 +9,7 @@ How do I use it?
 
 2.- Open NucleusCoop.exe.
 
-3.- Click on Download Game Scripts, search for a game in the [supported games](https://www.reddit.com/r/nucleuscoop/comments/fjdqid/list_of_new_supported_games_and_faq/) list and download a script.
+3.- Click on Download Game Scripts, search for a game in the [supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/) list and download a script.
 
 4.- Once the script has finished downloading you will get a prompt asking if you would like to add a game now, press yes if you want to add it now, if you select no proceed to step 6.
 

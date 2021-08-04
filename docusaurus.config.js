@@ -61,6 +61,10 @@ module.exports = {
               label: 'Discord',
               href: 'https://discord.gg/a9ssM5pxTW',
             },
+            {
+              label: 'Steam',
+              href: 'https://steamcommunity.com/groups/nucleuscoop',
+            },
           ],
         },
         {
