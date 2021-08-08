@@ -78,6 +78,10 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/SplitScreen-Me',
             },
+            {
+              label: 'Steam Curator Page',
+              href: 'https://store.steampowered.com/curator/39181474-Nucleus-Coop-Recommends/',
+            },
           ],
         },
       ],
