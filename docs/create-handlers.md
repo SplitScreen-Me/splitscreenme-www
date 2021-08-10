@@ -2,10 +2,18 @@
 id: create-handlers
 title: Create your handler
 ---
+# Nucleus-Coop scripting
+This, is my approach when I want to script a game.
+Hope that could be useful for who want to create scripts for Nucleus-Coop.
 
-I invite you to read the [FAQ](https://www.reddit.com/r/nucleuscoop/comments/fjdqid/list_of_new_supported_games_and_faq/ ) post.
+## Reddit F.A.Q Post
 
-# Where to start?
+I invite you to read the [FAQ](https://www.reddit.com/r/nucleuscoop/comments/fjdqid/list_of_new_supported_games_and_faq/ ) post before continuing.
+It will help you understand better how Nucleus-Coop works and
+fix possible problems.
+
+## Where to start?
+
 Before doing something, I suggest checking the game's [PcGamingWiki](https://www.pcgamingwiki.com/wiki/Home) page. Here you will find most of the game's known problems, what input supports and what type of multiplayer connections supports.
 
 ### Input
@@ -19,7 +27,7 @@ The game should support LAN multiplayer as a native option, if it doesn't suppor
 - If it is available only on the Epic Games Store, you can try use Nemirtinga's Epic Emulator (Nucleus-Coop has a built-in option). Be sure it uses Epic Games API and not external servers for multiplayer. More info [here](https://gitlab.com/Nemirtingas/nemirtingas_epic_emu)
 - Search for a possible LAN/Multiplayer mod on Google.
 - 
-### Testing
+## Testing
 Nucleus-Coop as all the features for making copies of your game and set external tools. I suggest you use a public script, remove the not necessary lines, and doing the tests with that.
 (usually, the ones of games that use the same game-engine share a lot of characteristics. Example: You are scripting an Unreal Engine 4 game? Use as a base-script one that uses Unreal Engine 4).
 If you still want to manually test it, you should make a copy of your original game and use that instead.
@@ -27,30 +35,30 @@ If you still want to manually test it, you should make a copy of your original g
 ### Start multiple instances
 First thing, you must find a way to make the game run multiple times.
 If it doesn't run twice, these are the methods that I know (*For some games, you will need to combine these methods):
-1) **Closing game mutexes:**
+#### Closing game mutexes:
 Most of the games, need a specific (or more) mutex/event/semaphore to be closed.
 Usually, the right one/ones have the game-name or engine-name in the name. For example, most source games use ***"hl2"_singleton_mutex***.
 To check which ones the game use, we will use [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
 Open Process Explorer (with ***admin rights***), start the game, click the game process on the list, and press ***View Handles*** (Ctrl+H). You will see the full list of mutex/event/semaphore, etc.
 If you think to have found the right one, right-click on it and choose ***"Close Handle"***. After that, try to run a second instance of the game and see if it opens. (some games require multiple mutexes to be closed).
 Be careful that launchers check if the game is already running. For example, Goldberg, make it unseen from Steam.
-****Check public scripts for examples.***
-2) **Rename the game exe:**
+#### Check public scripts for examples.
+#### Rename the game exe:
 Change the game exe name for each instance (in Nucleus-Coop = Game.ChangeExe = true;)
-3) **Change the title of the game window:**
+#### Change the title of the game window:**
 You can use https://www.nirsoft.net/utils/winexp.html for testing. (in Nucleus-Coop = Game.IdInWindowTitle = true;) 
-4) **Start the game as a different windows user:**
+#### Start the game as a different windows user:**
 For testing, you need a second windows user and press ***shift + right-click*** on the exe and choose ***"Rus as another user"***. (In Nucleus-Coop you can use Game.LaunchAsDifferentUsers = true; and if needed Game.ThirdPartyLaunch = true;)
 
-If you use a script for testing, here two lines that could help you:
+:::note If you use a script for testing, here two lines that could help you:
 
-- This line will keep the game files inside the Nucleus-Coop\content folder. In this way, you can do the process manually and verify if the problems you are getting are Nucleus-Coop related.  
+This line will keep the game files inside the Nucleus-Coop\content folder. In this way, you can do the process manually and verify if the problems you are getting are Nucleus-Coop related.  
 ```Game.KeepSymLinkOnExit = true; 			//Enable or disable symlink files from being deleted when Nucleus is closed | default: false```
 
-- If by doing manually the second instance starts, while through Nucleus-Coop don't, try adding this line. (You can also disable all the not necessary lines and enable one at the time between each test to identify which one causes problems). 
+If by doing manually the second instance starts, while through Nucleus-Coop don't, try adding this line. (You can also disable all the not necessary lines and enable one at the time between each test to identify which one causes problems). 
 ```Game.HookInit = true;					//Enable or disable hooks of functions some games may try and use to prevent multiple instances from running | default: false```
 
-### Connection between instances
+## Connectivity
 
 After you made multiple instances start, is the time to test the connectivity.
 While for games with native LAN you will just need to check if the instances see each other through the multiplayer menu, for games that must use Goldberg/Nemirtinga's emulators you will need to set them for each copy of the game (each instance must have a different SteamID inside user_steam_id.txt and nickname inside account_name.txt).
@@ -58,18 +66,18 @@ I usually directly create a script and make Nucleus-Coop set the instances for m
 
 
 
-### Scripting Tips
+## Scripting Tips
 
 If all work is time to script it. Now, You will start testing input restriction and focus methods!
 Start by checking how the public scripts work and use as an example one that uses the same game-engine of the game you are trying to script.
-##### Some tips and essential lines
+### Some tips and essential lines
 You can find most of the lines in the Mod-ReadMe.txt (inside Nucleus-Coop root folder) and in the Master_SCript.js (documentation link inside Reddit FAQ post).
 Also, all my public scripts (Bizzo) have descriptions inside that could help you.
 
 Here some tips and essential lines:
 
-#### Game Info
-***These lines must be inside the script:***
+### Game Info
+#### Essential lines
 Line  | Description
 ----- | -----------
 Game.ExecutableName = "game.exe";  | 	What executable the game use. This will be used by Nucleus for "exe script selection", for run the game and as the process to follow for positioning and resizing.
@@ -78,7 +86,7 @@ Game.GameName = "Game Name on Nucleu UI"; | Title of the game that will be shown
 Game.MaxPlayersOneMonitor = 4; |	This is just an info. It will not limit the players' numbers.
 Game.MaxPlayers = 16; | 	This is just an info. Usually, we write the max players number the game support. 
 
-***Other important ones:***
+#### Other important ones:
 Line | Description
 ---- | -----------
 Game.BinariesFolder = "Bin"; | In which folder the game exe is located? Relative path to where Nucleus should start the game's working folder to.
@@ -87,25 +95,7 @@ Game.LauncherTitle = ""; | The name of the launcher's window title. Some games n
 Game.LauncherExe = "gamelauncher.exe";  | If the game needs to go through a launcher before opening. Nucleus will use this exe to start the game and it will follow Game.ExecutableName process for resizing and positioning. You can also write it like this: Game.LauncherExe = "gamelauncher.exe|NucleusDefined"; for let the User select the launcher exe the very first time (useful if is not located in the game folder).
 Game.LauncherExeIgnoreFileCheck = true;	 | Do not check if Launcher Exe exists in game folder | you will need to provide a relative filepath from game root folder
 
-***Files copies lines***
-
-Usually, these are enough:
-Line | Description
----- | -----------
-Game.SymlinkExe = false; | False = this will copy the game exe. Enable = will symlink the game exe.
-Game.SymlinkGame = true; | False = this will not copy the game in Nucleus\content folder. Enable = this will symlink the game in Nucleus\content folder
-
-***Others that could help:***
-Line | Description
----- | -----------
-Game.HardlinkGame = true;          | **Nucleus-Coop must be on the same game drive**. Different type of link files. Hardlink files instead of Symlink (or hard copy) | Directories will still be symlinked but files will be hardlinked
-
-***For saves and testing:***
-Line | Description
----- | -----------
-Game.KeepSymLinkOnExit = true; | False = after Nucleus is closed, game files inside Nucleus\content will be deleted. Enable = Nucleus will keep the files inside Nucleus\content even after is closed. Useful if the game store saves it in the game-folder.
-
-## Nucleus-Coop Environment
+#### Nucleus-Coop Environment
 
 This function will provide a different game's Document path for each player.
 
@@ -119,7 +109,7 @@ Then, you will be able to access in the script context part by using:
 
 Line | Description
 ---- | -----------
-Game.UseNucleusEnvironment = true; | Use custom environment variables for games that use them, replaces some common paths (e.g. AppData) with C:\Users\<your username>\NucleusCoop
+Game.UseNucleusEnvironment = true; | Use custom environment variables for games that use them, replaces some common paths (e.g. AppData) with C:\Users\\<your username\>\NucleusCoop
 Game.UserProfileConfigPath = "AppData\\Local\\Game\\Config"; | Relative path from user profile (e.g. C:\Users\ZeroFox) to game's config path | Used to provide some extra functionality (open/delete/copy over to Nucleus Environment). In context = Context.UserProfileConfigPath 
 Game.UserProfileSavePath = "AppData\\Local\\Game\\Saves"; | Relative path from user profile (e.g. C:\Users\ZeroFox) to game's save path | Used to provide some extra functionality (open/delete/copy over to Nucleus Environment). In context = Context.UserProfileSavePath 
 Game.DocumentsConfigPath = "Path\\Here"; | Relative path from user document folder (e.g. C:\Users\ZeroFox\Documents) to game's config path | Used to provide some extra functionality (open/delete/copy over to Nucleus Environment). Use this when the game uses Documents to store game files. In context = Context.DocumentsConfigPath 
@@ -128,12 +118,12 @@ Game.DocumentsSavePath = "Path\\Here"; | Relative path from user document folder
 
 ### Handlers
 
-***This is needed:***
+#### This is needed:
 Line | Description
 ---- | ----------
 Game.HandlerInterval = 100; | The interval in milliseconds the Handler should be updated at. Set it to 0 to disable updating (will lose all functionality that depends on ticks).
 
-***Higher time could help low spec PCs:***
+#### Higher time could help low spec PCs:
 Line | Description
 ---- | ----------
 Game.PauseBetweenStarts = 20; | Pause between game intances starts in milliseconds.
@@ -142,7 +132,9 @@ Game.PauseBetweenStarts = 20; | Pause between game intances starts in millisecon
 
 All player's game instances must think they are the currently active window to receive input and play.
 
-***These must be always present. ForceFocus is not always needed on true. Try to see if there are any differences if you set it on false.***
+:::note
+These must be always present. ForceFocus is not always needed on true. Try to see if there are any differences if you set it on false.
+:::
 
 Line | Description
 ---- | ----------
@@ -325,4 +317,4 @@ Context.BackupFile(Context.NucleusFolder + "\\utils\\FlawlessWidescreen\\x64\\se
 If you need help, don't understand how or if it's possible to do a specific thing with Nucleus-Coop, ask for help on our Discord Server (developers text channel). You can find the invite inside the [Reddit FAQ post](https://app.desktop.nicepage.com/73831406#sec-2d2f).
 Try to understand what the problem is and search if anyone has already fixed it (Google and PcGamingWiki can help you) before asking.
 
-By Bizzo.
+By Pizzo.
