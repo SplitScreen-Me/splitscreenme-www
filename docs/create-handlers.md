@@ -2,6 +2,7 @@
 id: create-handlers
 title: Create your handler
 ---
+![Nucleus-Coop Logo](../static/img/NucleusCoop1.png)
 # Nucleus-Coop scripting
 This, is my approach when I want to script a game.
 Hope that could be useful for who want to create scripts for Nucleus-Coop.
@@ -16,11 +17,13 @@ fix possible problems.
 
 Before doing something, I suggest checking the game's [PcGamingWiki](https://www.pcgamingwiki.com/wiki/Home) page. Here you will find most of the game's known problems, what input supports and what type of multiplayer connections supports.
 
+![Controller image](../static/img/gamepad.jpg)
 ### Input
 About gamepads support:
 - Nucleus-Coop has different methods to restrict XInput gamepads and is easier to make them work (also, most modern games support them).
 - Nucleus-Coop has only one method to restrict DInput gamepads. Not always works and when it does is mostly for older games (devreorder).
 
+![Ethernet Cables](../static/img/network.jpg)
 ### Connectivity
 The game should support LAN multiplayer as a native option, if it doesn't support LAN:
 - If it is available on the Steam Store, you can still use Goldberg's Emulator (Nucleus-Coop has a built-in option). Be sure it uses SteamWorks and not external servers for multiplayer. More info [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator)
@@ -36,16 +39,21 @@ If you still want to manually test it, you should make a copy of your original g
 First thing, you must find a way to make the game run multiple times.
 If it doesn't run twice, these are the methods that I know (*For some games, you will need to combine these methods):
 #### Closing game mutexes:
+![Closing game mutex first screenshot](../static/img/closing-game-mutex1.jpg)
 Most of the games, need a specific (or more) mutex/event/semaphore to be closed.
 Usually, the right one/ones have the game-name or engine-name in the name. For example, most source games use ***"hl2"_singleton_mutex***.
 To check which ones the game use, we will use [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
+
+![Closing game mutex second screenshot](../static/img/closing-game-mutex2.png)
 Open Process Explorer (with ***admin rights***), start the game, click the game process on the list, and press ***View Handles*** (Ctrl+H). You will see the full list of mutex/event/semaphore, etc.
 If you think to have found the right one, right-click on it and choose ***"Close Handle"***. After that, try to run a second instance of the game and see if it opens. (some games require multiple mutexes to be closed).
 Be careful that launchers check if the game is already running. For example, Goldberg, make it unseen from Steam.
 #### Check public scripts for examples.
 #### Rename the game exe:
 Change the game exe name for each instance (in Nucleus-Coop = Game.ChangeExe = true;)
+![Rename game exe](../static/img/rename-game-exe.png)
 #### Change the title of the game window:**
+![Change Title of the game window](../static/img/change-title.jpg)
 You can use https://www.nirsoft.net/utils/winexp.html for testing. (in Nucleus-Coop = Game.IdInWindowTitle = true;) 
 #### Start the game as a different windows user:**
 For testing, you need a second windows user and press ***shift + right-click*** on the exe and choose ***"Rus as another user"***. (In Nucleus-Coop you can use Game.LaunchAsDifferentUsers = true; and if needed Game.ThirdPartyLaunch = true;)
@@ -189,6 +197,8 @@ Game.Hook.XInputEnabled = true; | If enabled, will allow XInput devices to be us
 Game.Hook.XInputReroute = false; | If enabled, will allow XInput devices to act like DInput devices. This allows using more than 4 controllers. You can use only ONE XboxOne controller and you can't use at the same time the keyboard. You must click/alt+tab on the corresponding instance to make it work. In alternative, you can try to fix the problem by doing ***[this](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510)*** or try Xoutput.
 Game.UseDInputBlocker = true; | Setup wizark952's dinput blocker (block dinput for the game). This line will help users that use an XInput emulator. Use it when the script should restrict XInput gamepads and DInput will not be used in any way.
 
+![dll finding 1](../static/img/dll-finding1.jpg)
+![dll finding 2](../static/img/dll-finding2.png)
 You can find out which dlls the game is using with Process Explorer. 
 Start the game, open Process Explorer, click on the game process and click on View DLLs (Ctrl+D).
 Search on the list, and you will find which Xinput DLLs the game is using. A game that supports controllers but not Xinput ones (old games) use dinput8.dll or dinput.dll.
