@@ -57,6 +57,7 @@ This line will keep the game files inside the Nucleus-Coop\content folder. In th
 
 If by doing manually the second instance starts, while through Nucleus-Coop don't, try adding this line. (You can also disable all the not necessary lines and enable one at the time between each test to identify which one causes problems). 
 ```Game.HookInit = true;					//Enable or disable hooks of functions some games may try and use to prevent multiple instances from running | default: false```
+:::
 
 ## Connectivity
 
