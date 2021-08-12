@@ -5,52 +5,65 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+    .heroBanner {
+        padding: 2rem;
+    }
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+    height: 200px;
+    width: 200px;
 }
 
 .featuredHandler {
-  box-shadow: 0px 0px 60px 0px rgba(71,74,182,0.12);
-  background-size: cover;
-  height:450px;
-  margin: 35px !important;
-  transition: transform .2s;
+    box-shadow: 0px 0px 60px 0px rgba(71, 74, 182, 0.12);
+    background-size: cover;
+    height: 450px;
+    margin: 35px !important;
+    transition: transform .2s;
 }
+
 .featuredHandler:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .getStarted {
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
 }
 
 .getStarted:hover {
-  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #ffffff;
+}
+
+.exploreGames {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    color: #0e86bb;
+    border-color: #0e86bb;
+}
+
+.exploreGames:hover {
+    transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
