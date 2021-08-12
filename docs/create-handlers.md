@@ -41,11 +41,13 @@ First thing, you must find a way to make the game run multiple times.
 If it doesn't run twice, these are the methods that I know (*For some games, you will need to combine these methods)
 #### Closing game mutexes:
 ![Closing game mutex first screenshot](../static/img/closing-game-mutex1.jpg)
+
 Most of the games, need a specific (or more) mutex/event/semaphore to be closed.
 Usually, the right one/ones have the game-name or engine-name in the name. For example, most source games use ***"hl2"_singleton_mutex***.
 To check which ones the game use, we will use [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
 
 ![Closing game mutex second screenshot](../static/img/closing-game-mutex2.png)
+
 Open Process Explorer (with ***admin rights***), start the game, click the game process on the list, and press ***View Handles*** (Ctrl+H). You will see the full list of mutex/event/semaphore, etc.
 If you think to have found the right one, right-click on it and choose ***"Close Handle"***. After that, try to run a second instance of the game and see if it opens. (some games require multiple mutexes to be closed).
 Be careful that launchers check if the game is already running. For example, Goldberg, make it unseen from Steam.
@@ -58,6 +60,7 @@ Change the game exe name for each instance (in Nucleus-Coop = Game.ChangeExe = t
 #### Change the title of the game window
 
 ![Change Title of the game window](../static/img/change-title.jpg)
+
 You can use [winexp](https://www.nirsoft.net/utils/winexp.html) with admin rights for testing. (in Nucleus-Coop = Game.IdInWindowTitle = true;) 
 
 #### Start the game as a different windows user
@@ -219,6 +222,7 @@ Game.UseDInputBlocker = true; | Setup wizark952's dinput blocker (block dinput f
 
 ![dll finding 1](../static/img/dll-finding1.jpg)
 ![dll finding 2](../static/img/dll-finding2.png)
+
 You can find out which dlls the game is using with Process Explorer. 
 Start the game, open Process Explorer, click on the game process and click on View DLLs (Ctrl+D).
 Search on the list, and you will find which Xinput DLLs the game is using. A game that supports controllers but not Xinput ones (old games) use dinput8.dll or dinput.dll.
