@@ -15,7 +15,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'https://hub.splitscreen.me',
+          href: '/',
           target: "_self",
           label: 'Games Hub',
           position: 'left',

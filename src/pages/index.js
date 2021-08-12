@@ -70,14 +70,14 @@ function Home() {
     <Layout
       title={`SplitScreen every game`}
       description="SplitScreen.Me is an application allowing players to play any game splitscreened.">
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--outline button--lg button--dark',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/installation')}>
@@ -89,6 +89,7 @@ function Home() {
       <main>
         {features && features.length && (
           <section className={styles.features}>
+            <h2/>
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
@@ -104,13 +105,16 @@ function Home() {
                 <div className="row">{featuredHandlers.map(handler => (
                     <div key={handler._id} className="col col--4" style={{paddingBottom:'50px'}}>
                 <a href={`https://hub.splitscreen.me/handler/${handler._id}`}>
-                    <div className={styles.featuredHandler} style={{background: `no-repeat center/cover url('https://images.igdb.com/igdb/image/upload/t_cover_big/${handler.gameCover}.jpg')`}} />
+                    <div className={styles.featuredHandler}
+                         style={{background: `no-repeat center/cover url('https://images.igdb.com/igdb/image/upload/t_cover_big/${handler.gameCover}.jpg')`}}
+                         title={`Game name: handler.gameName`}
+                    />
                 </a></div>
                 ))}
                     <div style={{textAlign:'center', width:'100%',marginBottom:'150px'}}><Link
                         className={classnames(
-                            'button button--outline button--primary button--lg',
-                            styles.getStarted,
+                            'button button--outline button--lg button--primary',
+                            styles.exploreGames,
                         )}
 
                         to="https://hub.splitscreen.me"
