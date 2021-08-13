@@ -2,7 +2,10 @@
 id: create-handlers
 title: Create your handler
 ---
-<img src="../static/img/NucleusCoop1.png" alt="Example banner" height="150px"/>
+
+import NucleusLogo from '../static/img/NucleusCoop1.png';
+
+<img src={NucleusLogo} alt="Nucleus Logo" height="150px"/>
 
 # Nucleus-Coop scripting
 This, is my approach when I want to script a game.
