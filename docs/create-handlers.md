@@ -2,7 +2,10 @@
 id: create-handlers
 title: Create your handler
 ---
-<img src="/static/img/NucleusCoop1.png" alt="Example banner" height="150px"/>
+
+import NucleusLogo from '../static/img/NucleusCoop1.png';
+
+<img src={NucleusLogo} alt="Nucleus Logo" height="150px"/>
 
 # Nucleus-Coop scripting
 This, is my approach when I want to script a game.
@@ -41,12 +44,14 @@ First thing, you must find a way to make the game run multiple times.
 If it doesn't run twice, these are the methods that I know (*For some games, you will need to combine these methods)
 #### Closing game mutexes:
 ![Closing game mutex first screenshot](../static/img/closing-game-mutex1.jpg)
+<br />
 
 Most of the games, need a specific (or more) mutex/event/semaphore to be closed.
 Usually, the right one/ones have the game-name or engine-name in the name. For example, most source games use ***"hl2"_singleton_mutex***.
 To check which ones the game use, we will use [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
 
 ![Closing game mutex second screenshot](../static/img/closing-game-mutex2.png)
+<br />
 
 Open Process Explorer (with ***admin rights***), start the game, click the game process on the list, and press ***View Handles*** (Ctrl+H). You will see the full list of mutex/event/semaphore, etc.
 If you think to have found the right one, right-click on it and choose ***"Close Handle"***. After that, try to run a second instance of the game and see if it opens. (some games require multiple mutexes to be closed).
