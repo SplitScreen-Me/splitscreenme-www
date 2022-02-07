@@ -1,6 +1,6 @@
 module.exports = {
   title: 'SplitScreen.Me',
-  tagline: 'Collection of programs to add split-screen functionality to hundreds of PC games',
+  tagline: 'Add split-screen functionality to hundreds of PC games!',
   url: 'https://www.splitscreen.me',
   baseUrl: '/',
   favicon: 'img/favicon-192x192.png',
