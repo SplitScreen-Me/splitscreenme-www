@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'SplitScreen Me',
+  title: 'SplitScreen.Me',
   tagline: 'Play every game, splitscreened',
   url: 'https://www.splitscreen.me',
   baseUrl: '/',
