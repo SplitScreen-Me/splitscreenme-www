@@ -8,7 +8,7 @@ module.exports = {
   projectName: 'splitscreenme-www', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'SplitScreen Me',
+      title: 'SplitScreen.Me',
       logo: {
         alt: 'SplitScreen.Me Logo',
         src: 'img/splitscreen-me-logo.png',
