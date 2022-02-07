@@ -1,9 +1,9 @@
 ---
 id: what-is-splitscreen-me
-title: What is Splitscreen.me?
+title: What is SplitScreen.Me?
 ---
 
-What is Splitscreen.me?
+What is SplitScreen.Me?
 
 Here's a short [Youtube video](https://www.youtube.com/watch?v=jbituCgu3Bc) that explains an older version of splitscreen.me.
 
