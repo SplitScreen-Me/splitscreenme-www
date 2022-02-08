@@ -1,7 +1,7 @@
 ---
-id: nucleuscoop
-title: Nucleus Co-op
-sidebar_label: Nucleus Co-op
+id: faq
+title: Frequently Asked Questions and troubleshooting
+sidebar_label: FAQ
 ---
 * Download latest Nucleus Co-op from the [Github releases page](https://github.com/ZeroFox5866/nucleuscoop/releases):
 
