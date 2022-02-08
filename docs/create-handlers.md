@@ -7,37 +7,36 @@ import NucleusLogo from '../static/img/NucleusCoop1.png';
 
 <img src={NucleusLogo} alt="Nucleus Logo" height="150px"/>
 
-# Nucleus-Coop scripting
-This, is my approach when I want to script a game.
-Hope that could be useful for who want to create scripts for Nucleus-Coop.
+# Nucleus-Coop handler creation
+This is my approach when I want to make a handler for a game.
+Hopefully it will be useful for those that want to create game handlers for Nucleus-Coop too.
 
-## Reddit F.A.Q Post
+## F.A.Q
 
-I invite you to read the [FAQ](https://www.reddit.com/r/nucleuscoop/comments/fjdqid/list_of_new_supported_games_and_faq/ ) post before continuing.
-It will help you understand better how Nucleus-Coop works and
-fix possible problems.
+I encourage you to read the [FAQ](/docs/faq) before continuing.
+It will help you better understand how Nucleus Co-op works and to fix possible issues.
 
 ## Where to start?
 
-Before doing something, I suggest checking the game's [PcGamingWiki](https://www.pcgamingwiki.com/wiki/Home) page. Here you will find most of the game's known problems, what input supports and what type of multiplayer connections supports.
+Before starting I suggest checking the game's [PcGamingWiki](https://www.pcgamingwiki.com/wiki/Home) page. Here you will find most of the game's known problems, what input does it supports and what type of multiplayer connections it uses.
 
 ![Controller image](../static/img/gamepad.jpg)
 ### Input
-About gamepads support:
-- Nucleus-Coop has different methods to restrict XInput gamepads and is easier to make them work (also, most modern games support them).
-- Nucleus-Coop has only one method to restrict DInput gamepads. Not always works and when it does is mostly for older games (devreorder).
+About controller support:
+- Nucleus Co-op has different methods to restrict XInput gamepads and it is a lot easier to make them work (also, most modern games support them).
+- Nucleus Co-op has very few methods to restrict DInput gamepads. They not always work and when they do it is mostly for older games (devreorder).
 
 ![Ethernet Cables](../static/img/network.jpg)
 ### Connectivity
 
 The game should support LAN multiplayer as a native option, if it doesn't support LAN:
-- If it is available on the Steam Store, you can still use [Goldberg's Emulator](https://gitlab.com/Mr_Goldberg/goldberg_emulator) (Nucleus-Coop has a built-in option). Be sure it uses SteamWorks and not external servers for multiplayer
-- If it is available only on the Epic Games Store, you can try use [Nemirtinga's Epic](https://gitlab.com/Nemirtingas/nemirtingas_epic_emu) Emulator (Nucleus-Coop has a built-in option). Be sure it uses Epic Games API and not external servers for multiplayer.
+- If it is available on the Steam Store, you can still use [Goldberg's Emulator](https://gitlab.com/Mr_Goldberg/goldberg_emulator) (Nucleus Co-op has a built-in option). Be sure it uses SteamWorks and not external servers for multiplayer.
+- If it is available only on the Epic Games Store, you can try using [Nemirtinga's Epic](https://gitlab.com/Nemirtingas/nemirtingas_epic_emu) Emulator (Nucleus Co-op has a built-in option). Be sure it uses Epic Games API and not external servers for multiplayer.
 - Search for a possible LAN/Multiplayer mod on Google.
 ## Testing
-Nucleus-Coop as all the features for making copies of your game and set external tools. I suggest you use a public script, remove the not necessary lines, and doing the tests with that.
-(usually, the ones of games that use the same game-engine share a lot of characteristics. Example: You are scripting an Unreal Engine 4 game? Use as a base-script one that uses Unreal Engine 4).
-If you still want to manually test it, you should make a copy of your original game and use that instead.
+Nucleus Co-op has all the features to make copies of your game and set external tools. I suggest you use a public handler, remove the unnecessary lines, and do the tests with that.
+(usually, games that use the same game-engine share a lot of characteristics. Example: You are scripting an Unreal Engine 4 game? Use as a base-handler that uses Unreal Engine 4).
+If you still want to manually test it, you should make a copy of your original game files and use that instead.
 
 ### Start multiple instances
 First thing, you must find a way to make the game run multiple times.
@@ -47,56 +46,55 @@ If it doesn't run twice, these are the methods that I know (*For some games, you
 <br />
 
 Most of the games, need a specific (or more) mutex/event/semaphore to be closed.
-Usually, the right one/ones have the game-name or engine-name in the name. For example, most source games use ***"hl2"_singleton_mutex***.
-To check which ones the game use, we will use [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
+Usually, the right one/ones have the game-name or engine-name in their name. For example, most source games use ***"hl2"_singleton_mutex***.
+To check which ones the game uses, we will use the app [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
 
 ![Closing game mutex second screenshot](../static/img/closing-game-mutex2.png)
 <br />
 
 Open Process Explorer (with ***admin rights***), start the game, click the game process on the list, and press ***View Handles*** (Ctrl+H). You will see the full list of mutex/event/semaphore, etc.
 If you think to have found the right one, right-click on it and choose ***"Close Handle"***. After that, try to run a second instance of the game and see if it opens. (some games require multiple mutexes to be closed).
-Be careful that launchers check if the game is already running. For example, Goldberg, make it unseen from Steam.
+Be aware that launchers check if a game is already running. For example, Goldberg, makes it unseen from the Steam launcher.
 
 #### Rename the game exe
 
-Change the game exe name for each instance (in Nucleus-Coop = Game.ChangeExe = true;)
+Change the game exe name for each instance (in Nucleus Co-op = Game.ChangeExe = true;)
 ![Rename game exe](../static/img/rename-game-exe.png)
 
 #### Change the title of the game window
 
 ![Change Title of the game window](../static/img/change-title.jpg)
 
-You can use [winexp](https://www.nirsoft.net/utils/winexp.html) with admin rights for testing. (in Nucleus-Coop = Game.IdInWindowTitle = true;) 
+You can use [winexp](https://www.nirsoft.net/utils/winexp.html) with admin rights for testing. (in Nucleus Co-op = Game.IdInWindowTitle = true;) 
 
 #### Start the game as a different windows user
 
-For testing, you need a second windows user and press ***shift + right-click*** on the exe and choose ***"Rus as another user"***. (In Nucleus-Coop you can use Game.LaunchAsDifferentUsers = true; and if needed Game.ThirdPartyLaunch = true;)
+For testing, you need a second windows user and press ***shift + right-click*** on the exe and choose ***"Rus as another user"***. (In Nucleus Co-op you can use Game.LaunchAsDifferentUsers = true; and if needed Game.ThirdPartyLaunch = true;)
 
-:::note If you use a script for testing, here two lines that could help you:
+:::note If you use a handler for testing, here are two lines that could help you:
 
-This line will keep the game files inside the Nucleus-Coop\content folder. In this way, you can do the process manually and verify if the problems you are getting are Nucleus-Coop related.  
+This line will keep the game files inside the Nucleus Co-op\content folder. In this way, you can do the process manually and verify if the problems you are getting are Nucleus Co-op related.  
 ```Game.KeepSymLinkOnExit = true; 			//Enable or disable symlink files from being deleted when Nucleus is closed | default: false```
 
-If by doing manually the second instance starts, while through Nucleus-Coop don't, try adding this line. (You can also disable all the not necessary lines and enable one at the time between each test to identify which one causes problems). 
+If by doing it manually the second instance starts, while through Nucleus Co-op it doesn't, try adding this line. (You can also disable all the unnecessary lines and enable one at the time between each test to identify which one causes problems). 
 ```Game.HookInit = true;					//Enable or disable hooks of functions some games may try and use to prevent multiple instances from running | default: false```
 :::
 
 ## Connectivity
 
-After you made multiple instances start, is the time to test the connectivity.
-While for games with native LAN you will just need to check if the instances see each other through the multiplayer menu, for games that must use Goldberg/Nemirtinga's emulators you will need to set them for each copy of the game (each instance must have a different SteamID inside user_steam_id.txt and nickname inside account_name.txt).
-I usually directly create a script and make Nucleus-Coop set the instances for me. Recently, a software called [GoldbergGUI](https://www.reddit.com/r/GoldbergEmu/comments/kxsaki/goldberggui_frontend_for_goldberg_emulator/?utm_source=share&utm_medium=web2x&context=3), that helps you set Goldberg for you, was just released if you still want to try manually.
+After you managed to open multiple instances, it is the time to test the connectivity.
+While for games with native LAN you will just need to check if the instances see each other through the multiplayer menu, for games that use Goldberg/Nemirtinga's emulators you will need to set them for each copy of the game (each instance must have a different SteamID inside user_steam_id.txt and nickname inside account_name.txt).
+I usually directly create a handler and make Nucleus Co-op set the instances for me. Recently, a software called [GoldbergGUI](https://www.reddit.com/r/GoldbergEmu/comments/kxsaki/goldberggui_frontend_for_goldberg_emulator/?utm_source=share&utm_medium=web2x&context=3), that helps you set Goldberg for you, was just released if you still want to try manually.
 
 
+## Handler Creation Tips
 
-## Scripting Tips
-
-If all work is time to script it. Now, You will start testing input restriction and focus methods!
-Start by checking how the public scripts work and use as an example one that uses the same game-engine of the game you are trying to script.
+If all works it is time to script it. Now, you will start testing input restriction and focus methods!
+Start by checking how the public handlers work and use as an example one that uses the same game-engine of the game you are trying.
 
 ### Some tips and essential lines
 
-You can find most of the lines in the Mod-ReadMe.txt (inside Nucleus-Coop root folder) and in the Master_SCript.js (documentation link inside Reddit FAQ post).
+You can find most of the lines in the ReadMe.txt (inside Nucleus Co-op root folder) and in the MasterHandler.js (documentation link inside Reddit FAQ post).
 Also, all my public scripts (Bizzo) have descriptions inside that could help you.
 Next, you will find the most used ones.
 
