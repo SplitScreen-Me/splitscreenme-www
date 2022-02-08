@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     'About': ['what-is-splitscreen-me', 'history'],
-    'Getting Started': ['installation', 'usage'],
+    'Getting Started': ['installation', 'usage', 'faq'],
     'Handlers': ['handlers', 'create-handlers'],
     'Games': ['games'],
 	'Scripting': ['kbm-setup'],
