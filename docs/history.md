@@ -3,21 +3,21 @@ id: history
 title: History
 ---
 
-# The History of Nucleus Coop and Splitscreen.me
+# SplitScreen.Me History
 
 ## The Beginning
 
-The story of Splitscreen.me starts with a splitscreening tool, made by the Brazillian game and software developer Lucas
+The story of SplitScreen.Me starts with a splitscreening tool, made by the Brazillian game and software developer Lucas
 Assislar in August/September 2012, only a few weeks after Borderlands 2's release. The app was originally created to
-split screen Borderlands 2, as there was not any way to play that game split screen on PC at the time. The app was
+split-screen Borderlands 2, as there was not any way to play that game split-screen on PC at the time. The app was
 called "Borderlands 2 SplitScreen Tool" at the time; fast-forward a year in August 2013 Lucas made
 this [post](https://steamcommunity.com/app/49520/discussions/0/864977025916708574/). The app already had support for
 multiple games, and because of that, the app name "Borderlands 2 SplitScreen Tool" didn't really fit anymore. Therefore
 the project was renamed to SplitPlay. SplitPlay was really buggy, so a lot of people were still using the original tool
-for borderlands 2.
+for Borderlands 2.
 
 In 2014 Lucas Assislar made his first [Youtube video](https://www.youtube.com/watch?v=rFLCTIJHxQI) about the project,
-showcasing Borderlands 2 in split screen. 4 days later he made
+showcasing Borderlands 2 in split-screen. 4 days later he made
 another [video](https://www.youtube.com/watch?v=GBdW1qzRUbQ) showcasing Borderlands: The Pre-Sequel. The video was a
 hit, and is currently sitting at around 68k views.
 
@@ -26,7 +26,7 @@ hit, and is currently sitting at around 68k views.
 Behind the scenes Lucas started working on another rebranding of the app, this time it was going to be called Nucleus
 Co-op. Lucas made version 1 of Nucleus Co-op in October 2015, but didn't like the result. He rebuilt it in version 2.0,
 and in December 2015 [this version](https://github.com/lucasassislar/nucleuscoop/releases/tag/v2.0-alpha-1) was
-released. The release was very buggy and only had support for the two previously mentioned borderlands games. In terms
+released. The release was very buggy and only had support for the two previously mentioned Borderlands games. In terms
 of functionality, Nucleus Co-op was a downgrade compared to SplitPlay. But the groundwork for the project was made.
 
 Lucas continued to improve Nucleus Co-op over the next few months, and new features were added in each release. Perhaps
@@ -47,18 +47,18 @@ improving Borderlands 1 support, along with quality of life upgrades to the
 app. [Alpha 7(March 21. 2017)](https://github.com/lucasassislar/nucleuscoop/releases/tag/v2.0-alpha-7) redesigned the
 UI, brought close to perfect splitscreening of all the Borderlands games released at the time, Saints Row 3 got added as
 working, and the javascript engine got improved. This was also around the time where the first people started joining in
-and making their own scripts.
+and making their own handlers.
 
 On August 9. 2017, r-mach shared his addition of don't starve together in
 a [reddit post](https://www.reddit.com/r/nucleuscoop/comments/6sl4k3/added_dont_starve_together_pc_split_screen/). A few
 days after this reddit post, r-mach reached out to Lucas, and they decided that Lucas would continue on the app, and
-r-mach would be doing the web stuff. r-mach created the old website nucleuscoop.com, and he later created basic a basic
+r-mach would be doing the web stuff. r-mach created the old website nucleuscoop.com, and he later created a basic
 API for handlers. He also created a wiki together with Lucas. Even though the API was 99% finished, the wiki and API
 never saw the light of day.
 
 [Alpha 8(August 27. 2017)](https://github.com/lucasassislar/nucleuscoop/releases/tag/v2.0-alpha-8) brought a big change
 as well, arguably even more so than Alpha 4, d1maxa and [r-mach](https://github.com/r-mach) made some improvements, and
-added some games. Several bugs were also fixed. This version broke Saints Row 3, but it added 4 new games to the list,
+added more games. Several bugs were also fixed. This version broke Saints Row 3, but it added 4 new games to the list,
 and the first Cod game was added to the "What kinda works" list.
 In [Alpha 9(August 5. 2018)](https://github.com/lucasassislar/nucleuscoop/releases/tag/v2.0-alpha-9) the engine got
 reworked once again, The game handlers now needed to be downloaded from an external website, unlike the included
@@ -68,7 +68,7 @@ had a reworked UI. With this version admin privileges were not needed at app sta
 words "XInput library will setup the game's window, for WAYYY faster scaling". The handlers also got changed in this
 version, now the .js handler file would have to be placed inside a .nc(zip-file) file in order to be read by Nucleus.
 
-Lucas had long been struggling with mental health problems, and personal matters. And largely because of this he stopped
+Lucas had long been struggling with mental health problems and personal matters. And largely because of this he stopped
 working on the project after the release of Alpha 10 and went silent. R-mach, the main website developer at the time,
 also went silent after that release, also due to personal matters. This is the reason the old wiki and API, which I
 mentioned earlier, never got finished.
@@ -81,23 +81,23 @@ screen handlers/scripts, for the app. They soon found out about each other, and 
 called "SplitScreenDreams" on April 24. 2019.
 
 One of the two enthusiasts, called Talos91, invited another enthusiast called dr.oldboi(dr.oldboi#8752 on Discord) to
-the server very shortly after. These three started working together on making split screen scripts for Nucleus Co-op.
+the server very shortly after. These three started working together on making split-screen handlers for Nucleus Co-op.
 The SplitScreenDreams server started growing, and Talos91 would often post guides on reddit about how to play new games
-in split screen with Nucleus. At the time of writing this (August 04. 2021), SplitScreenDreams has made handlers for
-over 500 games, almost 400 of which are published on the hub, and downloadable from within the Nucleus Coop app. These
-handlers were made thanks to cooperation between almost 100 people, but the majority of the handlers, were made by
+in split-screen with Nucleus. At the time of writing this (August 04. 2021), SplitScreenDreams has made handlers for
+over 500 games, 400+ of which are published on the hub, and downloadable from within the Nucleus Co-op app. These
+handlers were made thanks to co-operation among almost 100 people, but the majority of the handlers, were made by
 co-creator of SplitScreenDreams, Talos91.
 
 ## The Nucleus Co-op Zerofox Mod
 
 Most of [todays supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/) however, would not be possible if it weren't for Zerofox bringing new life into the
-project, with his fork of the Alpha 8 version, called "Alpha 8 Zerofox mod".
+project, with his fork of the Alpha 8 version, called "Alpha 8 Zerofox Mod".
 
-Zerofox had first seen the split screen project back in it's infancy just before it's rebranding from SplitPlay to
-Nucleus Co-op. He stumbled upon it when trying to find games he could play in split screen on his PC. At the time (as
+Zerofox had first seen the split-screen project back in it's infancy just before it's rebranding from SplitPlay to
+Nucleus Co-op. He stumbled upon it when trying to find games he could play in split-screen on his PC. At the time (as
 mentioned earlier) SplitPlay was very much in early development, so he didn't look any further into it at the time.
-Fast-forward to 2019, he went on a quest again to find a way to split screen games. This is when he stumbled upon one of
-Talos91's reddit posts. The post was a guide to playing Dead Rising 2 in split screen. There he referenced Nucleus Co-op
+Fast-forward to 2019, he went on a quest again to find a way to split-screen games. This is when he stumbled upon one of
+Talos91's reddit posts. The post was a guide to playing Dead Rising 2 in split-screen. There he referenced Nucleus Co-op
 which Zerofox remembered from his earlier encounter with the app. And because of this guide Zerofox had his first real
 experience with Nucleus Co-op. It was after this that Zerofox really got into Nucleus Co-op. In July 2019, after reading
 Talos' post, and reading up more of his guides/posts, Zerofox read about a "secret" Discord channel where this stuff was
@@ -106,16 +106,15 @@ to the SplitScreenDreams Discord server.
 
 After trying out Nucleus and learning more about it, Zerofox saw there were a few major barriers. Having modded games
 and consoles since his childhood, and a few big mods behind him, he thought that he could fix those barriers relatively
-easily. So he started working on a few Quality of Life upgrades to the app. That was originally all that he intended to
+easily. So he started working on a few quality of life upgrades to the app. That was originally all that he intended to
 do. However as he got to using Nucleus more and more, and talking with the other members of the SplitScreenDreams
 discord, he started to realize the potential Nucleus Co-op had. So he expanded the "mod" by adding a few thing here and
 there according to community feedback and his own ideas. Those "few things here and there" added up to a lot of things,
-and with a lot of support from the community he branded his mod "Zerofox Alpha 8 mod" and released it on August 1. 2019.
+and with a lot of support from the community he branded his mod "Zerofox Alpha 8 Mod" and released it on August 1. 2019.
 
 In this relatively short time, Zerofox had made it possible for the community to add support for a lot of games that
-were previously impossible to split screen through Nucleus Co-op. However there were a few things missing, and multiple
-mouse and keyboard support was one of them. There had been attempts earlier by Lucas to add Keyboard and Mouse (KBM)
-support to Nucleus, but it only allowed for 1 KBM, not multiple. And besides, it was quite buggy and didn't always work
+were previously impossible to split-screen through Nucleus Co-op. However there were a few things missing, and multiple
+mouse and keyboard support was one of them. There had been attempts earlier by Lucas to add keyboard and mouse support to Nucleus, but it only allowed for 1 KBM, not  multiple. And besides, it was quite buggy and didn't always work
 as intended. While Zerofox was working on Nucleus Co-op he heard
 about [Universal Split Screen](https://universalsplitscreen.github.io/)(USS). He took a look at it, and was instantly
 amazed. While I was interviewing Zerofox he said: <cite>"The code, design and execution was very impressive. It was more
@@ -141,7 +140,7 @@ brings us to the story of how USS and developer Ilyaki joined the Nucleus Co-op 
 ## The Origins of Universal Split Screen (USS)
 
 Going a bit back in time, to before Nucleus Co-op started gaining traction again, another developer called Ilyaki was
-also looking into split screen. This other developer also came from the modding scene. In 2018 he had made a mod for
+also looking into split-screen. This other developer also came from the modding scene. In 2018 he had made a mod for
 Stardew Valley, the mod redirected controller input between instances, much like Nucleus Co-op. He even added KBM
 support, and moved onto porting the mod to Terraria, as it was running under the same engine. After a brief stunt
 called [Battle Royalley](https://www.nexusmods.com/stardewvalley/mods/3199)(a battle royale mod for Stardew Valley), he
@@ -170,13 +169,13 @@ automation features and simple user setup, compared to USS's entirely manual app
 
 After r-mach suggesting Ilyaki and Zerofox should join forces, Zerofox started talking to the developer of USS, Ilyaki.
 Ilyaki agreed to help out with Zerofox's mod, and they have been working together ever since. Ilyaki has since brought
-multi-KBM support to Nucleus Co-op, along with a lot more features for scripters.
+multi-KBM support to Nucleus Co-op, along with a lot more features for handler authors.
 
-## Rebranding to Splitscreen.me
+## Rebranding to Splitscreen.Me
 
-r-mach started working on the new website(Splitscreen.me) and the hub(splitscreen.me/hub). After it's creation lots of
+r-mach started working on the new website(splitscreen.me) and the hub(splitscreen.me/hub). After it's creation lots of
 contributions have been made to the website by the community. Today the website has documentation which is ever
-expanding and the hub has almost 400 public handlers, and close to 500,000 handler downloads.
+expanding and the hub has more than 450 public handlers, and close to 500,000 handler downloads.
 
 Before we end this story, we would like to thank the entire community for helping develop, script, suggest features,
 report bugs, manage Discord and Reddit servers, post guides, and everything else you do to make this community so much
