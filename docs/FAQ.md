@@ -103,23 +103,23 @@ Join the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) community or con
 
 See [handlers](/docs/handlers).
 
-#### 12.- When support for X game?
+#### 13.- When support for X game?
 
 Not all games are easy to splitscreen, if you want to suggest a game make a [subreddit](https://www.reddit.com/r/nucleuscoop) post with the title `[Request] Name of the game` and provide useful information like if the game supports LAN or dedicated servers, if it is available on Steam or in other services, if it uses external servers for online, if it has gamepad support etc. You can also contact any of our experienced Nucleus handlers developers here or in the [Nucleus Co-Op discord](https://discord.gg/QDUt8HpCvr) and ask if a handler is possible. The main handler developer is [Talos91](https://www.reddit.com/user/blackman9/). Remember that handler developers are limited by the games they own and can test on, so if you really want support for a game to be added consider donating the game to the handler dev in question.
 
-#### 13.- How do I know when a handler gets updated?
+#### 14.- How do I know when a handler gets updated?
 
 Handlers updates are always announced in the [Nucleus Co-Op discord](https://discord.gg/QDUt8HpCvr) in the channel #handlers-updates. Also [/u/The_Shnazberry](https://www.reddit.com/u/The_Shnazberry/) posts great Weekly Review Threads in the [subreddit](https://www.reddit.com/r/nucleuscoop) with all the information about new released handlers and updates to existing ones.
 
-#### 14.- How do I create my own split-screen handler for Nucleus Co-op?
+#### 15.- How do I create my own split-screen handler for Nucleus Co-op?
 
 See the documentation on this website. Here is the [Master Handler](https://drive.google.com/file/d/1AqWqlgH2gh0UR-u0uq_PjU02Ton4gaEg/view?usp=drivesdk), open the .js file with notepad to read it. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler creation you can ask us in the Nucleus Co-Op discord or on the subreddit, we can help you improve your handler so it is fully working for sharing with the community.
 
-#### 15.- Does Nucleus Co-op work on Linux/Mac?
+#### 16.- Does Nucleus Co-op work on Linux/Mac?
 
 Nucleus Co-op depends on a lot of Windows functions and APIs, at the moment it only works on Windows 7 and Up. If you are interested in porting Nucleus Co-op to other operating systems please feel free to contact any of the developers.
 
-#### 16.- Where can I report a bug/issue?
+#### 17.- Where can I report a bug/issue?
 
 Note that Nucleus Co-op is a tool in development and may have bugs, glitches and weird things happening. Help other people not have these things happen by checking for a solution on the subreddit and submitting a `[BUG REPORT]` to the subreddit as a new topic if no-one else has brought it up. Make sure you have read the game handler notes in the Nucleus UI very carefully before submitting anything.
 
@@ -153,7 +153,7 @@ Keep in mind most handlers are made and tested using the latest legit Steam vers
 
 Also provide a debug log of the Nucleus Co-op error or crash: Open Nucleus Co-op settings by pressing the gear icon at the top right of the Nucleus UI. Check the box labelled Enable Debug Log, then press Save and Close. Run the handler you are having trouble with again and a log file will be created in the same folder as the Nucleus Co-Op exe, called debug-log.txt. You can also ask for support in our discord.
 
-#### 17.- A Nucleus Co-op handler doesn't launch / is not working, why?
+#### 18.- A Nucleus Co-op handler doesn't launch / is not working, why?
 
 Make sure you are using latest Nucleus Co-Op version and the handler latest version too. Here are other things you can try:
 
@@ -175,33 +175,33 @@ Make sure you are using latest Nucleus Co-Op version and the handler latest vers
 
 9. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
 
-#### Where are my Nucleus Co-op save files located?
+#### 19.- Where are my Nucleus Co-op save files located?
 
 Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\YourUser\NucleusCoop`, you can access each game save file via the Nucleus Co-op UI too, select a game, click on Game Options and select Open UserProfile Save/Config Path. Other handlers just save in the same file path your regular game saves to.
 
-#### Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
+#### 20.- Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
 
 Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (For example if you are using a monitor resolution of 1920x1080 add custom resolutions like 960x540, 1920x540, 960x1080, ect.) that way most games will be able to see and use those custom resolutions and the spli-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. Also try disabling the Nucleus status window in Nucleus UI settings and save.
 
-#### Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
+#### 21.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
 
 A lot of handlers edit the game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once and change some graphic settings before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op UI, click on Game Options and select Delete UserProfile Config Path for all players. You can also try deleting Nucleus Co-op content folder and add the game again. 
 
-#### Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
+#### 22.- Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
 
 Remember that Nucleus Co-op opens multiple instances of a game, so depending on the game this can be quite demanding for your PC, to improve FPS and performance try reducing graphics settings like textures and shadows, limit the FPS or unfocus all the game windows so that they get equal priority and the FPS even out, you can do this by Alt-Tabbing to a different window like the Nucleus app window, the game windows will still remain on top, you can also press the windows key+b in your keyboard to unfocus all the instances. Forcing Vsync via your graphics panel could also help.
 
-#### Why can't I exit Nucleus Co-op or move my cursor to close it?
+#### 23.- Why can't I exit Nucleus Co-op or move my cursor to close it?
 
 Some handlers that support multiple keyboards and mice lock the main mouse cursor in the corner. To unlock it press the END key in your keyboard when you finish playing. You can also use CTRL+Q to close Nucleus and all its instances. Other Nucleus shortcuts are changeable in the app UI settings.
 
-#### Nucleus Co-op changed the location of my Documents folder, why?
+#### 24.- Nucleus Co-op changed the location of my Documents folder, why?
 
 For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), running the handler again and closing Nucleus/ending your game session properly, using the Nucleus shortcut CTRL+Q or closing the app, will revert the registry back to its original value. Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Double click that file and click yes to add it. This will manually restore its original value. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%/Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
 
 The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
-#### My Playstation/generic PC controller isn't working/isn't being detected by Nucleus Co-op, how do I fix it?
+#### 25.- My Playstation/generic PC controller isn't working/has double input/isn't being detected by Nucleus Co-op, how do I fix it?
 
 Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipedia.org/wiki/DirectInput#DirectInput_vs_XInput) controllers. Controllers that work best are native XInput gamepads like Xbox 360 and Xbox One controllers for minimum hassle. There are a few handlers that also support DirectInput controllers but XInput controllers are generally a lot easier to restrict to a specific game instance than DirectInput controllers.
 
@@ -223,19 +223,19 @@ Xbox One controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.p
 
 If you are using steam controllers try [this](https://www.youtube.com/watch?v=wy4F2eqTXQ4).
 
-#### Why is my keyboard/gamepad not showing in the Nucleus Co-op UI?
+#### 26.- Why is my keyboard/gamepad not showing in the Nucleus Co-op UI?
 
 If a handler is only showing gamepads and not keyboard icons that means the handler only supports gamepads and doesn't support keyboards and mice in splitscreen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support.
 
-#### There are many keyboards, mice and controllers icons in the UI, how do I know which ones to use?
+#### 27.- There are many keyboards, mice and controllers icons in the UI, how do I know which ones to use?
 
 If you press a key in the keyboard you will use or move the mouse their corresponding icons in the Nucleus Co-Op UI will light up yellow. The app can detect keyboard macros that is why sometimes you will get multiple keyboard icons. If you maintain a controller button pressed the corresponding icon will light up green. If you see multiple mice and keyboard icons that means the handler supports multiple instances playable with multiple keyboards/mice, if you only see one big keyboard icon that means the handler only supports one keyboard/mouse with the instance focused.
 
-#### Can you play splitscreen+LAN in different PCs?
+#### 28.- Can you play splitscreen+LAN in different PCs?
 
 Yes, if you run the game via Nucleus Co-Op in different PCs you can connect all instances you launch via LAN, for example you can have 2 players playing vertical splitscreen in one PC via Nucleus and connect to 2 others playing Nucleus splitscreen in a different PC via LAN. If the handler uses steamworks multiplayer emulation you'll have to change the instances steam ids in the other PCs you'll connect to, otherwise the instances launched by Nucleus will use the same steam ids and won't be able to connect to each other. For that you can open the game handler .js file in Nucleus handlers folder in the other PCs and add for example `Game.PlayerSteamIDs = [ "76561198134585131","76561198131394153","76561198011792067","76561198043762785" ];` that will change the default ids of the first four instances you open in one PC via Nucleus Co-op.
 
-#### This project is amazing, where can I donate?
+#### 29.- This project is amazing, where can I donate?
 
 We don't have an unified donation platform yet but you can support the devs individually here: [Zerofox](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WUXKHLAD3A3LE&source=url), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
 
