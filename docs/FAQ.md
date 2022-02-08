@@ -28,21 +28,21 @@ The further development of the app wouldn't have been possible without the amazi
 
 #### 2.- How does Nucleus Co-op work?
 
-Essentially Nucleus Co-op opens multiple instances of the same game (some games require [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing for that, among other methods) with [symlinked](https://en.wikipedia.org/wiki/Symbolic_link) files that will only answer to one specific gamepad (we do this via Nucleus Co-Op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or steamworks online multiplayer emulation (Goldberg Emulator), while making sure all the windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the games windows so you can have synthetic split-screen to play locally with your friends.
+Essentially Nucleus Co-op opens multiple instances of the same game (some games require [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing for that, among other methods) with [symlinked](https://en.wikipedia.org/wiki/Symbolic_link) files that will only answer to one specific gamepad (we do this via Nucleus Co-op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or steamworks online multiplayer emulation (Goldberg Emulator), while making sure all the windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the games windows so you can have synthetic split-screen to play locally with your friends.
 
 Note that Nucleus does not add multiplayer or co-op to single player games, the game needs to already have some form of online or LAN multiplayer, or another way to connect the instances like via mods for example (e.g. Skyrim Together).
 
 #### 3.- Which games can be split-screened using Nucleus Co-op?
 
-There are a lot of supported games, all mentioned in the [website hub](https://hub.splitscreen.me/) and in the [list of supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/). A ton of games are now supported thanks to the amazing program called [Goldberg Emulator](https://gitlab.com/Mr_Goldberg/goldberg_emulator), developed by Mr. Goldberg, a big thank you to him. Read the [Goldberg FAQ](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/blob/master/README.md) if you want to know more.
+There are a lot of supported games, see [Which games are supported?](/docs/games).
 
 #### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/ZeroFox5866/nucleuscoop/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 1.1.4 is the latest version recent handlers are created for, please avoid other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/ZeroFox5866/nucleuscoop/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 1.1.4 is the latest version recent handlers are created for, please avoid using older and other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
 
 #### 5.- How do I use Nucleus Co-op?
 
-See Quickstart or this video tutorial:
+See [Installation](/docs/installation), [How to use](/docs/usage),  or this video tutorial:
 
 <div class="embed-container">
   <iframe 
@@ -67,7 +67,7 @@ You can place the folder wherever you like as long as you keep the following in 
 
 * Avoid placing it inside a folder that has security settings applied to it, such as program files, program files (x86).
 
-* Some scripts require the Nucleus Co-Op folder to be located in the same drive as the game files.
+* Some game handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
 
 * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCoop.
 
@@ -99,6 +99,10 @@ Right click on a section of the splitscreen layout.
 
 Join the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) community or contact us in the [subreddit](https://www.reddit.com/r/nucleuscoop).
 
+#### 12.- What are game handlers?
+
+See [handlers](/docs/handlers).
+
 #### 12.- When support for X game?
 
 Not all games are easy to splitscreen, if you want to suggest a game make a [subreddit](https://www.reddit.com/r/nucleuscoop) post with the title `[Request] Name of the game` and provide useful information like if the game supports LAN or dedicated servers, if it is available on Steam or in other services, if it uses external servers for online, if it has gamepad support etc. You can also contact any of our experienced Nucleus handlers developers here or in the [Nucleus Co-Op discord](https://discord.gg/QDUt8HpCvr) and ask if a handler is possible. The main handler developer is [Talos91](https://www.reddit.com/user/blackman9/). Remember that handler developers are limited by the games they own and can test on, so if you really want support for a game to be added consider donating the game to the handler dev in question.
@@ -109,7 +113,7 @@ Handlers updates are always announced in the [Nucleus Co-Op discord](https://dis
 
 #### 14.- How do I create my own split-screen handler for Nucleus Co-op?
 
-See the documentation on this website. Here is the [Master Script](https://drive.google.com/file/d/1AqWqlgH2gh0UR-u0uq_PjU02Ton4gaEg/view?usp=drivesdk), open the .js file with notepad to read it. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler creation you can ask us in the Nucleus Co-Op discord or on the subreddit, we can help you improve your handler so it is fully working for sharing with the community.
+See the documentation on this website. Here is the [Master Handler](https://drive.google.com/file/d/1AqWqlgH2gh0UR-u0uq_PjU02Ton4gaEg/view?usp=drivesdk), open the .js file with notepad to read it. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler creation you can ask us in the Nucleus Co-Op discord or on the subreddit, we can help you improve your handler so it is fully working for sharing with the community.
 
 #### 15.- Does Nucleus Co-op work on Linux/Mac?
 
@@ -147,13 +151,13 @@ I'd really like this to get fixed please thanks magic man! -Beanboy
 ```
 Keep in mind most handlers are made and tested using the latest legit Steam versions, so provide information about what version of the game you have.
 
-Also provide a debug log of the Nucleus Co-op error or crash: Open Nucleus Co-op settings by pressing the gear icon at the top right of the Nucleus UI. Check the box labelled Enable Debug Log, then press Save and Close. Run the script you are having trouble with again and a log file will be created in the same folder as the Nucleus Co-Op exe, called debug-log.txt. You can also ask for support in our discord.
+Also provide a debug log of the Nucleus Co-op error or crash: Open Nucleus Co-op settings by pressing the gear icon at the top right of the Nucleus UI. Check the box labelled Enable Debug Log, then press Save and Close. Run the handler you are having trouble with again and a log file will be created in the same folder as the Nucleus Co-Op exe, called debug-log.txt. You can also ask for support in our discord.
 
 #### 17.- A Nucleus Co-op handler doesn't launch / is not working, why?
 
 Make sure you are using latest Nucleus Co-Op version and the handler latest version too. Here are other things you can try:
 
-1. Read the game handler author's notes that appear at the bottom of the UI, read them carefully as they contain important information related to the script functionality.
+1. Read the game handler author's notes that appear at the bottom of the UI, read them carefully as they contain important information related to the handler functionality.
 
 2. Check that your antivirus program or windows defender is not deleting or blocking any Nucleus Co-op files.
 
@@ -165,9 +169,9 @@ Make sure you are using latest Nucleus Co-Op version and the handler latest vers
 
 6. If the handler requires it move Nucleus to the same drive as your game.
 
-7. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the script again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
+7. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
-8. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the script notes or description say it works with other versions too (GoG, EGS).
+8. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the gam handler notes or description say it works with other versions too (GoG, EGS).
 
 9. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
 
@@ -193,7 +197,7 @@ Some handlers that support multiple keyboards and mice lock the main mouse curso
 
 #### Nucleus Co-op changed the location of my Documents folder, why?
 
-For some games that save in the default Documents folder Nucleus Co-Op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), running the script again and closing Nucleus/ending your game session properly, using the Nucleus shortcut CTRL+Q or closing the app, will revert the registry back to its original value. Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Double click that file and click yes to add it. This will manually restore its original value. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%/Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
+For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), running the handler again and closing Nucleus/ending your game session properly, using the Nucleus shortcut CTRL+Q or closing the app, will revert the registry back to its original value. Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Double click that file and click yes to add it. This will manually restore its original value. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%/Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
 
 The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
@@ -215,7 +219,7 @@ You can also try using [this .dll](http://www.mediafire.com/file/iuso0fmhjsao92g
 
 Do not place any x360ce xinput dlls inside the Nucleus Co-Op files as this might interfere with Nucleus own custom xinput dlls.
 
-Xbox One controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support. For this reason too the Xinput Reroute Nucleus option mentioned in the master script that reroutes directinput back to xinput to track more than 4 gamepads on xinput at once, allowing you to play with more than 4 xinput gamepads, will not work with Xbox One controllers even with fake focus because of the driver background input issue. To fix that in those cases you can also use XOutput on your Xbox One controllers.
+Xbox One controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support. For this reason too the Xinput Reroute Nucleus option mentioned in the master handler that reroutes directinput back to xinput to track more than 4 gamepads on xinput at once, allowing you to play with more than 4 xinput gamepads, will not work with Xbox One controllers even with fake focus because of the driver background input issue. To fix that in those cases you can also use XOutput on your Xbox One controllers.
 
 If you are using steam controllers try [this](https://www.youtube.com/watch?v=wy4F2eqTXQ4).
 
