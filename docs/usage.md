@@ -2,6 +2,7 @@
 id: usage
 title: How to use
 ---
+## Nucleus Co-op
 
 ### Game setup
 
