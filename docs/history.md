@@ -21,7 +21,7 @@ showcasing Borderlands 2 in split-screen. 4 days later he made
 another [video](https://www.youtube.com/watch?v=GBdW1qzRUbQ) showcasing Borderlands: The Pre-Sequel. The video was a
 hit, and is currently sitting at around 68k views.
 
-## Rebranding to Nucleus Co-op
+## Nucleus Co-op
 
 Behind the scenes Lucas started working on another rebranding of the app, this time it was going to be called Nucleus
 Co-op. Lucas made version 1 of Nucleus Co-op in October 2015, but didn't like the result. He rebuilt it in version 2.0,
@@ -188,4 +188,4 @@ gaming for PC. Join the split screen revolution!
 
 > Written by *Snailed lt*
 >
-> In association with: *Talos91*, *dr.oldboi*, *Lucas Assislar*, *Zerofox*, *r-mach*, *Gaz*, *Ilyaki*, *anonymous SplitScreenDreams creator*
+> In association with: *dr.oldboi*, *Lucas Assislar*, *Zerofox*, *r-mach*, *Gaz*, *Ilyaki*, *anonymous SplitScreenDreams creator*
