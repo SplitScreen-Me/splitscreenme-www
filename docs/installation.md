@@ -3,7 +3,6 @@ id: installation
 title: Installation 
 sidebar_label: Installation
 ---
-## Nucleus Co-op
 
 * Download latest Nucleus Co-op from the [Github releases page](https://github.com/ZeroFox5866/nucleuscoop/releases):
 
