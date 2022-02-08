@@ -28,9 +28,9 @@ The further development of the app wouldn't have been possible without the amazi
 
 #### 2.- How does Nucleus Co-op work?
 
-Essentially Nucleus Co-op opens multiple instances of the same game (some games require [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing for that, among other methods) with [symlinked](https://en.wikipedia.org/wiki/Symbolic_link) files that will only answer to one specific gamepad (we do this via Nucleus Co-op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or steamworks online multiplayer emulation (Goldberg Emulator), while making sure all the windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the games windows so you can have synthetic split-screen to play locally with your friends.
+Essentially Nucleus Co-op [symlinks](https://en.wikipedia.org/wiki/Symbolic_link) and opens multiple instances of the same game files (sometimes [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing is required for that, among other methods) that will only answer to one specific gamepad (we do this via Nucleus Co-op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or steamworks online multiplayer emulation (Goldberg Emulator), all while making sure the game windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the games windows so you can have synthetic split-screen to play locally with your friends!
 
-Note that Nucleus does not add multiplayer or co-op to single player games, the game needs to already have some form of online or LAN multiplayer, or another way to connect the instances like via mods for example (e.g. Skyrim Together).
+Note that Nucleus does not add multiplayer or co-op to single player games, the game needs to already have some form of online or LAN multiplayer, or another way to connect the instances, like via mods for example (e.g. Skyrim Together).
 
 #### 3.- Which games can be split-screened using Nucleus Co-op?
 
