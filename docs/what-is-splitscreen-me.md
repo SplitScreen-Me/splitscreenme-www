@@ -17,4 +17,4 @@ Proto Input is the set of libraries used by Nucleus Co-op to inject games with h
 
 ### Universal Split Screen
 
-Universal Split Screen is a standalone application that directs Windows input to enable local multiplayer in PC games with keyboards, mice and controllers. Universal Split Screen has been superseded by Proto Input, which is part of Nucleus Co-op now but it is still a very useful app for many purposes, the app was developed by [Ilyaki](https://github.com/Ilyaki) too.
+[Universal Split Screen](https://universalsplitscreen.github.io/) is a standalone application that directs Windows input to enable local multiplayer in PC games with keyboards, mice and controllers. Universal Split Screen has been superseded by Proto Input, which is part of Nucleus Co-op now but it is still a very useful app for many purposes, the app was developed by [Ilyaki](https://github.com/Ilyaki) too.
