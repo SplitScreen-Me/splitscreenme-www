@@ -22,13 +22,13 @@ sidebar_label: FAQ
 
 Nucleus Co-op is a free and open source tool for Windows that allows split-screen play on many games that do not initially support it. Its purpose is to make it as easy as possible for the average user to play games locally using only one PC and one game copy. The app was originally created by [Lucas Assis](https://github.com/lucasassislar). The developer [Zerofox](https://github.com/ZeroFox5866) later took over and added a ton of new features and improvements to support a lot more games. [Ilyaki](https://github.com/Ilyaki) later joined in and brought multiple keyboards/mice support, extended hooks support and more great features to the table. Finally [Mikou27](https://github.com/Mikou27) added a new beautiful overhauled user interface with support for themes, game covers and screenshots, among other many quality of life improvements and scaling bug fixes.
 
-[R-mach](https://github.com/r-mach) is the creator and developer of the SplitScreen.Me website that hosts all the available Nucleus Co-op game handlers.
+[R-mach](https://github.com/r-mach) is the creator and developer of the SplitScreen.Me [website](https://hub.splitscreen.me/) that hosts all the available Nucleus Co-op game handlers.
 
 The further development of the app wouldn't have been possible without the amazing contributions and hard work from all the Split Screen Dreams Discord members (which include the devs mentioned above) that made all the new Nucleus Co-op game handlers and continue to test the app, make new discoveries and game handlers to support even more games, among them: [Talos91](https://hub.splitscreen.me/user/eeL7HAz8zJovChWw4), [PoundlandBacon](https://hub.splitscreen.me/user/AdiAjSyfZPMvu3a4M), [dr. old.boi](https://hub.splitscreen.me/user/dPRj3q6kFtT4HvMGg), [Pizzo](https://hub.splitscreen.me/user/HEgozNi3MNvhAmWfi) and many more.
 
 #### 2.- How does Nucleus Co-op work?
 
-Essentially Nucleus Co-op [symlinks](https://en.wikipedia.org/wiki/Symbolic_link) and opens multiple instances of the same game files (sometimes [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing is required for that, among other methods) that will only answer to one specific gamepad (we do this via Nucleus Co-op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or steamworks online multiplayer emulation (Goldberg Emulator), all while making sure the game windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the games windows so you can have synthetic split-screen to play locally with your friends!
+Essentially Nucleus Co-op [symlinks](https://en.wikipedia.org/wiki/Symbolic_link) and opens multiple instances of the same game files (sometimes [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing is required for that, among other methods) that will only answer to one specific gamepad (we do this via Nucleus Co-op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or online multiplayer emulation (Goldberg, Nemirtingas emulators etc.), all while making sure the game windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the game windows so you can have synthetic split-screen to play locally with your friends!
 
 Note that Nucleus does not add multiplayer or co-op to single player games, the game needs to already have some form of online or LAN multiplayer, or another way to connect the instances, like via mods for example (e.g. Skyrim Together).
 
@@ -88,8 +88,6 @@ Here are a few things you can try:
 #### 9.- How do I play with an uneven amount of players (such as 3 players) without having an empty space?
 
 Right click on a section of the splitscreen layout.
-
-![Expand layout](https://i.imgur.com/AzHTn1W.png)
 
 #### 10.- How do you use Nucleus Co-op Custom Layout?
 
