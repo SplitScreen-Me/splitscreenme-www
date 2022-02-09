@@ -21,7 +21,7 @@ Proto Input is standalone from Nucleus Co-Op, so it's usually fastest to setup t
 
 ### Proto Input Host
 
-![Proto Input Host](../../img/protoinput/protoinputhost.png)
+![Proto Input Host](../../img/protoinputhost.png)
 
 Run ProtoInputHost.exe
 
@@ -42,7 +42,7 @@ When you have finished with settings, you can start injection with (8). If injec
 
 ### Proto Input GUI
 
-![Proto Input GUI](../../img/protoinput/protoinputgui.png)
+![Proto Input GUI](../../img/protoinputgui.png)
 
 Once the hooks dll is injected, you can open the hooks GUI. Press right ctrl + right alt + 1 to open the GUI for the first instance (and 2 for the 2nd, etc). The GUI lets you enable/disable hooks at runtime, change device settings, and everything else related to Proto Input. You should tweak the settings in the GUI until you get input working smoothly in-game.
 
