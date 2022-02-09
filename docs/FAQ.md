@@ -3,6 +3,7 @@ id: faq
 title: Frequently Asked Questions and Troubleshooting
 sidebar_label: FAQ
 ---
+### F.A.Q.
 #### 1.- What is Nucleus Co-op?
 
 <div class="embed-container">
