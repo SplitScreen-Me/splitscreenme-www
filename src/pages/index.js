@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/undraw_splitscreen_mountain.svg',
     description: (
       <>
-          Simply <a href={"https://github.com/ZeroFox5866/nucleuscoop/releases/latest"}>download the Windows application</a>, start it, pick a game, plug your controllers, grab some friends, and enjoy!
+          Simply <a href={"docs/installation"}>download the Windows application</a>, start it, pick a game, plug your controllers, grab some friends, and enjoy!
       </>
     ),
   },
