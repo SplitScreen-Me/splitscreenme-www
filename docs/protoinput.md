@@ -7,17 +7,17 @@ This page serves as a guide to how Proto Input works, and how to use it to setup
 
 ## What is Proto Input?
 
-[Proto Input](https://github.com/ilyaki/protoinput) is the set of libraries used by Nucleus Co-Op to inject games with hooks for input (mainly multiple keyboards/mice) as well as window focus faking, etc. Proto Input is a massive improvement over the original hooks inside Nucleus and Universal Split Screen. It's highly recommended to update any scripts using the old mouse/keyboard hooks to Proto Input as input will work much more reliably.
+[Proto Input](https://github.com/ilyaki/protoinput) is the set of libraries used by Nucleus Co-Op to inject games with hooks for input (mainly multiple keyboards/mice) as well as window focus faking, etc. Proto Input is a massive improvement over the original hooks inside Nucleus and Universal Split Screen. It's highly recommended to update any handlers using the old mouse/keyboard hooks to Proto Input as input will work much more reliably.
 
 ## How it works
 
 The main code for Proto Input is inside ProtoInputHooks32/64.dll. This needs to be injected into the game process. The main API, inside ProtoInputLoader32/64.dll, contains two methods of injection. First is EasyHook startup injection, which creates the game process and immediately injects into it. This is necessary for games that call a function at startup which needs to be hooked (e.g. creating a mutex). The other method is runtime inejction, which injects into an existing process. The API (in ProtoInputLoader) is then called from a "host" process, e.g. Nucleus or ProtoInputHost. In principle, the hooks can be injected from any dll injector.
 
-Before the dll is injected, ProtoInputLoader will open a named pipe (a tunnel used for communication) with a name related to the injected process ID, e.g. ProtoInput1234. Once the dll is injected, it will connect to the pipe. All data sent to the dll is done through this pipe. At this point, the dll will not have injected any hooks. Commands to inject hooks (or set data, etc) are then done by calling the API in ProtoInputLoader. For example, in Nucleus, it would now inject all the hooks set in the script.
+Before the dll is injected, ProtoInputLoader will open a named pipe (a tunnel used for communication) with a name related to the injected process ID, e.g. ProtoInput1234. Once the dll is injected, it will connect to the pipe. All data sent to the dll is done through this pipe. At this point, the dll will not have injected any hooks. Commands to inject hooks (or set data, etc) are then done by calling the API in ProtoInputLoader. For example, in Nucleus, it would now inject all the hooks set in the handler.
 
 ## How to use Proto Input
 
-Proto Input is standalone from Nucleus Co-Op, so it's usually fastest to setup the options for a game first using the GUI, then make it into a Nucleus script.
+Proto Input is standalone from Nucleus Co-op, so it's usually fastest to setup the options for a game first using the GUI, then make it into a Nucleus handler.
 
 ### Proto Input Host
 
@@ -58,9 +58,9 @@ Some options can be configured in (3), (4) and (5): see below.
 
 Message filters can be configured in the Message filter tab. Message "modifiers" will change the data sent in a Windows message, or selectively block messages, e.g. by only allowing messages that are simulated by Proto Input. Additionally you can set blocks on any messages, e.g. on WM_KILLFOCUS to prevent the game losing focus.
 
-### Scripting with Nucleus Co-Op
+### Handler making with Nucleus Co-op
 
-In your script, you should always have the lines:
+In your handler, you should always have the lines:
 
 ```js
 // This can be true or false, whether or not you want to allow raw keyboards/mice to be selected in the Nucleus GUI. Doesn't actually affect the hooks being injected or not.
@@ -108,7 +108,7 @@ Game.LockInputToggleKey = 0x23;
 
 ### Hooks
 
-You should use the Proto GUI to enable/disable hooks at runtime until you get input working. Once you have, you should add the corresponding lines to your script. You should also do the same for messages filters and the other settings.
+You should use the Proto GUI to enable/disable hooks at runtime until you get input working. Once you have, you should add the corresponding lines to your handler. You should also do the same for messages filters and the other settings.
 
 | Hook                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -145,7 +145,7 @@ You should use the Proto GUI to enable/disable hooks at runtime until you get in
 
 ### Message blocks
 
-In the Block tab, you can select individual windows messages to block from the game. Usually a good one to block is WM_KILLFOCUS (0x0008). You can search for the hexadecimal code on MSDN, e.g. for [WM_KILLFOCUS](https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-killfocus). Add the blocks to a script like so:
+In the Block tab, you can select individual windows messages to block from the game. Usually a good one to block is WM_KILLFOCUS (0x0008). You can search for the hexadecimal code on MSDN, e.g. for [WM_KILLFOCUS](https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-killfocus). Add the blocks to a handler like so:
 ```js
 // Add multiple blocks by separating with commas
 Game.ProtoInput.BlockedMessages = [ 0x0008 ]; // Blocks WM_KILLFOCUS
@@ -205,7 +205,7 @@ Game.ProtoInput.FocusLoop_WM_NCACTIVATE = false;
 
 ### Multiple controller indices
 
-Some games have a built-in split screen, typically with a maximum of 2 or 4 players. You can combine this with Proto Input to open multiple instance, each with multiple players. This is done in Nucleus by setting the individual controller index mappings within a script. By default, Nucleus will tell Proto Input to use the controller index Player.GamepadId (i.e. the number labelled on the controller UI icon). To use multiple controller indices, set `Game.ProtoInput.MultipleProtoControllers = true;`. You then need to set Player.ProtoController1/2/3/4 for each player. A controller index of 0 means no controller, 1 means controller 1, etc. (Note that Player.GamepadId *starts* at zero, so if Player.GamepadId is 0 it actually means controller 1). A good idea is, for example with 3 players, to set controllers 1/4/7/10 to the first instance, 2/5/8/11 to the second instance and 3/6/9/12 to the third. Here is a snippet that does that:
+Some games have a built-in split screen, typically with a maximum of 2 or 4 players. You can combine this with Proto Input to open multiple instance, each with multiple players. This is done in Nucleus by setting the individual controller index mappings within a handler. By default, Nucleus will tell Proto Input to use the controller index Player.GamepadId (i.e. the number labelled on the controller UI icon). To use multiple controller indices, set `Game.ProtoInput.MultipleProtoControllers = true;`. You then need to set Player.ProtoController1/2/3/4 for each player. A controller index of 0 means no controller, 1 means controller 1, etc. (Note that Player.GamepadId *starts* at zero, so if Player.GamepadId is 0 it actually means controller 1). A good idea is, for example with 3 players, to set controllers 1/4/7/10 to the first instance, 2/5/8/11 to the second instance and 3/6/9/12 to the third. Here is a snippet that does that:
 ```js
 var answers = ["No", "Yes"];
 Game.AddOption("Use native split screen?", "", "NativeSplitScreen", answers);
@@ -289,15 +289,15 @@ Game.Play = function()
 
 ### Advanced scripting
 
-The Proto Input API inside ProtoInputLoader is called by Nucleus when you set an option like `Game.ProtoInput.DrawFakeCursor = false;`, for example. The "normal" way to write a script is to write all the options at the top of your script, then the corresponding hooks/etc will be installed once Proto Input is injected.
+The Proto Input API inside ProtoInputLoader is called by Nucleus when you set an option like `Game.ProtoInput.DrawFakeCursor = false;`, for example. The "normal" way to write a handler is to write all the options at the top of your handler, then the corresponding hooks/etc will be installed once Proto Input is injected.
 
-There are some drawbacks to immediately installing hooks though: the game will no longer respond to the "real" cursor, which can be problematic when setting up the instances, especially if you have some instances that use controllers. We can get around this by directly calling the API from within the Nucleus script. A slick technique is to install hooks/etc when the "real" input is locked, and uninstall the hooks/etc when the input is unlocked. This will mean the game always responds to either real input or fake input.
+There are some drawbacks to immediately installing hooks though: the game will no longer respond to the "real" cursor, which can be problematic when setting up the instances, especially if you have some instances that use controllers. We can get around this by directly calling the API from within the Nucleus handler. A slick technique is to install hooks/etc when the "real" input is locked, and uninstall the hooks/etc when the input is unlocked. This will mean the game always responds to either real input or fake input.
 
 You can view the Proto Input API in the file `nucleuscoop/Master/NucleusGaming/Coop/ProtoInput/protoinput.cs`. (Ignore the APIs in the 32/64 vesrions, look to the bottom of the file). For example, we can call:
 ```cs
 public void InstallHook(uint instanceHandle, ProtoHookIDs hookID)
 ```
-in a Nucleus script as:
+in a Nucleus handler as:
 ```js
 ProtoInput.InstallHook(player.ProtoInputInstanceHandle, ProtoInput.Values.GetCursorPosHookID);
 ```
@@ -327,7 +327,7 @@ Game.ProtoInput.OnInputUnlocked = function()
 
 One important function call is `ProtoInput.SetRawInputBypass(player.ProtoInputInstanceHandle, true or false);`. This will let any raw input be forwarded to the game, regardless if the input device is selected or not. Note you must still have the RegisterRawInputDevices and GetRawInputData hook **enabled**. This function is important in games that use raw input in the menus, for example, so then you can use 'real' input when the input is unlocked.
 
-For a full example, this will default to not injecting any hooks, then install almost everything when input is locked, and uninstall it if input is locked again. Copy-pasting this example should usually be enough for most scripts.
+For a full example, this will default to not injecting any hooks, then install almost everything when input is locked, and uninstall it if input is locked again. Copy-pasting this example should usually be enough for most handlers.
 
 ```js
 Game.SupportsMultipleKeyboardsAndMice = true;
