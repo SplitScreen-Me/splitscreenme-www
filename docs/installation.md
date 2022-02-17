@@ -10,7 +10,7 @@ sidebar_label: Installation
 
 * Note: Goldberg Emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some web browsers, see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow it as an exception before extracting.
 
-* Move the NucleusCoop folder to wherever you like, and run NucleusCoop.exe
+* Move the Nucleus Co-op folder to wherever you like, and run NucleusCoop.exe
 
   * You can place the folder wherever you like as long as you keep the following in mind:
 
