@@ -4,7 +4,7 @@ title: Installation
 sidebar_label: Installation
 ---
 
-* Download latest Nucleus Co-op from the [Github releases page](https://github.com/ZeroFox5866/nucleuscoop/releases):
+* Download latest Nucleus Co-op from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
 
 * Extract the file with [7-Zip](https://www.7-zip.org/):
 
