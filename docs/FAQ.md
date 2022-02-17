@@ -38,7 +38,7 @@ There are a lot of supported games, see [Which games are supported?](/docs/games
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/ZeroFox5866/nucleuscoop/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 1.1.4 is the latest version recent handlers are created for, please avoid using older and other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 1.1.4 is the latest version recent handlers are created for, please avoid using older and other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
