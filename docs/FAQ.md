@@ -34,11 +34,11 @@ Note that Nucleus does not add multiplayer or co-op to single player games, the 
 
 ### 3.- Which games can be split-screened using Nucleus Co-op?
 
-There are a lot of supported games, see [Which games are supported?](/docs/games).
+Nucleus Co-op has support for more than 400 games now, see [which games are supported?](/docs/games).
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 1.1.4 is the latest version recent handlers are created for, please avoid using older and other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.0 is the latest version recent handlers are created for, please avoid using older and other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
@@ -69,7 +69,7 @@ You can place the folder wherever you like as long as you keep the following in 
 
 * Some game handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
 
-* If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCoop.
+* If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op.
 
 ### 7.- Nucleus Co-op doesn't launch, how do I fix it?
 
@@ -169,17 +169,17 @@ Make sure you are using latest Nucleus Co-op version and the handler latest vers
 
 7. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
-8. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the gam handler notes or description say it works with other versions too (GoG, EGS).
+8. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description say it works with other versions too (GoG, EGS).
 
 9. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
 
 ### 19.- Where are my Nucleus Co-op save files located?
 
-Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\YourUser\NucleusCoop`, you can access each game save file via the Nucleus Co-op UI too, select a game, click on Game Options and select Open UserProfile Save/Config Path. Other handlers just save in the same file path your regular game saves to. The PC [Gaming Wiki](https://www.pcgamingwiki.com/wiki/Home) is a great place to know where exactly a game saves.
+Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\YourUser\NucleusCoop`, you can access each game save file via the Nucleus Co-op UI too, select a game, click on Game Options and select Open UserProfile Save/Config Path. Other handlers just save in the same file path your regular game saves to. The [PC Gaming Wiki](https://www.pcgamingwiki.com/wiki/Home) is a great place to know where exactly a game saves to.
 
 ### 20.- Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
 
-Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (For example if you are using a monitor resolution of 1920x1080 add custom resolutions like 960x540, 1920x540, 960x1080, etc.) that way most games will be able to see and use those custom resolutions and the spli-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. Also try disabling the Nucleus status window in Nucleus UI settings and save.
+Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (For example if you are using a monitor resolution of 1920x1080 add custom resolutions like 960x540, 1920x540, 960x1080, etc.) that way most games will be able to see and use those custom resolutions and the split-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. Also try disabling the Nucleus status window in Nucleus UI settings and save.
 
 ### 21.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
 
@@ -223,7 +223,7 @@ If you are using steam controllers try [this](https://www.youtube.com/watch?v=wy
 
 ### 26.- Why is my keyboard/gamepad not showing in the Nucleus Co-op UI?
 
-If a handler is only showing gamepads and not keyboard icons that means the handler only supports gamepads and doesn't support keyboards and mice in splitscreen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support.
+If a handler is only showing gamepads and not keyboard icons that means the handler only supports gamepads and doesn't support keyboards and mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support.
 
 ### 27.- There are many keyboards, mice and controllers icons in the UI, how do I know which ones to use?
 
