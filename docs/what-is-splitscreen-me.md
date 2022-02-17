@@ -12,8 +12,8 @@ title: What is SplitScreen.Me?
 
 The further development of the app wouldn't have been possible without the amazing contributions and hard work from all the Split Screen Dreams Discord members (which include the devs mentioned above) that made all the new Nucleus Co-op game handlers and continue to test the app, make new discoveries and game handlers to support even more games, among them: [Talos91](https://hub.splitscreen.me/user/eeL7HAz8zJovChWw4), [PoundlandBacon](https://hub.splitscreen.me/user/AdiAjSyfZPMvu3a4M), [dr. old.boi](https://hub.splitscreen.me/user/dPRj3q6kFtT4HvMGg), [Pizzo](https://hub.splitscreen.me/user/HEgozNi3MNvhAmWfi) and many more.
 
-### ProtoInput
-[Proto Input](/docs/proto) is the set of libraries used by Nucleus Co-op to inject games with hooks for input (mainly multiple keyboards/mice) as well as window focus faking, etc. Developed by [Ilyaki](https://github.com/Ilyaki) Proto Input is a massive improvement over the original hooks inside Nucleus Co-op and Universal Split Screen. ProtoInput can also be used independently without opening Nucleus.
+### Proto Input
+[Proto Input](/docs/proto) is the set of libraries used by Nucleus Co-op to inject games with hooks for input (mainly multiple keyboards/mice) as well as window focus faking, etc. Developed by [Ilyaki](https://github.com/Ilyaki) Proto Input is a massive improvement over the original hooks inside Nucleus Co-op and Universal Split Screen. Proto Input can also be used independently without opening Nucleus.
 
 ### Universal Split Screen
 
