@@ -20,7 +20,7 @@ sidebar_label: Installation
 
     * Some handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
 
-    * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCoop
+    * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op
 
 :::tip How To Download Earlier Versions 
 You can download earlier versions of Nucleus Co-op from [Lucas's](https://github.com/lucasassislar/nucleuscoop)
