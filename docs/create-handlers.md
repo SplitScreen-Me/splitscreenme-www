@@ -9,7 +9,7 @@ import NucleusLogo from '../static/img/NucleusCoop1.png';
 
 # Nucleus-Coop handler creation
 This is my approach when I want to make a handler for a game.
-Hopefully it will be useful for those that want to create game handlers for Nucleus-Coop too.
+Hopefully it will be useful for those that want to create game handlers for Nucleus Co-op too.
 
 ## F.A.Q
 
@@ -94,7 +94,7 @@ Start by checking how the public handlers work and use as an example one that us
 
 ### Some tips and essential lines
 
-You can find most of the lines in the ReadMe.txt (inside Nucleus Co-op root folder) and in the MasterHandler.js (documentation link inside Reddit FAQ post).
+You can find most of the lines in the ReadMe.txt (inside Nucleus Co-op root folder) and in the MasterHandler.js (documentation link inside FAQ post).
 Also, all my public scripts (Bizzo) have descriptions inside that could help you.
 Next, you will find the most used ones.
 
