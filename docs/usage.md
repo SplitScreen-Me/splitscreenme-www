@@ -8,11 +8,13 @@ title: How to use
 
 * Click the `Download Game Handler` button and search for a game handler for the game you want to split-screen, see [which games are supported?](/docs/games)
 
-![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/nucleusdhandler.png?raw=true)
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusdownload.png?raw=true)
 
 * Click the `More Info` button and be sure to read through the guide or info for the game.
 
-* Click `Download`. When Nucleus asks to add the game, click Yes and browse to the game executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusmoreinfo.png?raw=true)
+
+* Go back and click `Download`. When Nucleus asks to add the game, click Yes and browse to the game executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
 
 * If you already have the game handler (.js) inside Nucleus handlers folder you can click `Search Game` to add the game to Nucleus or you can automatically add games by clicking `Auto Search Game` and selecting the drive and path you want to add games from.
 
