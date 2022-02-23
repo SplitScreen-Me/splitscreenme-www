@@ -2,7 +2,7 @@
 id: kbm-setup
 title: Scripting for multiple keyboards and mice
 ---
-This guide talks about the older integrated Universal Split Screen Nucleus Co-op multiple keyboards and mice functions, for the newer and improved multiple keyboards and mice support see [Proto Input](/docs/proto).
+This guide talks about the deprecated Universal Split Screen Nucleus Co-op multiple keyboards and mice integrated functions, for the newer and improved multiple keyboards and mice integration use [Proto Input](/docs/proto).
 
 ## First steps
 >**While testing with keyboards/mice, press the End key to toggle the input lock. Do this once all instances are finished setting up so that the default Windows input doesn't interfere with the games. To stop split screen, press Ctrl+Q (this will also close Nucleus Co-op). If something breaks, press Ctrl+Alt+Delete to unlock input and kill Nucleus Co-op and/or the game instances.**
