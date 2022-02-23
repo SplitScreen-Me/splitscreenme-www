@@ -2,7 +2,11 @@
 id: what-is-splitscreen-me
 title: What is SplitScreen.Me?
 ---
+
 [SplitScreen.Me](https://github.com/SplitScreen-Me) is an [organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) that aims to reunite all split-screen open source projects under one banner.
+
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-hub/blob/master/public/android-icon-96x96.png?raw=true)
+
 
 ## SplitScreen.Me Programs:
 ### Nucleus Co-op
