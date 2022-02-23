@@ -22,7 +22,13 @@ title: How to use
 
 * Once your game is added, select it in the Nucleus UI and assign the input devices to parts of the screen by dragging the devices. The device icons will light up when they receive input (maintain a button press for controllers). Change the layout of each screen by clicking the icon in the top-left corner of each screen, if you have multiple monitors connected they will show in the UI.
 
-* When you are ready, click the `>` button. If there are any handler UI options, configure them. Then press `PLAY`
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusinputd.png?raw=true)
+
+* If you wish you can download a game cover and screenshots by clicking the arrow icon in the top right bar:
+
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusmighty.png?raw=true)
+
+* When you are ready, click the `>` button. If there are any handler UI options, configure them. Then press `PLAY`.
 
 * Wait a bit for the games to start and their windows to be positioned. If you are using multiple keyboards and mice, you may have to press the End key to lock input after the games are set up (see the game handler notes).
 
