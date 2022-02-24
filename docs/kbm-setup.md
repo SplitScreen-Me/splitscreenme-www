@@ -188,3 +188,4 @@ Game.LockInputAtStart = true;
 Game.DrawFakeMouseCursorForControllers = true;
 Game.UpdateFakeMouseWithInternalInput = true;
 ```
+-Written by [Ilyaki](https://github.com/Ilyaki).
