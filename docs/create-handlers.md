@@ -7,7 +7,7 @@ import NucleusLogo from '../static/img/NucleusCoop1.png';
 
 <img src={NucleusLogo} alt="Nucleus Logo" height="150px"/>
 
-# Nucleus-Coop handler creation
+# Nucleus Co-op handler creation
 This is my approach when I want to make a handler for a game.
 Hopefully it will be useful for those that want to create game handlers for Nucleus Co-op too.
 
@@ -330,7 +330,7 @@ By using the previous example, before **var dict**  you can do something like th
 
 **var joystick = Context.FindLineNumberInTextFile(txtPath, "JOYSTICK ENABLED", Nucleus.SearchType.Contains);**  
 
-In this way, Nucleus-Coop will search for a line that contains the text **"JOYSTICK ENABLED"**  and store the line number in the variable joystick.
+In this way, Nucleus Co-op will search for a line that contains the text **"JOYSTICK ENABLED"**  and store the line number in the variable joystick.
 Then you can use it like this:
 
 **var dict = [
