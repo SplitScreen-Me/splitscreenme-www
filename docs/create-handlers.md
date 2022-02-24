@@ -35,7 +35,7 @@ The game should support LAN multiplayer as a native option, if it doesn't suppor
 - Search for a possible LAN/Multiplayer mod on Google.
 ## Testing
 Nucleus Co-op has all the features to make copies of your game and set external tools. I suggest you use a public handler, remove the unnecessary lines, and do the tests with that.
-(usually, games that use the same game-engine share a lot of characteristics. Example: You are scripting an Unreal Engine 4 game? Use as a base-handler that uses Unreal Engine 4).
+(usually, games that use the same game-engine share a lot of characteristics. Example: You are making an handler of an Unreal Engine 4 game? Use as a base-handler that uses Unreal Engine 4).
 If you still want to manually test it, you should make a copy of your original game files and use that instead.
 
 ### Start multiple instances
@@ -95,7 +95,7 @@ Start by checking how the public handlers work and use as an example one that us
 ### Some tips and essential lines
 
 You can find most of the lines in the ReadMe.txt (inside Nucleus Co-op root folder) and in the MasterHandler.js (documentation link inside FAQ post).
-Also, all my public scripts (Bizzo) have descriptions inside that could help you.
+Also, all my public handlers (Bizzo) have descriptions inside that could help you.
 Next, you will find the most used ones.
 
 ### Game Info
@@ -128,7 +128,7 @@ When a player is initialized, Nucleus Co-op will edit the Windows registry lines
 You can find the registry lines inside this path:
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders**
 
-Then, you will be able to access in the script context part ( [Game.Play= function() {](#gameplay--function-) ) by using:
+Then, you will be able to access in the handler context part ( [Game.Play= function() {](#gameplay--function-) ) by using:
 - Context.EnvironmentPlayer (specific player Environment path) or  Context.EnvironmentRoot (Nucleus Co-op Environment Folder root) when using the UserProfile lines.
 - Context.DocumentsPlayer (specific player Documents path) or Context.DocumentsRoot (Nucleus Co-op Documents Folder root) when using the Documents lines.
 
@@ -221,7 +221,7 @@ Game.Hook.DInputEnabled = false; | If enabled, will allow DInput devices to be u
 Game.Hook.DInputForceDisable = true; | If we should completely remove support for DirectInput input from the game
 Game.Hook.XInputEnabled = true; | If enabled, will allow XInput devices to be used as a device input in Nucleus. This doesn't mean that it will work with the game if not supported.
 Game.Hook.XInputReroute = false; | If enabled, will allow XInput devices to act like DInput devices. This allows using more than 4 controllers. You can use only ONE XboxOne controller and you can't use at the same time the keyboard. You must click/alt+tab on the corresponding instance to make it work. In alternative, you can try to fix the problem by doing this [workaround](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) or try Xoutput.
-Game.UseDInputBlocker = true; | Setup wizark952's dinput blocker (block dinput for the game). This line will help users that use an XInput emulator. Use it when the script should restrict XInput gamepads and DInput will not be used in any way.
+Game.UseDInputBlocker = true; | Setup wizark952's dinput blocker (block dinput for the game). This line will help users that use an XInput emulator. Use it when the handler should restrict XInput gamepads and DInput will not be used in any way.
 
 ![dll finding 1](../static/img/dll-finding1.jpg)
 ![dll finding 2](../static/img/dll-finding2.png)
@@ -302,8 +302,8 @@ Game.LockInputToggleKey = 0x23; | If you need to change the key to toggle input 
 
 ## Game.Play = function() { 
 
-Inside "Game.Play = function() {" you can write operations that Nucleus will do in the context of the game starting. The lines inside this section are unique on each script.
-I invite you to check the documentation inside the FAQ Reddit post or check other scripts to see examples. As I said, mine (Bizzo) as descriptions inside that could help you.
+Inside "Game.Play = function() {" you can write operations that Nucleus will do in the context of the game starting. The lines inside this section are unique on each handler.
+I invite you to check the documentation inside the FAQ or check other handlers to see examples. As I said, mine (Bizzo) as descriptions inside that could help you.
 
 ### Here some examples
 
@@ -311,21 +311,21 @@ I invite you to check the documentation inside the FAQ Reddit post or check othe
 
 Code | Steps
 :--: | :---:
-var filePath = (Context.filePath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\scripts"); <br /> System.IO.Directory.CreateDirectory(filePath); | This is an example taken by the Need For Speed: Most Wanted (2005) script by Bizzo. <br /> The variable filePath  will contain the path and the name of the folder. <br /> In this case, it will be inside the root of the current player instance game folder (Context.GetFolder(Nucleus.Folder.InstancedGameFolder)), then the remaining path and in the end the name of the folder you want to create ("\\scripts"). <br /> In this example (because the game is symlinked) it will be: "Path to NucleusCoop folder\content\NeedForSpeedMostWanted2005 (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be created inside all current players folders each time the corresponding one is initialized)\scripts".
+var filePath = (Context.filePath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\handlers"); <br /> System.IO.Directory.CreateDirectory(filePath); | This is an example taken by the Need For Speed: Most Wanted (2005) handler by Bizzo. <br /> The variable filePath  will contain the path and the name of the folder. <br /> In this case, it will be inside the root of the current player instance game folder (Context.GetFolder(Nucleus.Folder.InstancedGameFolder)), then the remaining path and in the end the name of the folder you want to create ("\\handlers"). <br /> In this example (because the game is symlinked) it will be: "Path to NucleusCoop folder\content\NeedForSpeedMostWanted2005 (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be created inside all current players folders each time the corresponding one is initialized)\handlers".
 
 #### Copy a Specific File
 
 Code | Steps
 :--: | :---:
-var savePath = Context.NucleusFolder + "\\utils\\FlawlessWidescreen\\x64\\settings.xml"; <br /> var savePkgOrigin = System.IO.Path.Combine(Game.Folder, "FlawlessWidescreen\\settings.xml"); <br /> System.IO.File.Copy(savePkgOrigin, savePath, true); | This is an example taken by the The Dark Pictures Anthology: Man of Medan script by Bizzo. <br /> The variable savePath  contains the path where the file will be copied and the final name of the file (use a different one to rename it). <br /> The variable savePkgOrigin  contains the path of the source file. <br /> In this case, the source path of the file that the script will copy is inside the corresponding game scripts folder (Game.Folder) and  the destination will be inside the Nucleus-Coop utils folder. <br /> In this example it will be: Source file = "Path to NucleusCoop folder\scripts\The Dark Pictures Anthology Man of Medan (Game.Folder.  This f older must be named as the .js file)\FlawlessWidescreen\settings.xml". Destination path = "Path to NucleusCoop root folder (Context.NucleusFolder)\utils\FlawlessWidescreen\x64\settings.xml". 
+var savePath = Context.NucleusFolder + "\\utils\\FlawlessWidescreen\\x64\\settings.xml"; <br /> var savePkgOrigin = System.IO.Path.Combine(Game.Folder, "FlawlessWidescreen\\settings.xml"); <br /> System.IO.File.Copy(savePkgOrigin, savePath, true); | This is an example taken by the The Dark Pictures Anthology: Man of Medan handler by Bizzo. <br /> The variable savePath  contains the path where the file will be copied and the final name of the file (use a different one to rename it). <br /> The variable savePkgOrigin  contains the path of the source file. <br /> In this case, the source path of the file that the handler will copy is inside the corresponding game handlers folder (Game.Folder) and  the destination will be inside the Nucleus Co-op utils folder. <br /> In this example it will be: Source file = "Path to NucleusCoop folder\handlers\The Dark Pictures Anthology Man of Medan (Game.Folder.  This f older must be named as the .js file)\FlawlessWidescreen\settings.xml". Destination path = "Path to NucleusCoop root folder (Context.NucleusFolder)\utils\FlawlessWidescreen\x64\settings.xml". 
 
 #### Edit a file that contains text
 
 Code | Steps
 :--: | :---:
-var txtPath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\data\\config\\current\\current_control.map"; var dict = ["24<br />JOYSTICK ENABLED=TRUE", "70<br />KEYBOARD ENABLED=FALSE" ]; Context.ReplaceLinesInTextFile(txtPath, dict);  | This is an example taken by the Star Wars: Episode I - Racer script by Bizzo. <br /> The variable txtPath  contains the path of the file that the script will edit. <br /> The variable dict  contains the specific number of the line you want to edit and the text that will be written. <br /> In this example (because the game is symlinked): <br /> The  file we want to edit is = "Path to NucleusCoop folder\content\SWEpIRacer (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be edited for all current players each time the corresponding one is initialized)\data\config\current\current_control.map". <br /> Line 24  will be  JOYSTICK ENABLED=TRUE . <br /> Line 70  will be  KEYBOARD ENABLED=FALSE .
+var txtPath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\data\\config\\current\\current_control.map"; var dict = ["24<br />JOYSTICK ENABLED=TRUE", "70<br />KEYBOARD ENABLED=FALSE" ]; Context.ReplaceLinesInTextFile(txtPath, dict);  | This is an example taken by the Star Wars: Episode I - Racer handler by Bizzo. <br /> The variable txtPath  contains the path of the file that the handler will edit. <br /> The variable dict  contains the specific number of the line you want to edit and the text that will be written. <br /> In this example (because the game is symlinked): <br /> The  file we want to edit is = "Path to NucleusCoop folder\content\SWEpIRacer (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be edited for all current players each time the corresponding one is initialized)\data\config\current\current_control.map". <br /> Line 24  will be  JOYSTICK ENABLED=TRUE . <br /> Line 70  will be  KEYBOARD ENABLED=FALSE .
 
-If you don't know the exact number of the text line you want to edit you can make Nucleus-Coop search it for you.
+If you don't know the exact number of the text line you want to edit you can make Nucleus Co-op search it for you.
 By using the previous example, before **var dict**  you can do something like this:
 
 **var joystick = Context.FindLineNumberInTextFile(txtPath, "JOYSTICK ENABLED", Nucleus.SearchType.Contains);**  
@@ -342,29 +342,29 @@ Context.ReplaceLinesInTextFile(txtPath, dict);**
 
 Code | Steps
 :--: | :---:
-var savePath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\XInputPlus.ini"; <br /> Context.ModifySaveFile(savePath, savePath, Nucleus.SaveType.INI, [ new Nucleus.IniSaveInfo("ControllerNumber", "Controller1", Context.PlayerID + 1), <br /> new Nucleus.IniSaveInfo("ControllerNumber", "Controller2", ""),  <br /> new Nucleus.IniSaveInfo("ControllerNumber", "Controller3", ""),  <br /> new Nucleus.IniSaveInfo("ControllerNumber", "Controller4", "")]); | This is an example taken by the Star Wars: Episode I - Racer script by Bizzo. <br /> The variable save Path  contains the path of the file that the script will edit. <br /> In this example (because the game is symlinked): <br /> The  file we want to edit is = "Path to NucleusCoop folder\content\SWEpIRacer (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be edited for all current players each time the corresponding one is initialized)\XInputPlus.ini". <br /> Inside the .ini file section [ControllerNumber],  the variable Controller1  will be set as the Current Player ID + 1. While the other ones will be empty. <br /> [ControllerNumber] <br /> Controller1=1 <br /> Controller2= <br /> Controller3= <br /> Controller4=
+var savePath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\XInputPlus.ini"; <br /> Context.ModifySaveFile(savePath, savePath, Nucleus.SaveType.INI, [ new Nucleus.IniSaveInfo("ControllerNumber", "Controller1", Context.PlayerID + 1), <br /> new Nucleus.IniSaveInfo("ControllerNumber", "Controller2", ""),  <br /> new Nucleus.IniSaveInfo("ControllerNumber", "Controller3", ""),  <br /> new Nucleus.IniSaveInfo("ControllerNumber", "Controller4", "")]); | This is an example taken by the Star Wars: Episode I - Racer handler by Bizzo. <br /> The variable save Path  contains the path of the file that the handler will edit. <br /> In this example (because the game is symlinked): <br /> The  file we want to edit is = "Path to NucleusCoop folder\content\SWEpIRacer (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be edited for all current players each time the corresponding one is initialized)\XInputPlus.ini". <br /> Inside the .ini file section [ControllerNumber],  the variable Controller1  will be set as the Current Player ID + 1. While the other ones will be empty. <br /> [ControllerNumber] <br /> Controller1=1 <br /> Controller2= <br /> Controller3= <br /> Controller4=
 
 #### Add Launch Options to the game exe
 
 Code | Steps
 :--: | :---:
-var Args = (Context.Args = " -windowed -noborder -AlwaysFocus -insecure -novid +sv_lan 1 +sv_pausable 1 +fps_max " + fps); <br /> var Args = (Context.Args = " -windowed -noborder -AlwaysFocus -insecure -novid +sv_lan 1 +sv_pausable 1 +fps_max " + fps); <br /> Context.StartArguments = Args; Context.StartArguments = Args; | This is an example taken by the Day of Infamy script by Bizzo.<br /> The variable Args contains the launch options. 
+var Args = (Context.Args = " -windowed -noborder -AlwaysFocus -insecure -novid +sv_lan 1 +sv_pausable 1 +fps_max " + fps); <br /> var Args = (Context.Args = " -windowed -noborder -AlwaysFocus -insecure -novid +sv_lan 1 +sv_pausable 1 +fps_max " + fps); <br /> Context.StartArguments = Args; Context.StartArguments = Args; | This is an example taken by the Day of Infamy handler by Bizzo.<br /> The variable Args contains the launch options. 
 
 #### Create a file with text lines inside
 
 Code | Steps
 :--: | :---:
-var autoExec = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\doi\\cfg\\autoexec.cfg";   var lines = [ "engine_no_focus_sleep 0",        'm_rawinput "1"',        "bind F8 pause",        'joystick_force_disabled_set "1"',        "exec undo360controller.cfg",        "host_writeconfig",        'echo "$$$$$$ autoexec.cfg loaded = controller disabled $$$$$$'      ]; Context.WriteTextFile(autoExec, lines); | This is an example taken by the Day of Infamy script by Bizzo. The variable autoExec  contains the path and the name of the file that the script will create. The variable lines contain  the text lines the will be written inside the file. In this example (because the game is symlinked): A file named autoexec.cfg will be created inside "Path to NucleusCoop folder\content\Day of Infamy (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be edited for all current players each time the corresponding one is initialized)\doi\cfg\".
+var autoExec = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\doi\\cfg\\autoexec.cfg";   var lines = [ "engine_no_focus_sleep 0",        'm_rawinput "1"',        "bind F8 pause",        'joystick_force_disabled_set "1"',        "exec undo360controller.cfg",        "host_writeconfig",        'echo "$$$$$$ autoexec.cfg loaded = controller disabled $$$$$$'      ]; Context.WriteTextFile(autoExec, lines); | This is an example taken by the Day of Infamy handler by Bizzo. The variable autoExec  contains the path and the name of the file that the handler will create. The variable lines contain  the text lines the will be written inside the file. In this example (because the game is symlinked): A file named autoexec.cfg will be created inside "Path to NucleusCoop folder\content\Day of Infamy (name specified in Game.GUID line)\InstanceN# (If you don't specify it, it will be edited for all current players each time the corresponding one is initialized)\doi\cfg\".
 
 #### Backup a file
 
 Code | Steps
 :--: | :---:
-Context.BackupFile(Context.NucleusFolder + "\\utils\\FlawlessWidescreen\\x64\\settings.xml", true); | This is an example taken by the The Dark Pictures Anthology: Man of Medan script by Bizzo. This line will backup a specified file. Then, when Nucleus-Coop will be closed, it will be restored. Useful if you need to do edits on original files. The line must be placed before any edits related to the specified file. In this example: Nucleus-Coop will do a backup of the file settings.xml  inside the path  "Path to NucleusCoop root folder (Context.NucleusFolder)\utils\FlawlessWidescreen\x64".
+Context.BackupFile(Context.NucleusFolder + "\\utils\\FlawlessWidescreen\\x64\\settings.xml", true); | This is an example taken by the The Dark Pictures Anthology: Man of Medan handler by Bizzo. This line will backup a specified file. Then, when Nucleus Co-op will be closed, it will be restored. Useful if you need to do edits on original files. The line must be placed before any edits related to the specified file. In this example: Nucleus Co-op will do a backup of the file settings.xml  inside the path  "Path to NucleusCoop root folder (Context.NucleusFolder)\utils\FlawlessWidescreen\x64".
 
 ## Last Notes
 
-If you need help, don't understand how or if it's possible to do a specific thing with Nucleus-Coop, ask for help on our Discord Server (developers text channel). You can find the invite inside the [FAQ](/docs/faq).
+If you need help, don't understand how or if it's possible to do a specific thing with Nucleus Co-op, ask for help on our Discord Server (developers text channel). You can find the invite inside the [FAQ](/docs/faq).
 
 Try to understand what the problem is and search if anyone has already fixed it (Google and PcGamingWiki can help you) before asking.
 
