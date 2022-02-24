@@ -89,7 +89,7 @@ I usually directly create a handler and make Nucleus Co-op set the instances for
 
 ## Handler Creation Tips
 
-If all works it is time to script it. Now, you will start testing input restriction and focus methods!
+If all works it is time to create a handler. Now, you will start testing input restriction and focus methods!
 Start by checking how the public handlers work and use as an example one that uses the same game-engine of the game you are trying.
 
 ### Some tips and essential lines
@@ -104,33 +104,33 @@ Next, you will find the most used ones.
 
 Line  | Description
 ----- | -----------
-Game.ExecutableName = "game.exe";  | 	What executable the game use. This will be used by Nucleus for "exe script selection", for run the game and as the process to follow for positioning and resizing.
-Game.GUID = "GameName";  | The name of the folder that will be created inside the Nucleus\content folder (Don't use spaces). In this folder, Nucleus will store the game files for each instance of the game.
+Game.ExecutableName = "game.exe";  | 	The name of the game executable with the extension. This will be used by Nucleus to add games, to run the game and as process to follow for positioning and resizing. 
+Game.GUID = "Game Name";  | The name of the folder that will be created inside the Nucleus content folder (just use letters not symbols). In this folder Nucleus will store the symlinked or copied game files for each instance of the game..
 Game.GameName = "Game Name on Nucleu UI"; | Title of the game that will be shown on Nucleus.
 Game.MaxPlayersOneMonitor = 4; |	This is just an info. It will not limit the players' numbers.
-Game.MaxPlayers = 16; | 	This is just an info. Usually, we write the max players number the game support. 
+Game.MaxPlayers = 16; | 	This is just the max players info that shows under the handler name in Nucleus UI. Usually we write the max number of players the game supports. (PC, should support 16 max connected input devices).
 
 #### Other important ones
 
 Line | Description
 ---- | -----------
 Game.BinariesFolder = "Bin"; | In which folder the game exe is located? Relative path to where Nucleus should start the game's working folder to.
-Game.SteamID = "1234"; | Here the SteamID of the game. You can find it on https://steamdb.info/ . Add it only if the game is available on Steam.
+Game.SteamID = "1234"; | Here the SteamID of the game. You can find it on https://steamdb.info/ . Add only if the game is available on Steam.
 Game.LauncherTitle = ""; | The name of the launcher's window title. Some games need to go through a launcher to open. This is needed or else the application will lose the game's window.
 Game.LauncherExe = "gamelauncher.exe";  | If the game needs to go through a launcher before opening. Nucleus will use this exe to start the game and it will follow Game.ExecutableName process for resizing and positioning. You can also write it like this: Game.LauncherExe = "gamelauncher.exe|NucleusDefined"; for let the User select the launcher exe the very first time (useful if is not located in the game folder).
 Game.LauncherExeIgnoreFileCheck = true;	 | Do not check if Launcher Exe exists in game folder | you will need to provide a relative filepath from game root folder
 
-#### Nucleus-Coop Environment
+#### Nucleus Co-op Environment
 
 This function will provide a different game's Document path for each player.
 
-When a player is initialized, Nucleus-Coop will edit the Windows registry lines to make the game use a different path for search/create Documents files.
+When a player is initialized, Nucleus Co-op will edit the Windows registry lines to make the game use a different path for search/create Documents files.
 You can find the registry lines inside this path:
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders**
 
 Then, you will be able to access in the script context part ( [Game.Play= function() {](#gameplay--function-) ) by using:
-- Context.EnvironmentPlayer (specific player Environment path) or  Context.EnvironmentRoot (Nucleus-Coop Environment Folder root) when using the UserProfile lines.
-- Context.DocumentsPlayer (specific player Documents path) or Context.DocumentsRoot (Nucleus-Coop Documents Folder root) when using the Documents lines.
+- Context.EnvironmentPlayer (specific player Environment path) or  Context.EnvironmentRoot (Nucleus Co-op Environment Folder root) when using the UserProfile lines.
+- Context.DocumentsPlayer (specific player Documents path) or Context.DocumentsRoot (Nucleus Co-op Documents Folder root) when using the Documents lines.
 
 Line | Description
 ---- | -----------
@@ -364,7 +364,7 @@ Context.BackupFile(Context.NucleusFolder + "\\utils\\FlawlessWidescreen\\x64\\se
 
 ## Last Notes
 
-If you need help, don't understand how or if it's possible to do a specific thing with Nucleus-Coop, ask for help on our Discord Server (developers text channel). You can find the invite inside the [Reddit FAQ post](#reddit-faq-post).
+If you need help, don't understand how or if it's possible to do a specific thing with Nucleus-Coop, ask for help on our Discord Server (developers text channel). You can find the invite inside the [FAQ](/docs/faq).
 
 Try to understand what the problem is and search if anyone has already fixed it (Google and PcGamingWiki can help you) before asking.
 
