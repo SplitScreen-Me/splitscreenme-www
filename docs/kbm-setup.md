@@ -1,6 +1,6 @@
 ---
 id: kbm-setup
-title: Scripting for multiple keyboards and mice
+title: Multiple keyboards and mice support
 ---
 This guide talks about the deprecated Universal Split Screen Nucleus Co-op multiple keyboards and mice integrated functions, for the newer and improved multiple keyboards and mice integration use [Proto Input](/docs/proto).
 
