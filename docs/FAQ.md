@@ -38,7 +38,7 @@ Nucleus Co-op has support for more than 400 games now, see [which games are supp
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.0 is the latest version recent handlers are created for, please avoid using older and other versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.0 is the latest version recent handlers are created for, please avoid using older versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
@@ -83,7 +83,7 @@ Here are a few things you can try:
 
 ### 8.- Does Nucleus Co-op have any malware?
 
-[Absolutely not](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/). Also a recent file added to Nucleus Co-Op utils folder is being picked up by some browsers and antivirus as malware, this is 100% a false positive, [read here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118).
+Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some other anti-viruses and web browsers, see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting. Nucleus is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases).
 
 ### 9.- How do I play with an uneven amount of players (such as 3 players) without having an empty space?
 
@@ -103,7 +103,7 @@ See [handlers](/docs/handlers).
 
 ### 13.- When support for X game?
 
-Not all games are easy to splitscreen, if you want to suggest a game make a [subreddit](https://www.reddit.com/r/nucleuscoop) post with the title `[Request] Name of the game` and provide useful information like if the game supports LAN or dedicated servers, if it is available on Steam or in other services, if it uses external servers for online, if it has gamepad support etc. You can also contact any of our experienced Nucleus handlers developers here or in the [Nucleus Co-Op discord](https://discord.gg/QDUt8HpCvr) and ask if a handler is possible. The main handler developer is [Talos91](https://www.reddit.com/user/blackman9/). Remember that handler developers are limited by the games they own and can test on, so if you really want support for a game to be added consider donating the game to the handler dev in question.
+Not all games are easy to splitscreen, if you want to suggest a game make a [subreddit](https://www.reddit.com/r/nucleuscoop) post with the title `[Request] Name of the game` and provide useful information like if the game supports LAN or dedicated servers, if it is available on Steam or in other services, if it uses external servers for online, if it has gamepad support etc. You can also contact any of our experienced Nucleus handlers developers here or in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) and ask if a handler is possible. The main handler developer is [Talos91](https://www.reddit.com/user/blackman9/). Remember that handler developers are limited by the games they own and can test on, so if you really want support for a game to be added consider donating the game to the handler dev in question.
 
 ### 14.- How do I know when a handler gets updated?
 
@@ -111,7 +111,7 @@ Handlers updates are always announced in the [Nucleus Co-op discord](https://dis
 
 ### 15.- How do I create my own split-screen handler for Nucleus Co-op?
 
-See the documentation on this website. Here is the [Master Handler](https://drive.google.com/file/d/1AqWqlgH2gh0UR-u0uq_PjU02Ton4gaEg/view?usp=drivesdk), open the .js file with notepad to read it. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler creation you can ask us in the Nucleus Co-Op discord or on the subreddit, we can help you improve your handler so it is fully working for sharing with the community.
+Open the MasterHandler.js file inside Nucleus 2.0 handlers folder with notepad to read the documentation, check the Readme.txt inside the Nucleus folder for even more additional documentation. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler creation you can ask us in the Nucleus Co-op discord or on the subreddit, we can help you improve your handler so it is fully working for sharing with the community. See the documentation on this website too. 
 
 ### 16.- Does Nucleus Co-op work on Linux/Mac?
 
@@ -235,6 +235,6 @@ Yes, if you run the game via Nucleus Co-op in different PCs you can connect all 
 
 ### 29.- This project is amazing, where can I donate?
 
-We don't have an unified donation platform yet but you can support the developers individually here: [Zerofox](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WUXKHLAD3A3LE&source=url), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
+We don't have an unified donation platform yet but you can support the developers individually here: [Mikou27](https://www.paypal.com/donate/?hosted_button_id=P3NVBYRQ4Z45L), [Zerofox](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WUXKHLAD3A3LE&source=url), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
 
-You can also donate to our main handler developer that makes the game handlers for Nucleus: [Talos91/blackman9](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8T6S7LYD9RLR8&source=url)
+You can also donate to our main handler developer that makes the game handlers for Nucleus to support even more games: [Talos91/blackman9](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8T6S7LYD9RLR8&source=url)
