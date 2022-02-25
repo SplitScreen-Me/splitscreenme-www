@@ -4,11 +4,15 @@ title: Installation
 sidebar_label: Installation
 ---
 
-* Download latest Nucleus Co-op from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
+* Download latest Nucleus Co-op 2.0 from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
+
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/releases.png?raw=true)
 
 * Extract the file with [7-Zip](https://www.7-zip.org/):
 
-* Note: Goldberg Emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some web browsers, see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow it as an exception before extracting.
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/extracthere.png?raw=true)
+
+Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some other anti-virus and web browsers: this is a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting.
 
 * Move the Nucleus Co-op folder to wherever you like, and run NucleusCoop.exe
 
