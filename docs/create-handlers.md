@@ -275,6 +275,8 @@ Game.UseDevReorder = true; | Set up Devreorder. This is used to restrict only DI
 
 ***thanks to Ilyaki for the multiple keyboards and mice support and guide***
 
+(These options are deprecated, see the new [Proto Input](/docs/proto) guide.
+
 Line | Description
 ---- | ----------
 Game.SupportsMultipleKeyboardsAndMice = true; | If enabled, it will allow multiple Keyboards and Mice to be used as a device input in Nucleus. Before enabling it by default, be sure that all works without problems.
@@ -286,7 +288,7 @@ Game.HookGetKeyboardState = true; | Some games may conflict with these hooks, so
 Game.HookFilterRawInput = true; | This filters raw input messages inside the application. This makes sure each instance only receives input for its designated input device.
 Game.HookFilterMouseMessages = true; | This hook filters many mouse messages to position the mouse cursor and other necessary changes from within the game itself. <br /> This should almost always be enabled unless it causes some conflict.
 Game.HookUseLegacyInput = true; | This is the main switch for legacy input.
-Game.HookDontUpdateLegacyInMouseMsg = true; | ****Nucleus Coop will hook mouse movement messages and the GetCursorPos function to work around legacy input. Some games only need the GetCursorPos hook and conflict when mouse movement messages are edited. If this is the case, enable this option***
+Game.HookDontUpdateLegacyInMouseMsg = true; | ****Nucleus Co-op will hook mouse movement messages and the GetCursorPos function to work around legacy input. Some games only need the GetCursorPos hook and conflict when mouse movement messages are edited. If this is the case, enable this option***
 Game.HookMouseVisibility = true; | Used for games that toggle the mouse visibility, e.g. hidden in first person movement and visible in menus. <br /> This shows/hides the fake mouse cursor when the game tries to show/hide the 'real' mouse cursor. <br /> ***!!!!Most of the time this one is the cause of crashes.!!!!***
 Game.SendNormalMouseInput = true; | This will send the game mouse input via Windows messages.
 Game.SendNormalKeyboardInput = true; | This sends keyboard input via Windows messages. This is usually all that's needed to get keyboard input working.
