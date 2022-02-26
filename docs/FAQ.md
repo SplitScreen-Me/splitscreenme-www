@@ -71,13 +71,15 @@ You can place the folder wherever you like as long as you keep the following in 
 
 * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op.
 
-### 7.- Nucleus Co-op doesn't launch, how do I fix it?
+### 7.- Nucleus Co-op doesn't launch/takes very long to open, how do I fix it?
 
 Here are a few things you can try:
 
 *  Try updating your Microsoft.net framework, and install/reinstall Visual C++ 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
 * Make sure your antivirus program or windows defender is not blocking Nucleus Co-op or deleting any of its files.
+
+* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files.
 
 * Restart your PC, and try again.
 
@@ -151,7 +153,7 @@ Keep in mind most handlers are made and tested using the latest legit Steam vers
 
 Also provide a debug log of the Nucleus Co-op error or crash: Open Nucleus Co-op settings by pressing the gear icon at the top right of the Nucleus UI. Check the box labelled Enable Debug Log, then press Save and Close. Run the handler you are having trouble with again and a log file will be created in the same folder as the Nucleus Co-op exe, called debug-log.txt. You can also ask for support in our discord.
 
-### 18.- A Nucleus Co-op handler doesn't launch / is not working, why?
+### 18.- A Nucleus Co-op handler doesn't launch/is not working, why?
 
 Make sure you are using latest Nucleus Co-op version and the handler latest version too. Here are other things you can try:
 
@@ -199,7 +201,7 @@ For some games that save in the default Documents folder Nucleus Co-op will edit
 
 The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
-### 25.- My Playstation/generic PC controller isn't working/has double input/isn't being detected by Nucleus Co-op, how do I fix it?
+### 25.- My Playstation/generic PC controller has double input/isn't being detected by Nucleus Co-op, how do I fix it?
 
 Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipedia.org/wiki/DirectInput#DirectInput_vs_XInput) controllers. Controllers that work best are native XInput gamepads like Xbox 360 and Xbox One controllers for minimum hassle. There are a few handlers that also support DirectInput controllers but XInput controllers are generally a lot easier to restrict to a specific game instance than DirectInput controllers.
 
