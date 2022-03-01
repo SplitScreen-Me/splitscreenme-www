@@ -58,7 +58,7 @@ Some options can be configured in (3), (4) and (5): see below.
 
 Message filters can be configured in the Message filter tab. Message "modifiers" will change the data sent in a Windows message, or selectively block messages, e.g. by only allowing messages that are simulated by Proto Input. Additionally you can set blocks on any messages, e.g. on WM_KILLFOCUS to prevent the game losing focus.
 
-### Handler making with Nucleus Co-op
+### Handler development with Nucleus Co-op
 
 In your handler, you should always have the lines:
 
