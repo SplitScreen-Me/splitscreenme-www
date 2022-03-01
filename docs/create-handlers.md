@@ -7,7 +7,7 @@ import NucleusLogo from '../static/img/NucleusCoop1.png';
 
 <img src={NucleusLogo} alt="Nucleus Logo" height="150px"/>
 
-# Nucleus Co-op handler creation
+# Nucleus Co-op handler development
 This is my approach when I want to make a handler for a game.
 Hopefully it will be useful for those that want to create game handlers for Nucleus Co-op too.
 
