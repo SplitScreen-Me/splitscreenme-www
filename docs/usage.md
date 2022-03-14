@@ -16,11 +16,11 @@ title: How to use
 
 * Go back and click `Download`. When Nucleus asks to add the game, click Yes and browse to the game executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
 
-* If you already have the game handler (.js) inside Nucleus handlers folder you can click `Search Game` to add the game to Nucleus or you can automatically add games by clicking `Auto Search Game` and selecting the drive and path you want to add games from.
+* If you already have the game handler (.js) inside Nucleus Co-op handlers folder you can click `Search Game` to add the game to Nucleus Co-op or you can automatically add games by clicking `Auto Search Game` and selecting the drive and path you want to add games from.
 
-* You can also download the handlers from the [website hub](https://hub.splitscreen.me/), then in Nucleus select `Extract Handler`or `Extract Existing`, choose the .nc file you downloaded and add the game.
+* You can also download the handlers from the [website handlers hub](https://hub.splitscreen.me/), then in Nucleus Co-op select `Extract Handler`or `Extract Existing`, choose the .nc file you downloaded and add the game.
 
-* Once your game is added, select it in the Nucleus UI and assign the input devices to parts of the screen by dragging the devices. The device icons will light up when they receive input (maintain a button press for controllers). Change the layout of each screen by clicking the icon in the top-left corner of each screen, if you have multiple monitors connected they will show in the UI.
+* Once your game is added, select it in the Nucleus Co-op UI and assign the input devices to parts of the screen by dragging the devices. The device icons will light up when they receive input (maintain a button press for controllers). Change the layout of each screen by clicking the icon in the top-left corner of each screen, if you have multiple monitors connected they will show in the UI.
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusinputd.png?raw=true)
 
@@ -28,9 +28,10 @@ title: How to use
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusmighty.png?raw=true)
 
+* Read the game handler author's notes below the game cover, read them carefully as they contain important information related to the handler functionality.
+
 * When you are ready, click the `>` button. If there are any handler UI options, configure them. Then press `PLAY`.
 
-* Wait a bit for the games to start and their windows to be positioned. If you are using multiple keyboards and mice, you may have to press the End key to lock input after the games are set up (see the game handler notes).
+* Wait a bit for the games to start and their windows to be resized and positioned. If you are using multiple keyboards and mice, you may have to press the End key to lock the input after the games are set up for the keyboards/mice to work correctly.
 
 * Follow the game handler notes to connect the games together.
-
