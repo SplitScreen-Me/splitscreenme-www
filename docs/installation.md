@@ -14,7 +14,7 @@ sidebar_label: Installation
 
 * When it asks you for a password write `nucleus` and extract.
 
-Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some other anti-virus and web browsers: this is a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting. Do not overwrite old Nucleus versions files with new ones, make a clean install.
+Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected by windows defender and other anti-viruses and web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting. Do not overwrite old Nucleus Co-op versions files with new ones, make a clean install.
 
 * Move the Nucleus Co-op folder to wherever you like, and run NucleusCoop.exe
 
