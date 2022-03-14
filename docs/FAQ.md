@@ -20,7 +20,7 @@ sidebar_label: FAQ
   </iframe>
 </div>
 
-Nucleus Co-op is a free and open source tool for Windows that allows split-screen play on many games that do not initially support it. Its purpose is to make it as easy as possible for the average user to play games locally using only one PC and one game copy. The app was originally created by [Lucas Assis](https://github.com/lucasassislar). The developer [Zerofox](https://github.com/ZeroFox5866) later took over and added a ton of new features and improvements to support a lot more games. [Ilyaki](https://github.com/Ilyaki) later joined in and brought multiple keyboards/mice support, extended hooks support and more great features to the table. Finally [Mikou27](https://github.com/Mikou27) added a new beautiful overhauled user interface with support for themes, game covers and screenshots, among other many quality of life improvements and scaling bug fixes.
+[Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus) is a free and open source tool for Windows that allows split-screen play on many games that do not initially support it. Its purpose is to make it as easy as possible for the average user to play games locally using only one PC and one game copy. The app was originally created by [Lucas Assis](https://github.com/lucasassislar). The developer [Zerofox](https://github.com/ZeroFox5866) later took over and added a ton of new features and improvements to support a lot more games. [Ilyaki](https://github.com/Ilyaki) later joined in and brought multiple keyboards/mice support, extended hooks support and more great features to the table. Finally [Mikou27](https://github.com/Mikou27) added a new beautiful overhauled user interface with support for themes, game covers and screenshots, among other many quality of life improvements and scaling bug fixes.
 
 [R-mach](https://github.com/r-mach) is the creator and developer of the SplitScreen.Me [website](https://hub.splitscreen.me/) that hosts all the available Nucleus Co-op game handlers.
 
@@ -30,15 +30,15 @@ The further development of the app wouldn't have been possible without the amazi
 
 Essentially Nucleus Co-op [symlinks](https://en.wikipedia.org/wiki/Symbolic_link) and opens multiple instances of the same game files (sometimes [mutex](https://en.wikipedia.org/?title=Mutex&redirect=no) killing is required for that, among other methods) that will only answer to one specific gamepad (we do this via Nucleus Co-op custom xinput libraries or xinput plus dlls) and connects those instances via LAN or online multiplayer emulation (Goldberg, Nemirtingas emulators etc.), all while making sure the game windows have focus so they can be playable at the same time with multiple controllers or that the instances are playable even in the background. Nucleus then resizes, removes borders and repositions the game windows so you can have synthetic split-screen to play locally with your friends!
 
-Note that Nucleus does not add multiplayer or co-op to single player games, the game needs to already have some form of online or LAN multiplayer, or another way to connect the instances, like via mods for example (e.g. Skyrim Together).
+Note that Nucleus Co-op does not add multiplayer or co-op to single player games, the game needs to already have some form of online or LAN multiplayer, or another way to connect the instances, like via mods for example (e.g. Skyrim Together).
 
 ### 3.- Which games can be split-screened using Nucleus Co-op?
 
-Nucleus Co-op has support for more than 400 games now, see [which games are supported?](/docs/games).
+Nucleus Co-op has support for more than 400 games! see [which games are supported?](/docs/games).
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.0 is the latest version recent handlers are created for, please avoid using older versions (like regular Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.0 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
@@ -71,13 +71,15 @@ You can place the folder wherever you like as long as you keep the following in 
 
 * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op.
 
-### 7.- Nucleus Co-op doesn't launch/takes very long to open, how do I fix it?
+### 7.- Nucleus Co-op doesn't launch/crashes, how do I fix it?
 
 Here are a few things you can try:
 
-*  Try updating your Microsoft.net framework, and install/reinstall Visual C++ 2010-2017, 2015-2019 Redistributable (both x86 and x64).
+* Try updating your Microsoft .NET Framework, and install/reinstall Visual C++ 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-* Make sure your antivirus program or windows defender is not blocking Nucleus Co-op or deleting any of its files.
+* Make sure your antivirus program or windows defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting.
+
+* Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
 * Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files.
 
@@ -85,7 +87,7 @@ Here are a few things you can try:
 
 ### 8.- Does Nucleus Co-op have any malware?
 
-Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some other anti-viruses and web browsers, see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting. Nucleus is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases).
+Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some other anti-viruses and web browsers, see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for  more information. You may have to allow Nucleus as an exception before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases).
 
 ### 9.- How do I play with an uneven amount of players (such as 3 players) without having an empty space?
 
@@ -105,11 +107,11 @@ See [handlers](/docs/handlers).
 
 ### 13.- When support for X game?
 
-Not all games are easy to splitscreen, if you want to suggest a game make a [subreddit](https://www.reddit.com/r/nucleuscoop) post with the title `[Request] Name of the game` and provide useful information like if the game supports LAN or dedicated servers, if it is available on Steam or in other services, if it uses external servers for online, if it has gamepad support etc. You can also contact any of our experienced Nucleus handlers developers here or in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) and ask if a handler is possible. The main handler developer is [Talos91](https://www.reddit.com/user/blackman9/). Remember that handler developers are limited by the games they own and can test on, so if you really want support for a game to be added consider donating the game to the handler dev in question.
+Not all games are easy to split-screen, if you want to suggest a game make a [subreddit](https://www.reddit.com/r/nucleuscoop) post with the title `[Request] Name of the game` and provide useful information like if the game supports LAN or dedicated servers, if it is available on Steam or in other services, if it uses external servers for online, if it has gamepad support etc. You can also contact any of our experienced Nucleus handler developers here or in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) and ask if a handler is possible. The main handler developer is [Talos91](https://www.reddit.com/user/blackman9/). Remember that handler developers are limited by the games they own and can test on, so if you really want support for a game to be added consider donating the game to the handler dev in question.
 
 ### 14.- How do I know when a handler gets updated?
 
-Handlers updates are always announced in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) in the channel #handlers-updates. 
+Handlers updates are always announced in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) in the channel #handlers-updates. Nucleus Co-op will also let you know if a new handler is available when you select a game in its interface. 
 
 ### 15.- How do I create my own split-screen handler for Nucleus Co-op?
 
