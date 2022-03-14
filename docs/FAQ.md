@@ -87,7 +87,7 @@ Here are a few things you can try:
 
 ### 8.- Does Nucleus Co-op have any malware?
 
-Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as a false positive by Windows Defender and some other anti-viruses and web browsers, see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for  more information. You may have to allow Nucleus as an exception before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases).
+Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected by windows defender and some other anti-viruses and web browsers, this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You may have to allow Nucleus Co-op as an exception before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). If you got a detection you can help by [reporting the file(s) to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission) as incorrectly classified as malware.
 
 ### 9.- How do I play with an uneven amount of players (such as 3 players) without having an empty space?
 
@@ -95,7 +95,7 @@ Right click on a section of the splitscreen layout.
 
 ### 10.- How do you use Nucleus Co-op Custom Layout?
 
-[Like this](https://www.reddit.com/link/nc9364/video/vdhz3d56c3z61/player)
+[Like this](https://www.reddit.com/link/nc9364/video/vdhz3d56c3z61/player).
 
 ### 11.- I wish to help out with the project, how can I get in touch?
 
@@ -157,23 +157,25 @@ Keep in mind most handlers are made and tested using the latest legit Steam vers
 
 ### 18.- A Nucleus Co-op handler doesn't launch/is not working, why?
 
-Make sure you are using latest Nucleus Co-op version and the handler latest version too. Here are other things you can try:
+Make sure you are using latest Nucleus Co-op version and the handler latest version. Here are other things you can try:
 
 1. Read the game handler author's notes that appear under the game cover, read them carefully as they contain important information related to the handler functionality.
 
 2. Check that your antivirus program or windows defender is not deleting or blocking any Nucleus Co-op files.
 
-3. Delete Nucleus Co-op content folder and add the game again.
+3. Try launching your main game without Nucleus and change some graphics settings, apply then close.
 
-4. Don't place Nucleus Co-op inside the game files you wish to run.
+4. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
+
+5. Don't place Nucleus Co-op inside the game files you wish to run.
 
 5. Move Nucleus Co-op outside any user or protected folders, C:/NucleusCo-op is recommended.
 
-6. If the handler requires it move Nucleus to the same drive as your game.
+6. If the handler requires it move Nucleus Co-op to the same drive as your game.
 
-7. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
+7. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description say it works with other versions too (GoG, EGS).
 
-8. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description say it works with other versions too (GoG, EGS).
+8. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
 9. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
 
@@ -187,11 +189,11 @@ Try setting your monitor scale to 100% in your monitor/TV resolution settings. I
 
 ### 21.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
 
-A lot of handlers edit a game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once and change some graphic settings before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op UI, click on Game Options and select Delete UserProfile Config Path for all players. You can also try deleting Nucleus Co-op content folder and add the game again. 
+A lot of handlers edit a game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once, change some graphic settings and apply them before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op user interface, click on Game Options and select Delete UserProfile Config Path for all players. You can also try deleting Nucleus Co-op content folder and add the game again. 
 
 ### 22.- Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
 
-Remember that Nucleus Co-op opens multiple instances of a game, so depending on the game this can be quite demanding for your PC, to improve FPS and performance try reducing graphics settings like textures and shadows, limit the FPS or unfocus all the game windows so that they get equal priority and the FPS even out, you can do this by Alt-Tabbing to a different window like the Nucleus app window, the game windows will still remain on top, you can also press the windows key+b in your keyboard to unfocus all the instances. Forcing Vsync via your graphics panel can also help.
+Remember that Nucleus Co-op opens multiple instances of a game, so depending on the game this can be quite demanding for your PC, to improve FPS and performance try reducing graphics settings like textures and shadows, limit the FPS or unfocus all the game windows so that they get equal priority and the FPS even out, you can do this by Alt-Tabbing to a different window like the Nucleus Co-op app window, the game windows will still remain on top, you can also press the windows key+b in your keyboard to unfocus all the instances. Forcing Vsync via your graphics panel can also help.
 
 ### 23.- Why can't I exit Nucleus Co-op or move my cursor to close it?
 
