@@ -111,11 +111,11 @@ Not all games are easy to split-screen, if you want to suggest a game make a [su
 
 ### 14.- How do I know when a handler gets updated?
 
-Handlers updates are always announced in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) in the channel #handlers-updates. Nucleus Co-op will also let you know if a new handler is available when you select a game in its interface. 
+Handlers updates are always announced in the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) in the channel #handlers-updates. Nucleus Co-op will also let you know if a new handler update is available when you select a game in its interface. 
 
 ### 15.- How do I create my own split-screen handler for Nucleus Co-op?
 
-Open the MasterHandler.js file inside Nucleus 2.0 handlers folder with notepad to read the documentation, check the Readme.txt inside the Nucleus folder for even more additional documentation. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler creation you can ask us in the Nucleus Co-op discord or on the subreddit, we can help you improve your handler so it is fully working for sharing with the community. See the [handler development guide](/docs/create-handlers) on this website too. 
+Open the MasterHandler.js file inside Nucleus Co-op 2.0 handlers folder with notepad to read the documentation, check the Readme.txt inside the Nucleus folder for even more additional documentation. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus Co-op handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler development you can ask us in the Nucleus Co-op discord or in the subreddit, we can help you improve your handler so it is fully working for sharing with the community. See the [handler development guide](/docs/create-handlers) on this website too. 
 
 ### 16.- Does Nucleus Co-op work on Linux/Mac?
 
@@ -123,7 +123,9 @@ Nucleus Co-op depends on a lot of Windows functions and APIs, at the moment it o
 
 ### 17.- Where can I report a bug/issue?
 
-Note that Nucleus Co-op is a tool in development and may have bugs, glitches and weird things happening. Help other people not have these things happen by checking for a solution on the subreddit and submitting a `[BUG REPORT]` to the subreddit as a new topic if no-one else has brought it up. Make sure you have read the game handler notes in the Nucleus UI very carefully before submitting anything.
+Note that Nucleus Co-op is a tool in development and may have bugs, glitches and weird things happening. Help other people not have these things happen by checking for a solution in the subreddit or discord and submitting a `[BUG REPORT]` to the subreddit as a new topic if no-one else has brought it up. Provide a debug log of the Nucleus Co-op error or crash too: Open Nucleus Co-op settings by pressing the gear icon at the top right of the Nucleus UI. Check the box labelled Enable Debug Log, then press Save and Close. Run the handler you are having trouble with again and a log file will be created in the same folder as the Nucleus Co-op exe, called debug-log.txt. 
+
+Make sure you have read the game handler notes in the Nucleus UI very carefully before submitting anything.
 
 A good `[BUG REPORT]` looks like this:
 ```
@@ -152,8 +154,6 @@ SYSTEM: I'm on Windows 3.1 with 4MB of RAM, a 2KHz CPU and no graphics card, pla
 I'd really like this to get fixed please thanks magic man! -Beanboy
 ```
 Keep in mind most handlers are made and tested using the latest legit Steam versions, so provide information about what version of the game you have.
-
-Also provide a debug log of the Nucleus Co-op error or crash: Open Nucleus Co-op settings by pressing the gear icon at the top right of the Nucleus UI. Check the box labelled Enable Debug Log, then press Save and Close. Run the handler you are having trouble with again and a log file will be created in the same folder as the Nucleus Co-op exe, called debug-log.txt. You can also ask for support in our discord.
 
 ### 18.- A Nucleus Co-op handler doesn't launch/is not working, why?
 
