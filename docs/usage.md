@@ -3,6 +3,7 @@ id: usage
 title: How to use
 ---
 ## Nucleus Co-op
+← [Installation](/docs/installation)
 
 ### Game setup
 
