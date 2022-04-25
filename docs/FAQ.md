@@ -66,7 +66,7 @@ Here are a few things you can try:
 
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
-* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files. In latest Nucleus Co-op 2.1 you can just click on the splashscreen to dismiss it if it take too long, you can also disable it in Nucleus UI settings.
+* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files. In latest Nucleus Co-op 2.1 you can just click on the splashscreen to dismiss it if it takes too long, you can also disable it in Nucleus UI settings.
 
 * Restart your PC, and try again.
 
@@ -214,7 +214,7 @@ If you are using steam controllers try [this](https://www.youtube.com/watch?v=wy
 
 ### 26.- Why is my keyboard/gamepad not showing in the Nucleus Co-op UI?
 
-Since Nucleus Co-op v2.1 for handlers that support multiple keyboard/mice the keyboards and mice icons will only show in the UI if a key is pressed or a mouse moved. If a handler is only showing gamepads and not keyboard/mice icons that means the handler only supports gamepads and doesn't support keyboards/mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support. If you only see one big keyboard/mouse icon that means the handler only supports one keyboard and mouse with the instance focused.
+Since Nucleus Co-op v2.1 for handlers that support multiple keyboards/mice the keyboards and mice icons will only show in the UI if a key is pressed or a mouse moved. If a handler is only showing gamepads and not keyboards/mice icons that means the handler only supports gamepads and doesn't support keyboards/mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support. If you only see one big keyboard/mouse icon that means the handler only supports one keyboard and mouse with the instance focused.
 
 ### 27.- There are many keyboards, mice and controllers icons in the UI, how do I know which ones to use?
 
