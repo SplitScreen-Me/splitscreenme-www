@@ -34,11 +34,11 @@ Note that Nucleus Co-op does not add multiplayer or co-op to single player games
 
 ### 3.- Which games can be split-screened using Nucleus Co-op?
 
-Nucleus Co-op has support for more than 400 games! see [which games are supported?](/docs/games).
+Nucleus Co-op has support for more than 450 games! see [which games are supported?](/docs/games).
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.0 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.1 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
