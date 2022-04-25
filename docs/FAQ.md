@@ -42,22 +42,7 @@ You can download latest version from [Github](https://github.com/SplitScreen-Me/
 
 ### 5.- How do I use Nucleus Co-op?
 
-See [Installation](/docs/installation), [How to use](/docs/usage),  or this video tutorial:
-
-<div class="embed-container">
-  <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/hWmvz59i-o0" 
-          frameborder="0" 
-          allow="accelerometer; 
-                 autoplay; 
-                 encrypted-media; 
-                 gyroscope; 
-                 picture-in-picture" 
-          allowfullscreen="allowfullscreen">
-  </iframe>
-</div>
+See [Installation](/docs/installation) and [How to use](/docs/usage).
 
 ### 6.- Where should I place the Nucleus Co-op folder?
 
@@ -81,7 +66,7 @@ Here are a few things you can try:
 
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
-* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files.
+* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files. In latest Nucleus Co-op 2.1 you can just click on the splashscreen to dismiss it if it take too long, you can also disable it in Nucleus UI settings.
 
 * Restart your PC, and try again.
 
@@ -115,7 +100,7 @@ Handlers updates are always announced in the [Nucleus Co-op discord](https://dis
 
 ### 15.- How do I create my own split-screen handler for Nucleus Co-op?
 
-Open the MasterHandler.js file inside Nucleus Co-op 2.0 handlers folder with notepad to read the documentation, check the Readme.txt inside the Nucleus folder for even more additional documentation. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus Co-op handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler development you can ask us in the Nucleus Co-op discord or in the subreddit, we can help you improve your handler so it is fully working for sharing with the community. See the [handler development guide](/docs/create-handlers) on this website too. 
+Open the MasterHandler.js file inside Nucleus Co-op handlers folder with notepad to read the documentation, check the Readme.txt inside the Nucleus folder for even more additional documentation. You can also use the handlers you download from Nucleus Co-op as reference, they get downloaded to the Nucleus Co-op handlers folder. An easier way to start would be editing an existing handler, preferably one of a game that uses the same engine as the game you want (Unity, UE4 etc.) and just change the data in the handler to match your game's, like the .exe name and such. If you create a working handler or if you have any questions about Nucleus handler development you can ask us in the Nucleus Co-op discord or in the subreddit, we can help you improve your handler so it is fully working for sharing with the community. See the [handler development guide](/docs/create-handlers) on this website too. 
 
 ### 16.- Does Nucleus Co-op work on Linux/Mac?
 
@@ -185,7 +170,7 @@ Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\
 
 ### 20.- Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
 
-Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (for example if you are using a monitor resolution of 1920x1080 add custom resolutions like 1920x540, 960x1080, 960x540, etc.) that way most games will be able to see and use those custom resolutions and the split-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. If your graphics panel does not support adding custom resolutions using the app [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU) is recommended.
+Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (for example if you are using a monitor resolution of 1920x1080 add custom resolutions like 1920x540, 960x1080, 960x540, etc.) that way most games will be able to see and use those custom resolutions and the split-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. If your graphics panel does not support adding custom resolutions using the app [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU) is recommended. Disable the Status Window in Nucleus UI settings if you have it enabled as it can cause resizing issues.
 
 ### 21.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
 
@@ -201,7 +186,7 @@ Some handlers that support multiple keyboards and mice lock the main mouse curso
 
 ### 24.- Nucleus Co-op changed the location of my Documents folder, why?
 
-For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), running the handler again and closing Nucleus/ending your game session properly, using the Nucleus shortcut CTRL+Q or closing the app, will revert the registry back to its original value. Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Double click that file and click yes to add it. This will manually restore its original value. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%\Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
+For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus Co-op, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), opening Nucleus again will revert the registry back to its original value (Nucleus v2.1). Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Double click that file and click yes to add it. This will manually restore its original value. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%\Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
 
 The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
@@ -229,15 +214,17 @@ If you are using steam controllers try [this](https://www.youtube.com/watch?v=wy
 
 ### 26.- Why is my keyboard/gamepad not showing in the Nucleus Co-op UI?
 
-If a handler is only showing gamepads and not keyboard icons that means the handler only supports gamepads and doesn't support keyboards and mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support.
+Since Nucleus Co-op v2.1 for handlers that support multiple keyboard/mice the keyboards and mice icons will only show in the UI if a key is pressed or a mouse moved. If a handler is only showing gamepads and not keyboard/mice icons that means the handler only supports gamepads and doesn't support keyboards/mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support. If you only see one big keyboard/mouse icon that means the handler only supports one keyboard and mouse with the instance focused.
 
 ### 27.- There are many keyboards, mice and controllers icons in the UI, how do I know which ones to use?
 
-If you press a key in the keyboard you will use or move the mouse their corresponding icons in the Nucleus Co-Op UI will light up yellow. The app can detect keyboard macros that is why sometimes you will get multiple keyboard icons. If you maintain a controller button pressed the corresponding icon will light up green. If you see multiple mice and keyboard icons that means the handler supports multiple instances playable with multiple keyboards/mice, if you only see one big keyboard icon that means the handler only supports one keyboard/mouse with the instance focused.
+If you press a key in the keyboard you will use or move the mouse their corresponding icons in the Nucleus Co-Op UI will light up yellow. The app can detect keyboard macros that is why sometimes you will get multiple keyboard icons. If you maintain a controller button pressed the corresponding icon will light up yellow too. 
 
 ### 28.- Can you play splitscreen+LAN in different PCs?
 
-Yes, if you run the game via Nucleus Co-op in different PCs you can connect all instances you launch via LAN, for example you can have 2 players playing vertical splitscreen in one PC via Nucleus and connect to 2 others playing Nucleus splitscreen in a different PC via LAN. If the handler uses steamworks multiplayer emulation you'll have to change the instances steam ids in the other PCs you'll connect to, otherwise the instances launched by Nucleus will use the same steam ids and won't be able to connect to each other. For that you can open the game handler .js file in Nucleus handlers folder in the other PCs and add for example `Game.PlayerSteamIDs = [ "76561198134585131","76561198131394153","76561198011792067","76561198043762785" ];` that will change the default ids of the first four instances you open in one PC via Nucleus Co-op.
+Yes, if you run the game via Nucleus Co-op in different PCs you can connect all instances you launch via LAN, for example you can have 2 players playing vertical splitscreen in one PC via Nucleus and connect to 2 others playing Nucleus splitscreen in a different PC via LAN. If the handler uses steamworks multiplayer emulation you'll have to change the instances player steam ids in the other PCs you'll connect to, otherwise the instances launched by Nucleus will use the same player steam ids and won't be able to connect to each other. Since Nucleus Co-op v2.1 you can change the Player Steam ID per player in the app UI settings (Players tab).
+
+You can also open the game handler .js file in Nucleus handlers folder in the other PCs and add for example `Game.PlayerSteamIDs = [ "76561198134585131","76561198131394153","76561198011792067","76561198043762785" ];` that will change the default ids of the first four instances you open in one PC via Nucleus Co-op, note that the player steam ids you set in Nucleus UI will have priority over these ones.
 
 ### 29.- This project is amazing, where can I donate?
 
