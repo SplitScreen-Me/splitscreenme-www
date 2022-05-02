@@ -13,7 +13,7 @@ title: How to use
 
 * Click the `More Info` button and be sure to read through the guide or info for the game.
 
-![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusmoreinfo.png?raw=true)
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/moreinfonew.png?raw=true)
 
 * Go back and click `Download`. When Nucleus asks to add the game, click Yes and browse to the game executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
 
