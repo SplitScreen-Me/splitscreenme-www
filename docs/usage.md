@@ -9,7 +9,7 @@ title: How to use
 
 * Click the `Download Game Handler` button and search for a game handler for the game you want to split-screen, see [which games are supported?](/docs/games)
 
-![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/downloadh.png?raw=true)
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/downloadhandler.png?raw=true)
 
 * Click the `More Info` button and be sure to read through the guide or info for the game.
 
