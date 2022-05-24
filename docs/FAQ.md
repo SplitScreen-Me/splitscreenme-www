@@ -38,7 +38,7 @@ Nucleus Co-op has support for more than 450 games! see [which games are supporte
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.1 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.1.1 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
@@ -189,7 +189,7 @@ Some handlers that support multiple keyboards and mice lock the main mouse curso
 
 ### 24.- Nucleus Co-op changed the location of my Documents folder, why?
 
-For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus Co-op, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), opening Nucleus again will revert the registry back to its original value (Nucleus Co-op v2.1). Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%\Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
+For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus Co-op, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), opening Nucleus again will revert the registry back to its original value (Nucleus Co-op v2.1 and up). Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%\Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
 
 The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
