@@ -233,4 +233,4 @@ You can also open the game handler .js file in Nucleus Co-op handlers folder in 
 
 We don't have an unified donation platform yet but you can support the developers individually here: [Mikou27](https://www.paypal.com/donate/?hosted_button_id=P3NVBYRQ4Z45L), [Zerofox](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WUXKHLAD3A3LE&source=url), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
 
-You can also donate to our main handler developer that makes the game handlers for Nucleus to support even more games: [Talos91/blackman9](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8T6S7LYD9RLR8&source=url)
+You can also donate to our main handler developer that makes the game handlers for Nucleus to support even more games: [Talos91/blackman9](https://ko-fi.com/talos91)
