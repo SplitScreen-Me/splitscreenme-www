@@ -1,0 +1,35 @@
+name: "📝 Update Documentation Page"
+description: Are we missing anything in any of our documentation pages on the https://Splitscreen.me/docs website. Let us know what to add/remove/fix!
+title: '📝 <documentation name>'
+labels: [📝 update documentation page]
+body:
+  - type: markdown
+    attributes:
+      value: "## Before you continue, please search our open/closed issues to see if a similar issue has been addressed."
+
+  - type: checkboxes
+    attributes:
+      label: I have searched through the issues and didn't find my problem.
+      options:
+        - label: Confirm
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Documentation description
+      description: Short description of the documentation you'd like added.
+    validations:
+      required: true
+
+  - type: textarea
+    id: whyweneedthisdocumentation
+    attributes:
+      label: Why do we need this documentation?
+      description: Tell us why you want this documentation, and how it could be helpful.
+
+  - type: textarea
+    id: extrainformation
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this documentation?
