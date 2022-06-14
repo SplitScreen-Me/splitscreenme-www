@@ -39,7 +39,7 @@ html[data-theme='dark'] {
 /*Setting height and weight of the sidebar logo increases performance*/
 .themedImage_node_modules-\@docusaurus-theme-classic-lib-next-theme-ThemedImage-styles-module {
     height: 32px;
-    width: 32spx;
+    width: 32px;
 }
 
 @media screen and (max-width: 966px) {
