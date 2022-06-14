@@ -3,9 +3,6 @@ id: handlers
 title: What are handlers?
 ---
 
-What are handlers?
+Handlers are javascript files that handle a game. There is one handler for each game. A handler tells the app how and what to open, edit and use. Basically, if you want to split-screen a game you need a handler to tell the app what and how to split-screen it. 
 
-Handlers are javascript scripts that handle a game. There is one handler for each game. A handler tells Splitscreen.me how and what to open. 
-Basically, if you want to splitscreen a game you need a handler to tell Splitscreen.me what and how to splitscreen it. 
-
-For info on how to make a handler for yourself, please see [create your handler](/docs/create-handlers).
+For more info on how to make a handler yourself, please see [How do I create my own split-screen handler for Nucleus Co-op?](https://www.splitscreen.me/docs/faq#15--how-do-i-create-my-own-split-screen-handler-for-nucleus-co-op).

@@ -2,21 +2,37 @@
 id: usage
 title: How to use
 ---
+## Nucleus Co-op
+← [Installation](/docs/installation)
 
-How do I use it?
+### Game setup
 
-1.- Download and extract Nucleus Co-Op (extract using apps like 7-zip or winrar).
+* Click the `Download Game Handler` button and search for a game handler for the game you want to split-screen, see [which games are supported?](/docs/games)
 
-2.- Open NucleusCoop.exe.
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/searchh.png?raw=true)
 
-3.- Click on Download Game Scripts, search for a game in the [supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/) list and download a script.
+* Click the `More Info` button and be sure to read through the guide or info for the game.
 
-4.- Once the script has finished downloading you will get a prompt asking if you would like to add a game now, press yes if you want to add it now, if you select no proceed to step 6.
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/moreinfonew.png?raw=true)
 
-5.- Next you need to find where your game's executable is located. If you're not sure, try Googling 'where is (game) installed' and just searching for .exe in the place they tell you to look. For Steam games this is usually something along the lines of 'C:\Program Files\Steam\steamapps\common(game)'. Some games will have their .exe stashed away in a folder called 'bin' or 'binaries' inside that place. Once you choose the right .exe, add the game.
+* Go back and click `Download`. When Nucleus asks to add the game, click Yes and browse to the game executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
 
-6.- You can also automatically add games, click 'Auto-Search' and select the drive and path you want to add games from.
+* If you already have the game handler (.js) inside Nucleus Co-op handlers folder you can click `Search Game` to add the game to Nucleus Co-op or you can automatically add games by clicking `Auto Search Game` and selecting the drive and path you want to add games from.
 
-7.- Once your game is added, select it in the Nucleus UI and drag the gamepads/KBM icons to the splitscreen layout, click on the top-left icon on the layout corner to change the type of splitscreen layout. You can also right click a player in the layout to change the size.
+* You can also download the handlers from the [website handlers hub](https://hub.splitscreen.me/), then in Nucleus Co-op select `Extract Handler` or `Extract Existing`, choose the .nc file you downloaded and add the game.
 
-8.- Finally press play and you are ready to go.
+* Once your game is added, select it in the Nucleus Co-op UI and assign the input devices to parts of the screen by dragging the devices. The input devices icons will show and light up when they receive input (maintain a button press for controllers). Change the layout of each screen by clicking the icon in the top-left corner of each screen, if you have multiple monitors connected they will show in the UI.
+
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/dragg.png?raw=true)
+
+* If you wish you can download a game cover and screenshots by clicking the arrow icon in the top right bar:
+
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/sss211.png?raw=true)
+
+* Read the handler author's notes below the game cover, read them carefully as they contain important information related to the handler functionality.
+
+* When you are ready, click the `>` button. If there are any handler UI options, configure them. Then press `PLAY`.
+
+* Wait a bit for the games to start and their windows to be resized and positioned. If you are using multiple keyboards and mice, you may have to press the `End` key to lock the input after the games are set up for the keyboards/mice to work correctly.
+
+* Follow the game handler notes to connect the games together.

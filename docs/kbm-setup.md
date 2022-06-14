@@ -1,18 +1,19 @@
 ---
 id: kbm-setup
-title: Scripting for multiple keyboards and mice
+title: Multiple keyboards and mice support
 ---
+>**WARNING: This guide talks about the deprecated Universal Split Screen Nucleus Co-op multiple keyboards and mice integrated functions, for the newer and improved multiple keyboards and mice integration use [Proto Input](/docs/proto).**
 
 ## First steps
->**While testing with keyboards/mice, press the End key to toggle the input lock. Do this once all instances are finished setting up so that the default Windows input doesn't interfere with the games. To stop split screen, press Ctrl+Q (this will also close Nucleus Coop). If something breaks, press Ctrl+Alt+Delete to unlock input and kill Nucleus Coop and/or the game instances.**
+While testing with keyboards/mice, press the End key to toggle the input lock. Do this once all instances are finished setting up so that the default Windows input doesn't interfere with the games. To stop split screen, press Ctrl+Q (this will also close Nucleus Co-op). If something breaks, press Ctrl+Alt+Delete to unlock input and kill Nucleus Co-op and/or the game instances.
 
 First set
 ```js
 Game.SupportsMultipleKeyboardsAndMice = true;
 ```
-so that NucleusCoop knows you are using multiple keyboards/mice.
+so that Nucleus Co-op knows you are using multiple keyboards/mice.
 
-When setting up devices in Nucleus Coop, move each mouse or press a key to light up the corresponding input device.
+When setting up devices in Nucleus Co-op, move each mouse or press a key to light up the corresponding input device.
 
 ## Faking focus
 
@@ -84,9 +85,9 @@ Set the following options:
 // This will send the game mouse input via Windows messages.
 Game.SendNormalMouseInput = true;
 
-// This enables the fake mouse cursor to be drawn over the game by Nucleus Coop.
+// This enables the fake mouse cursor to be drawn over the game by Nucleus Co-op.
 // If the game uses a custom cursor, you will probably not need this option. (This will be obvious if you see the games custom cursor and a fake cursor drawn over it).
-// Be aware this is a 'fake' mouse cursor in the sense that Nucleus Coop will fake mouse input to the game via the other options and then the fake mouse cursor is drawn where the game should be responding to mouse input.
+// Be aware this is a 'fake' mouse cursor in the sense that Nucleus Co-op will fake mouse input to the game via the other options and then the fake mouse cursor is drawn where the game should be responding to mouse input.
 // The fake cursor is drawn by creating a large transparent window over the game. This may prevent the game from receiving mouse input from the 'real' Windows cursor. It is sometimes useful to disable this while testing.
 Game.DrawFakeMouseCursor = true;
 
@@ -114,7 +115,7 @@ Most games will use raw input for camera movement. If the game is using raw inpu
 * Only one of the instances respond to mouse input.
 * One or all of the instances respond to mouse input from all mice.
 
-To make Nucleus Coop work with raw input, set the following options:
+To make Nucleus Co-op work with raw input, set the following options:
 ```js
 // This will re-register the game for Windows raw input with the option to receive input while not in the foreground.
 // This is important as most games will register to receive raw input only when in the foreground.
@@ -133,7 +134,7 @@ Game.ForwardRawMouseInput = true;
 
 If the game doesn't work with raw input, it may be using 'legacy input'. Legacy input is where a game uses methods like mouse move messages and/or GetCursorPos calls to determine the distance the mouse moved from the center of the screen each frame. The application tries to reset the cursor to the center of the screen each frame. If you notice the game responds to mouse input by spinning, and spinning faster when the fake mouse cursor is further away from the window center, it is probably using legacy input.
 
-Nucleus Coop gets around legacy input by intercepting SetCursorPos and faking mouse movement to create the same effect as normal Windows input.
+Nucleus Co-op gets around legacy input by intercepting SetCursorPos and faking mouse movement to create the same effect as normal Windows input.
 Use these options to enable legacy input:
 ```js
 // This is the main switch for legacy input.
@@ -150,7 +151,7 @@ Game.HookGetCursorPos = true;
 // The game may detect mouse input from mouse move messages, so this will need to be turned on:
 Game.SendNormalMouseInput = true;
 ```
-Nucleus Coop will hook mouse movement messages and the GetCursorPos function to work around legacy input. Some games only need the GetCursorPos hook and conflict when mouse movement messages are edited. If this is the case, enable this option:
+Nucleus Co-op will hook mouse movement messages and the GetCursorPos function to work around legacy input. Some games only need the GetCursorPos hook and conflict when mouse movement messages are edited. If this is the case, enable this option:
 ```js
 Game.HookDontUpdateLegacyInMouseMsg = true;
 ```
@@ -171,7 +172,7 @@ Game.HookMouseVisibility = true;
 Game.ForwardRawKeyboardInput = true;
 
 // Sometimes it is important that the all game instances are in the background.
-// This is needed, for example, if the game responds to 'real' Windows mouse input, which interferes with Nucleus Coop.
+// This is needed, for example, if the game responds to 'real' Windows mouse input, which interferes with Nucleus Co-op.
 // Also useful if the game distributes CPU/GPU resources unequally if one instance is in the foreground.
 Game.PreventGameFocus = true;
 
@@ -187,3 +188,4 @@ Game.LockInputAtStart = true;
 Game.DrawFakeMouseCursorForControllers = true;
 Game.UpdateFakeMouseWithInternalInput = true;
 ```
+-Written by [Ilyaki](https://github.com/Ilyaki).

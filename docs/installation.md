@@ -4,21 +4,32 @@ title: Installation
 sidebar_label: Installation
 ---
 
-You can download the latest version from [GitHub](https://github.com/nucleuscoop/nucleuscoop/releases/latest).
+* Download latest Nucleus Co-op 2.1.1 from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
 
-Extract the .rar file and start the application.
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/releases.png?raw=true)
 
-:::caution Please Note 
-Please note that some games require you to start the application as Administrator.
+* Extract the file with [7-Zip](https://www.7-zip.org/):
 
-Some games may also require you to have your Nucleus Co-op installation in a folder that:
-1. Is on the same drive as the game.
-2. Is not in a user restricted folder, this includes folders like `downloads`, `documents`, `desktop`. 
-A good option is to put the application inside a root folder, for example `C:\NucleusCoop`
-:::
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/extracthere.png?raw=true)
+
+* When it asks you for a password write `nucleus` and extract.
+
+Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected by windows defender and other anti-viruses and web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting. Do not overwrite old Nucleus Co-op versions files with new ones, make a clean install.
+
+* Move the Nucleus Co-op folder to wherever you like, and run NucleusCoop.exe
+
+  * You can place the folder wherever you like as long as you keep the following in mind:
+
+    * DO NOT place it inside a folder containing files for a game you wish to play.
+
+    * Avoid placing it inside a folder that has security settings applied to it, such as Program Files, Program Files (x86).
+
+    * Some handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
+
+    * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op
 
 :::tip How To Download Earlier Versions 
 You can download earlier versions of Nucleus Co-op from [Lucas's](https://github.com/lucasassislar/nucleuscoop)
 or [Zerofox's](https://github.com/ZeroFox5866/nucleuscoop/releases) GitHub repos. Note that these versions will not
-support as many games, and that we no longer provide customer support for earlier versions.
+support as many games, and that we no longer provide support for earlier versions.
 :::

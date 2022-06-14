@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'SplitScreen Me',
-  tagline: 'Play every game, splitscreened',
+  title: 'SplitScreen.Me',
+  tagline: 'Add split-screen functionality to hundreds of PC games!',
   url: 'https://www.splitscreen.me',
   baseUrl: '/',
   favicon: 'img/favicon-192x192.png',
@@ -8,7 +8,7 @@ module.exports = {
   projectName: 'splitscreenme-www', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'SplitScreen Me',
+      title: 'SplitScreen.Me',
       logo: {
         alt: 'SplitScreen.Me Logo',
         src: 'img/splitscreen-me-logo.png',

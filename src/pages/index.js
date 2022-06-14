@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/undraw_splitscreen_mountain.svg',
     description: (
       <>
-          Simply <a href={"https://github.com/ZeroFox5866/nucleuscoop/releases/latest"}>download the Windows application</a>, start it, pick a game, plug your controllers, grab some friends, and enjoy!
+          Simply <a href={"docs/installation"}>download the Windows application</a>, start it, pick a game, plug your controllers, grab some friends, and enjoy!
       </>
     ),
   },
@@ -68,8 +68,8 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`SplitScreen every game`}
-      description="SplitScreen.Me is an application allowing players to play any game splitscreened.">
+      title={`Add split-screen functionality to hundreds of PC games!`}
+      description="SplitScreen.Me is an organization that aims to reunite all split-screen open source projects under one banner.">
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -80,8 +80,8 @@ function Home() {
                 'button button--outline button--lg button--dark',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/installation')}>
-              Get Started
+              to={useBaseUrl('docs/what-is-splitscreen-me')}>
+              Learn more
             </Link>
           </div>
         </div>
