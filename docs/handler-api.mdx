@@ -1075,31 +1075,54 @@ NemirtingasEpicEmu.json edition from a handler example:
 ---
 ### 11. Nemirtingas Galaxy GoG Emulator
 
-Automatically set up Nemirtinga's Galaxy Emulator in Nucleus.
+Nemirtinga's Galaxy Emulator works by substituting the game's Galaxy64.dll file with its own custom dll.
 
-```js
-Game.UseNemirtingasGalaxyEmu = false;   
+First, set up Nemirtinga's Galaxy Emulator in Nucleus.
+
+`Game.UseNemirtingasGalaxyEmu = true;   //Set to true to emulate GOG Galaxy`
+
+It is recommended that the emulator is used on the game without Nucleus once before scripting. This can be done by the following steps:
+
+1. Head to the root folder of NucleusCoop
+2. Open the utils folder and then open the NemirtingasGalaxyEmu folder. Copy the Galaxy64.dll file.
+3. Head to the installation folder of the game you wish to emulate.
+4. Find where Galaxy64.dll is stored. This shall be called **the Galaxy folder.**
+5. Rename Galaxy64.dll or move it from the Galaxy folder and paste the Galaxy64.dll from the NemirtingasGalaxyEmu folder.
+6. Locate and load the game's executable.
+
+This should generate a folder called ngalaxye_settings. This folder contains a .json file that keeps track of vital information. Keep track of where this folder is located as you will need it for the Nucleus script.
+
+7. If the game loads fine and the game does not crash when trying to use multiplayer, then the emulator is working. Feel free to remove the ngalaxye_settings folder and Galaxy64.dll, and restore the original Galaxy64.dll file to the Galaxy folder.
+
+With the steps above done, write inside the Game.Play() function:
+
 ```
+var idg = Context.PlayerID + 6;
+var jsonPath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\ngalaxye_settings\\NemirtingasGalaxyEmu.json"; //The string should be changed so that ngalaxye_settings is in the same folder as it was in Step 6.
+var params = [
+'{',
+'  "api_version": "1.139.2.0",', //Must be changed or the game cannot connect to LAN. API version can be found by right-clicking the original Galaxy64.dll, clicking the 'Details' tab and reading the File Version tag.
+'  "enable_overlay": false,', //Can be left unchanged
+'  "galaxyid": 14549624462898294'+idg+',', //Can be left unchanged
+'  "language": ' + '"' + Context.GogLang + '",', //Can be left unchanged
+'  "productid": 2143654691,', //Must be changed or the game will crash. Product ID can be found by visitng https://www.gogdb.org/
+'  "username": ' + '"' + Context.Nickname + '"', //Must always be added and must be the last line or else the emulator will reset all parameters (there is no comma at the end of this line in the json).
+'}'
+];
 
+Context.WriteTextFile(jsonPath,params);
+```
 ---
-NemirtingasGalxyEmu.json edition from a handler example:
+### Common Errors
 
-```js
-    var idg = Context.PlayerID + 6;
+### Q. The game's multiplayer only works when GOG Galaxy is open and even then, I can only play with my friends on GOG Galaxy.
+A. Make sure you set Game.UseNemirtingasGalaxyEmu = true
 
-    var jsonPath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\ngalaxye_settings\\NemirtingasGalaxyEmu.json";
-    var params = [
-    '{',
-    '  "api_version": "1.139.2.0",',
-    '  "enable_overlay": false,',
-    '  "galaxyid": 14549624462898294'+idg+',',
-    '  "language": ' + '"' + Context.GogLang + '",',
-    '  "productid": 2143654691,',
-    '  "username": ' + '"' + Context.Nickname + '"', //must always be added if you edit the json and must be the last line else the emulator will reset all parameters (there is no coma at the end of this line in the json).
-    '}'
-     ];
-    Context.WriteTextFile(jsonPath,params);
- ```
+### Q. The game crashes upon entering the multiplayer gamemode or main menu.
+A. The game is either not loading the custom Galaxy64.dll file or not loading the .json file correctly. Make sure you set Game.UseNemirtingasGalaxyEmu = true, make sure that the ngalaxye_settings folder is in the correct place and make sure the .json file has the correct parameters (i.e. make sure productid and api_version is correct).
+
+### Q. The game loads fine but I cannot connect to other players in Nucleus.
+A. The api_version has been set incorrectly. Go to the game's installation folder, locate the Galaxy64.dll, click the 'Details' tab and read the File Version. That is what your api_version should be.
 
  ### 12. Additional Tools 
 
