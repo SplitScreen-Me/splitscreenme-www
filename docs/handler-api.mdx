@@ -1079,7 +1079,9 @@ Nemirtinga's Galaxy Emulator works by substituting the game's Galaxy64.dll file 
 
 First, set up Nemirtinga's Galaxy Emulator in Nucleus.
 
-`Game.UseNemirtingasGalaxyEmu = true;   //Set to true to emulate GOG Galaxy`
+```js
+Game.UseNemirtingasGalaxyEmu = true;   //Set to true to emulate GOG Galaxy
+```
 
 It is recommended that the emulator is used on the game without Nucleus once before scripting. This can be done by the following steps:
 
@@ -1096,7 +1098,7 @@ This should generate a folder called ngalaxye_settings. This folder contains a .
 
 With the steps above done, write inside the Game.Play() function:
 
-```
+```js
 var idg = Context.PlayerID + 6;
 var jsonPath = Context.GetFolder(Nucleus.Folder.InstancedGameFolder) + "\\ngalaxye_settings\\NemirtingasGalaxyEmu.json"; //The string should be changed so that ngalaxye_settings is in the same folder as it was in Step 6.
 var params = [
