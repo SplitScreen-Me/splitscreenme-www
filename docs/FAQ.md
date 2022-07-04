@@ -84,7 +84,7 @@ Right click on a section of the splitscreen layout.
 
 ### 11.- I wish to help out with the project, how can I get in touch?
 
-Join the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) community or contact us in the [subreddit](https://www.reddit.com/r/nucleuscoop).
+Join the [Nucleus Co-op discord](https://discord.gg/QDUt8HpCvr) community or contact us in the [subreddit](https://www.reddit.com/r/nucleuscoop). You can also contribute to the [SplitScreen.Me github repos](https://github.com/SplitScreen-Me).
 
 ### 12.- What are game handlers?
 
