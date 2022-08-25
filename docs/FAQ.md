@@ -62,7 +62,7 @@ Here are a few things you can try:
 
 * Try updating your Microsoft .NET Framework, and [install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude the Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26). 
+* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" that means your antivirus or Microsoft Defender deleted or blocked the file, to fix exclude Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) and extract again to get the missing file. 
 
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
@@ -147,7 +147,7 @@ Make sure you are using [latest Nucleus Co-op](https://github.com/SplitScreen-Me
 
 1. Read the game handler author's notes that appear under the game cover, read them carefully as they contain important information related to the handler functionality.
 
-2. Check that your antivirus program or Microsoft Defender is not deleting or blocking any Nucleus Co-op files. If you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude the Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26).  
+2. Check that your antivirus program or Microsoft Defender is not deleting or blocking any Nucleus Co-op files. If you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26).  
 
 3. [Install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
