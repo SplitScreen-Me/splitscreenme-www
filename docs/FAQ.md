@@ -62,17 +62,17 @@ Here are a few things you can try:
 
 * Try updating your Microsoft .NET Framework, and [install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-* Make sure your antivirus program or windows defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting.
+* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude the Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26). 
 
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
-* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus files if the app gets stuck on the splashscreen when opening. In latest Nucleus Co-op you can just click on the splashscreen to dismiss it if it takes too long, you can also disable it in Nucleus UI settings.
+* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus Co-op files if the app gets stuck on the splashscreen when opening. In latest Nucleus Co-op you can just click on the splashscreen to dismiss it if it takes too long, you can also disable it in Nucleus Co-op UI settings.
 
 * Restart your PC, and try again.
 
 ### 8.- Does Nucleus Co-op have any malware?
 
-Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected by windows defender and some other anti-viruses and web browsers, this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You may have to allow Nucleus Co-op as an exception before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). If you got a detection you can help by [reporting the file(s) to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission) as incorrectly classified as malware.
+Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected by Microsoft Defender and some other anti-viruses and web browsers, this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You may have to allow Nucleus Co-op as an exception before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). If you got a detection you can help by [reporting the file(s) to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission) as incorrectly classified as malware.
 
 ### 9.- How do I play with an uneven amount of players (such as 3 players) without having an empty space?
 
@@ -143,15 +143,15 @@ Keep in mind most handlers are made and tested using the latest legit Steam vers
 
 ### 18.- A Nucleus Co-op handler doesn't launch/is not working, why?
 
-Make sure you are using latest Nucleus Co-op version and the handler latest version. Here are other things you can try:
+Make sure you are using [latest Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases) version and the handler latest version. Here are other things you can try:
 
 1. Read the game handler author's notes that appear under the game cover, read them carefully as they contain important information related to the handler functionality.
 
-2. Check that your antivirus program or windows defender is not deleting or blocking any Nucleus Co-op files. Add the Nucleus Co-op folder as an exception.  
+2. Check that your antivirus program or Microsoft Defender is not deleting or blocking any Nucleus Co-op files. If you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude the Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26).  
 
 3. [Install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-4. Try launching your main game without Nucleus and change some graphics settings, apply then close.
+4. Try launching your main game without Nucleus Co-op and change some graphics settings, apply then close.
 
 5. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
 
@@ -159,7 +159,7 @@ Make sure you are using latest Nucleus Co-op version and the handler latest vers
 
 7. Move Nucleus Co-op outside any user or protected folders, C:/NucleusCo-op is recommended.
 
-8. If the handler requires it move Nucleus Co-op to the same drive as your game.
+8. Move Nucleus Co-op to the same drive as your game.
 
 9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS).
 
