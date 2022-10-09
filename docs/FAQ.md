@@ -66,7 +66,7 @@ Here are a few things you can try:
 
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
-* Set the `SplashScreen_On=true` line to false in the Settings.ini config inside Nucleus Co-op files if the app gets stuck on the splashscreen when opening. In latest Nucleus Co-op you can just click on the splashscreen to dismiss it if it takes too long, you can also disable it in Nucleus Co-op UI settings.
+* If the app gets stuck on the splashscreen when opening you can just click on the splashscreen to dismiss it, you can also disable it in Nucleus Co-op UI settings.
 
 * Restart your PC, and try again.
 
@@ -155,17 +155,21 @@ Make sure you are using [latest Nucleus Co-op](https://github.com/SplitScreen-Me
 
 5. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
 
-6. Don't place Nucleus Co-op inside the game files you wish to run.
+6. Move Nucleus Co-op outside any user or protected folders, placing it in C:/NucleusCo-op is recommended.
 
-7. Move Nucleus Co-op outside any user or protected folders, C:/NucleusCo-op is recommended.
+7. Move Nucleus Co-op to the same drive as your game but don't place Nucleus Co-op inside the game files you wish to run.
 
-8. Move Nucleus Co-op to the same drive as your game.
+8. Run Nucleus Co-op as admin if the handler requires it.
 
 9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS).
 
-10. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
+10. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes.
+ 
+11. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
-11. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
+12. Disabling exernal overlays (Discord, Nvidia, MSI etc..) can fix some issues.
+
+13. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
 
 ### 19.- Where are my Nucleus Co-op save files located?
 
