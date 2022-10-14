@@ -201,7 +201,7 @@ The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_
 
 Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipedia.org/wiki/DirectInput#DirectInput_vs_XInput) controllers. Controllers that work best are native XInput gamepads like Xbox 360 and Xbox One controllers for minimum hassle. There are a few handlers that also support DirectInput controllers but XInput controllers are generally a lot easier to restrict to a specific game instance than DirectInput controllers.
 
-If you are using PS4 controllers try the app DS4windows, look in the settings for an option called "hide ds4 controller" - make sure it's ticked. To ensure it's definitely running in exclusive mode make sure ds4windows is set to load on windows startup, then turn your controllers on while windows is loading. Download the latest version [here](https://ryochan7.github.io/ds4windows-site/).
+If you are using PS4 controllers try the app [DS4windows](https://ds4-windows.com/get-started/), look in the settings for an option called "hide ds4 controller" - make sure it's ticked. To ensure it's definitely running in exclusive mode make sure ds4windows is set to load on windows startup, then turn your controllers on while windows is loading. Download the latest version [here](https://ryochan7.github.io/ds4windows-site/).
 
 Read more about how to use exclusive mode [here](https://bit.ly/377SUmh)
 
@@ -209,13 +209,13 @@ If you are using generic DirectInput controllers the app [XOutput](https://githu
 
 Remember that some games detect both DirectInput and XInput controllers so even if you are emulating a XInput controller the input could still not be restricted correctly by Nucleus because the game is now responding to both the emulated XInput controller and to the native DirectInput of your controller, that is why some apps like DS4windows have an "exclusive mode".
 
-The best way to block the native DirectInput of a controller when emulating to XInput is using [HidHide](https://github.com/ViGEm/HidHide/releases). Follow this [guide to learn how to use it](https://www.reddit.com/r/nucleuscoop/comments/mpx1w5/to_solve_doubled_not_working_properly_emulated/).
+The best way to block the native DirectInput of a controller when emulating to XInput is using [HidHide](https://github.com/ViGEm/HidHide/releases). Follow this [guide](https://vigem.org/projects/HidHide/Simple-Setup-Guide/) to learn [how to use](https://www.reddit.com/r/nucleuscoop/comments/mpx1w5/to_solve_doubled_not_working_properly_emulated/) it.
 
 You can also try using [this .dll](http://www.mediafire.com/file/iuso0fmhjsao92g/dinput8.blocker.zip/file) made by wizark952 that blocks Direct Input in most games. Place the dll alongside the game's .exe and make sure you are using the correct version of the dll (for x86 or x64 games).
 
-Do not place any x360ce xinput dlls inside the Nucleus Co-Op files as this might interfere with Nucleus own custom xinput dlls.
+Do not place any x360ce xinput dlls inside the Nucleus Co-op files as this might interfere with Nucleus own custom xinput dlls.
 
-Xbox One controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support. To fix that in those cases you can also use XOutput on your Xbox One controllers.
+Xbox One controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support.
 
 If you are using Steam controllers try [this](https://www.youtube.com/watch?v=wy4F2eqTXQ4).
 
