@@ -215,7 +215,7 @@ A lot of handlers edit a game's .ini or .cfg files to force windowed and to adju
 
 ### 25.- Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
 
-Remember that Nucleus Co-op opens multiple instances of a game, so depending on the game this can be quite demanding for your PC, to improve FPS and performance try reducing graphics settings like textures and shadows, limit the FPS or unfocus all the game windows so that they get equal priority and the FPS even out, you can do this by Alt-Tabbing to a different window like the Nucleus Co-op app window, the game windows will still remain on top, you can also press the windows key+b in your keyboard to unfocus all the instances. Forcing Vsync via your graphics panel can also help.
+Remember that Nucleus Co-op opens multiple instances of a game, so depending on the game this can be quite demanding for your PC, to improve FPS and performance try reducing graphics settings like textures and shadows, limit the FPS or unfocus all the game windows so that they get equal priority and the FPS even out, you can do this by Alt-Tabbing to a different window like the Nucleus Co-op app window, the game windows will still remain on top, you can also press the windows key+b in your keyboard to unfocus all the instances or use the Ctrl+H Nucleus Co-op shortcut. Forcing Vsync via your graphics panel can also help.
 
 ### 26.- Why can't I exit Nucleus Co-op or move my cursor to close it?
 
