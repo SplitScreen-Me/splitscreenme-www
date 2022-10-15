@@ -78,7 +78,7 @@ You may have to allow Nucleus Co-op as an exception before extracting. Nucleus C
 
 ### 9.- What controllers/input devices does Nucleus Co-op support?
 
-Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipedia.org/wiki/DirectInput#DirectInput_vs_XInput) controllers. Controllers that work best are native XInput gamepads like Xbox 360 and Xbox One controllers for minimum hassle. There are a few handlers that also support DirectInput controllers but XInput controllers are generally a lot easier to restrict to a specific game instance than DirectInput controllers. If you only have DirectInput controllers there are [multiple ways](https://www.splitscreen.me/docs/faq/#20--my-playstationgeneric-pc-controller-isnt-being-detectedhas-double-input-how-do-i-fix-this) to emulate XInput controllers. Some Nucleus Co-op handlers also support [one keyboard/mouse or multiple keyboards/mice](https://www.splitscreen.me/docs/faq/#21--why-is-my-keyboardgamepad-not-showing-in-the-nucleus-co-op-ui).  
+Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipedia.org/wiki/DirectInput#DirectInput_vs_XInput) controllers. Controllers that work best are native XInput gamepads like Xbox 360, Xbox One and Xbox Series X|S controllers for minimum hassle. There are a few handlers that also support DirectInput controllers but XInput controllers are generally a lot easier to restrict to a specific game instance than DirectInput controllers. If you only have DirectInput controllers there are [multiple ways](https://www.splitscreen.me/docs/faq/#20--my-playstationgeneric-pc-controller-isnt-being-detectedhas-double-input-how-do-i-fix-this) to emulate XInput controllers. Some Nucleus Co-op handlers also support [one keyboard/mouse or multiple keyboards/mice](https://www.splitscreen.me/docs/faq/#21--why-is-my-keyboardgamepad-not-showing-in-the-nucleus-co-op-ui).  
 
 ### 10.- How do I play with an uneven amount of players (such as 3 players) without having an empty space?
 
@@ -191,7 +191,7 @@ You can also try using [this .dll](http://www.mediafire.com/file/iuso0fmhjsao92g
 
 Do not place any x360ce xinput dlls inside the Nucleus Co-op files as this might interfere with Nucleus own custom xinput dlls.
 
-Xbox One controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support.
+Xbox One and Xbox Series X|S controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support.
 
 If you are using Steam controllers try [this](https://www.youtube.com/watch?v=wy4F2eqTXQ4).
 
