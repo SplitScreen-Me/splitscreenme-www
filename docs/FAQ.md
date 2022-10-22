@@ -169,27 +169,29 @@ Make sure you are using latest [Nucleus Co-op](https://github.com/SplitScreen-Me
 
 9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS).
 
-10. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes.
+10. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere.
+
+11. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes.
  
-11. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
+12. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
-12. Disabling exernal overlays (Discord, Nvidia, MSI etc..) can fix some issues.
+13. Disabling exernal overlays (Discord, Nvidia, MSI etc..) can fix some issues.
 
-13. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case report the issue so we can fix it.
+14. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case please report the issue so we can fix it if possible.
 
-### 20.- My Playstation/generic PC controller isn't being detected/has double input, how do I fix this?
+### 20.- My PlayStation/generic PC controller isn't being detected/has double input, how do I fix this?
 
 Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipedia.org/wiki/DirectInput#DirectInput_vs_XInput) controllers. If you only have DirectInput controllers there are multiple ways to emulate XInput controllers:
 
-If you are using PS4 controllers try the app [DS4windows](https://ds4-windows.com/get-started/), look in the settings for an option called "hide ds4 controller" - make sure it's ticked. To ensure it's definitely running in exclusive mode make sure ds4windows is set to load on windows startup, then turn your controllers on while windows is loading. Download the latest version [here](https://ryochan7.github.io/ds4windows-site/). Read more about how to use exclusive mode [here](https://bit.ly/377SUmh).
+If you are using PlayStation controllers try the app [DS4Windows](https://ds4-windows.com/get-started/). Download the latest version [here](https://ds4-windows.com/download/ryochan7-ds4windows/).
 
 If you are using generic DirectInput controllers the apps [XOutput](https://github.com/csutorasa/XOutput/releases) or [x360ce version 4](https://github.com/x360ce/x360ce/releases) are also very useful to emulate XInput controllers. 
 
-Remember that some games detect both DirectInput and XInput controllers so even if you are emulating a XInput controller the input could still not be restricted correctly by Nucleus Co-op because the game is now responding to both the emulated XInput controller and to the native DirectInput of your controller, causing your gamepad to control multiple instances at the same time, that is why some apps like DS4windows have an "exclusive mode". If you have double input because of that the best way to block the native DirectInput of a controller when emulating to XInput is using [HidHide](https://github.com/ViGEm/HidHide/releases). Follow [this guide](https://vigem.org/projects/HidHide/Simple-Setup-Guide/) to learn [how to use](https://www.reddit.com/r/nucleuscoop/comments/mpx1w5/to_solve_doubled_not_working_properly_emulated/) it.
+Remember that some games detect both DirectInput and XInput controllers so even if you are emulating a XInput controller the input could still not be restricted correctly by Nucleus Co-op because the game is now responding to both the emulated XInput controller and to the native DirectInput of your controller, causing your gamepad to control multiple instances at the same time. If you have double input because of that the best way to block the native DirectInput of a controller when emulating to XInput is using [HidHide](https://github.com/ViGEm/HidHide/releases). Follow [this guide](https://vigem.org/projects/HidHide/Simple-Setup-Guide/) to learn [how to use](https://www.reddit.com/r/nucleuscoop/comments/mpx1w5/to_solve_doubled_not_working_properly_emulated/) it.
 
 You can also try using [this .dll](http://www.mediafire.com/file/iuso0fmhjsao92g/dinput8.blocker.zip/file) made by wizark952 that blocks Direct Input in most games. Place the dll alongside the game's .exe and make sure you are using the correct version of the dll (for x86 or x64 games).
 
-Do not place any x360ce xinput dlls inside the Nucleus Co-op files as this might interfere with Nucleus own custom xinput dlls.
+Do not place any x360ce XInput dlls inside the Nucleus Co-op files as this might interfere with Nucleus own custom XInput dlls.
 
 Xbox One and Xbox Series X|S controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support.
 
