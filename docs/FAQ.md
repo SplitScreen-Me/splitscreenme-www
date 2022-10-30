@@ -221,7 +221,7 @@ Remember that Nucleus Co-op opens multiple instances of a game, so depending on 
 
 ### 26.- Why can't I exit Nucleus Co-op or move my cursor to close it?
 
-Some handlers that support multiple keyboards and mice lock the main mouse cursor in the corner. To unlock it press the END key in your keyboard when you finish playing. You can also use CTRL+Q to close Nucleus and all its instances. Other Nucleus shortcuts are editable in the app UI settings.
+Some handlers that support multiple keyboards and mice lock the input, including the main mouse cursor in the corner and emulate multiple cursors that only show in the instances when you left click. To unlock the input press the END key in your keyboard when you finish playing, remember that locking the input with the END key is necessary to make multiple keyboards and mice work correctly in handlers that support them. You can also use CTRL+Q to close Nucleus and all its instances. Other Nucleus Co-op shortcuts are editable in the app UI settings.
 
 ### 27.- Nucleus Co-op changed the location of my Documents folder, why?
 
@@ -229,11 +229,15 @@ For some games that save in the default Documents folder Nucleus Co-op will edit
 
 The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
-### 28.- Can you play Splitscreen+LAN in different PCs?
+### 28.- Can you use Nucleus Co-op and its handlers offline?
+
+Yes you can use Nucleus Co-op without internet connection, you only need internet connection to download handlers, covers and screenshots. Most game handlers also work fully offline as the game instances connect via real or emulated LAN, only few handlers require internet connection to connect the instances either because they connect to a game own servers or because they require multiple accounts.
+
+### 29.- Can you play Splitscreen+LAN in different PCs?
 
 Yes, if you run the game via Nucleus Co-op in different PCs you can connect all instances you launch via LAN, for example you can have 2 players playing vertical split-screen in one PC via Nucleus Co-op and connect to 2 other players using Nucleus Co-op split-screen in a different PC via LAN. If the handler uses steamworks online multiplayer emulation you'll have to change the instances Player Steam IDs in the other PCs you'll connect to, otherwise the instances launched by Nucleus Co-op will use the same Player Steam IDs and won't be able to connect to each other. Since Nucleus Co-op v2.1 you can change an instance Player Steam ID in the app UI settings (Players tab). You can also see the default Player Steam IDs Nucleus Co-op uses per instance there. There are games that tie save data to your Player Steam ID, so if you want to use your main save data you need to get your Player Steam ID, [here is the easiest way to get it](https://support.ubi.com/en-GB/Faqs/000027522/Finding-your-Steam-ID?fallback=en_GB).
 
-### 29.- This project is amazing, where can I donate?
+### 30.- This project is amazing, where can I donate?
 
 We don't have an unified donation platform yet but you can support the developers individually here: [Mikou27](https://www.paypal.com/donate/?hosted_button_id=P3NVBYRQ4Z45L), [Zerofox](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WUXKHLAD3A3LE&source=url), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
 
