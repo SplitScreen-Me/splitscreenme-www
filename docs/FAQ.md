@@ -167,7 +167,7 @@ Make sure you are using latest [Nucleus Co-op](https://github.com/SplitScreen-Me
 
 8. Run Nucleus Co-op as admin if the handler requires it.
 
-9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS).
+9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Xbox Game Pass games are currently not supported because of their DRM.
 
 10. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere.
 
