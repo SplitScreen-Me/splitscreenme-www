@@ -185,13 +185,17 @@ Most Nucleus Co-op handlers only detect and work with [XInput](https://en.wikipe
 
 If you are using PlayStation controllers try the app [DS4Windows](https://ds4-windows.com/get-started/). Download the latest version [here](https://ds4-windows.com/download/ryochan7-ds4windows/).
 
-If you are using generic DirectInput controllers the apps [XOutput](https://github.com/csutorasa/XOutput/releases) or [x360ce version 4](https://github.com/x360ce/x360ce/releases) are also very useful to emulate XInput controllers. Do not place any x360ce XInput dlls inside the Nucleus Co-op files as this might interfere with Nucleus own custom XInput dlls.
+If you are using generic DirectInput controllers the apps [XOutput](https://github.com/csutorasa/XOutput/releases) or [x360ce version 4](https://github.com/x360ce/x360ce/releases) are also very useful to emulate XInput controllers system wide. Do not place any x360ce XInput dlls inside Nucleus Co-op files as this might interfere with Nucleus Co-op own custom XInput dlls.
 
 Remember that some games detect both DirectInput and XInput controllers so even if you are emulating a XInput controller the input could still not be restricted correctly by Nucleus Co-op because the game is now responding to both the emulated XInput controller and to the native DirectInput of your controller, causing your gamepad to control multiple instances at the same time or other input issues like the camera spinning or buttons not working correctly. 
 
 If you have double input or other input issues because of that the best way to block the native DirectInput of a controller when emulating to XInput is using [HidHide](https://github.com/ViGEm/HidHide/releases). Follow [this guide](https://vigem.org/projects/HidHide/Simple-Setup-Guide/) to learn [how to](https://www.reddit.com/r/nucleuscoop/comments/mpx1w5/to_solve_doubled_not_working_properly_emulated/) use it.
 
-If you are using DS4Windows the option ["hide ds4 controller"](https://github.com/Ryochan7/DS4Windows/wiki/Exclusive-Mode-(Hide-DS4-Controller-config-option)-tips-and-issues) can help too. You can also try using [this .dll](http://www.mediafire.com/file/iuso0fmhjsao92g/dinput8.blocker.zip/file) made by wizark952 that blocks Direct Input in most games. Place the dll alongside the game's .exe and make sure you are using the correct version of the dll (for x86 or x64 games). 
+If you are using DS4Windows the option ["hide ds4 controller"](https://github.com/Ryochan7/DS4Windows/wiki/Exclusive-Mode-(Hide-DS4-Controller-config-option)-tips-and-issues) can help too but it is less reliable than using HidHide. 
+
+You can also try using [this .dll](http://www.mediafire.com/file/iuso0fmhjsao92g/dinput8.blocker.zip/file) made by wizark952 that blocks Direct Input in most games. Place the dll alongside the game's .exe and make sure you are using the correct version of the dll (for x86 or x64 games).
+
+If even after doing all that you are still getting double input make sure you disable Steam Input via Steam or close Steam.
 
 Xbox One and Xbox Series X|S controllers have some [issues](http://www.snes9x.com/phpbb3/viewtopic.php?t=27510) with background input in games that only support DirectInput controllers and in Unity games that use Unity's default input for gamepad support.
 
