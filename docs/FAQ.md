@@ -64,6 +64,8 @@ Here are a few things you can try:
 
 * Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" that means your antivirus or Microsoft Defender deleted or blocked the file, to fix exclude Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) and extract again to get the missing file. 
 
+* Extract Nucleus Co-op with [7-Zip](https://www.7-zip.org/) as the default Windows extraction tool can sometimes fail to extract the files correctly.
+
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
 
 * If the app gets stuck on the splashscreen when opening you can just click on the splashscreen to dismiss it, you can also disable it in Nucleus Co-op UI settings.
