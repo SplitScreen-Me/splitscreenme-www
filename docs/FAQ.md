@@ -171,7 +171,7 @@ Make sure you are using latest [Nucleus Co-op](https://github.com/SplitScreen-Me
 
 9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Xbox Game Pass games are currently not supported because of their DRM.
 
-10. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes.
+10. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere. To know for sure you are using a clean vanilla install of a game uninstall your game via Steam then go to your Steam installation folder (default in `C:\Program Files(x86)\Steam\steamapps\common\`) and delete the game folder manually there in case any extra files remained, then install the game again. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes. 
 
 11. If you can not connect the instances to the same game make sure your firewall or antivirus is not blocking the connection.
  
