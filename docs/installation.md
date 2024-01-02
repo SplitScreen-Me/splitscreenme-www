@@ -4,7 +4,7 @@ title: Installation
 sidebar_label: Installation
 ---
 
-* Download latest Nucleus Co-op 2.1.2 from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
+* Download latest Nucleus Co-op 2.2.0 from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/releases.png?raw=true)
 
