@@ -8,7 +8,7 @@ sidebar_label: Installation
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/releases.png?raw=true)
 
-* Extract the file with [7-Zip](https://www.7-zip.org/):
+* Extract the file with [7-Zip](https://www.7-zip.org/) inside a folder you want:
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/extracthere.png?raw=true)
 
