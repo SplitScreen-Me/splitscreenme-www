@@ -34,7 +34,7 @@ Note that Nucleus Co-op does not add multiplayer or co-op to single player games
 
 ### 3.- Which games can be split-screened using Nucleus Co-op?
 
-Nucleus Co-op has support for more than 500 games! see [which games are supported?](/docs/games).
+Nucleus Co-op has support for more than 600 games! see [which games are supported?](/docs/games).
 
 ### 4.- Where do I download Nucleus Co-op?
 
