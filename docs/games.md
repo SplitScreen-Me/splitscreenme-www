@@ -3,11 +3,11 @@ id: games
 title: Which games are supported?
 ---
 
-There are currently more than 500 supported games! you can see all in the [handlers hub](https://hub.splitscreen.me/) and in the [list of supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/). 
+There are currently more than 600 supported games! you can see all in the [handlers hub](https://hub.splitscreen.me/) and in the [list of supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/). 
 
 In the [game handlers hub](https://hub.splitscreen.me/) you will be able to explore all the available Nucleus Co-op [handlers](/docs/handlers) very easily and download the handlers directly without using the app, you will also be able to see the handler code, its version history, extra information related to the handler and game and give each handler points (hotness).
 
-Remember to only download handlers that have been verified by the SplitScreen.Me team as fully safe (you will see the verified green icon).
+Remember to only download handlers that have been verified by the SplitScreen.Me team as fully safe (you will see the verified green check icon).
 
 Most handlers are made and tested using the latest legit Steam version of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Nucleus Co-op also supports some fan games and open source games. Xbox Game Pass games are currently not supported because of their DRM.
 
