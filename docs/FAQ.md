@@ -247,4 +247,4 @@ Yes, if you run the game via Nucleus Co-op in different PCs you can connect all 
 
 We don't have an unified donation platform yet but you can support the developers individually here: [Mikou27](https://www.paypal.com/donate/?hosted_button_id=P3NVBYRQ4Z45L), [Zerofox](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WUXKHLAD3A3LE&source=url), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
 
-You can also donate to our main handler developer that makes the game handlers for Nucleus to support even more games: [Talos91/blackman9](https://ko-fi.com/talos91).
+You can also donate to our main handler developer that makes the game handlers for Nucleus to support even more games: [Talos91](https://ko-fi.com/talos91).
