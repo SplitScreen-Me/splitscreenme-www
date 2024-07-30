@@ -159,27 +159,31 @@ Make sure you are using latest [Nucleus Co-op](https://github.com/SplitScreen-Me
 
 3. [Install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-4. Try launching your main game without Nucleus Co-op and change some graphics settings, apply then close.
+4. Check your drive file format, the exFAT format does not support symlinking which most Nucleus Co-op handlers use. 
 
-5. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
+5. Try launching your main game without Nucleus Co-op and change some graphics settings, apply then close.
 
-6. Move Nucleus Co-op outside any user or protected folders, placing it in C:/NucleusCo-op is recommended.
+6. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
 
-7. Move Nucleus Co-op to the same drive as your game but don't place Nucleus Co-op inside the game files you wish to run.
+7. Move Nucleus Co-op outside any user or protected folders, placing it in C:/NucleusCo-op is recommended.
 
-8. Run Nucleus Co-op as admin if the handler requires it.
+8. Move Nucleus Co-op to the same drive as your game but don't place Nucleus Co-op inside the game files you wish to run.
 
-9. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Xbox Game Pass games are currently not supported because of their DRM.
+9. Move Nucleus Co-op and your game files to your main C: drive but never place Nucleus Co-op inside the game files you wish to run.
 
-10. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere. To know for sure you are using a clean vanilla install of a game uninstall your game via Steam then go to your Steam installation folder (default in `C:\Program Files(x86)\Steam\steamapps\common\`) and delete the game folder manually there in case any extra files remained, then install the game again. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes. 
+10. Run Nucleus Co-op as admin if the handler requires it.
 
-11. If you can not connect the instances to the same game make sure your firewall or antivirus is not blocking the connection.
+11. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Xbox Game Pass games are currently not supported because of their DRM.
+
+12. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere. To know for sure you are using a clean vanilla install of a game uninstall your game via Steam then go to your Steam installation folder (default in `C:\Program Files(x86)\Steam\steamapps\common\`) and delete the game folder manually there in case any extra files remained, then install the game again. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes. 
+
+13. If you can not connect the instances to the same game make sure your firewall or antivirus is not blocking the connection.
  
-12. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
+14. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
-13. Disabling exernal overlays (Discord, Nvidia, MSI etc..) can fix some issues.
+15. Disabling exernal overlays (Discord, Nvidia, MSI etc..) can fix some issues.
 
-14. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case please report the issue so we can fix it if possible.
+16. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case please report the issue so we can fix it if possible.
 
 ### 20.- My PlayStation/generic PC controller isn't being detected/has double input, how do I fix this?
 
