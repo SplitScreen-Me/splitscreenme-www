@@ -22,7 +22,7 @@ const features = [
     description: (
       <>
         We created tutorials to assist you in adding new games, and our amazing community is always willing to help & share.
-        Join our <a href={"https://discord.gg/a9ssM5pxTW"}>Discord</a> and read the <a href={"/docs/installation"}>docs</a>.
+        Join our <a href={"https://discord.gg/qnbZtpECYg"}>Discord</a> and read the <a href={"/docs/installation"}>docs</a>.
       </>
     ),
   },
@@ -31,7 +31,7 @@ const features = [
     imageUrl: 'img/undraw_splitscreen_computer.svg',
     description: (
       <>
-        We're being backed by a lot of talented developers and always welcoming new ones! Jump into the <a href={"https://discord.gg/a9ssM5pxTW"}>Discord</a> and get in touch with us.
+        We're being backed by a lot of talented developers and always welcoming new ones! Jump into the <a href={"https://discord.gg/qnbZtpECYg"}>Discord</a> and get in touch with us.
       </>
     ),
   },
