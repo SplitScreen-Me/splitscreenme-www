@@ -7,15 +7,15 @@ title: How to use
 
 ### Game setup
 
-* Click the `Add New Games` button and search for a game handler for the game you want to split-screen, see [which games are supported?](/docs/games)
+* Click on `Add New Games` and search for a game handler for the game you want to split-screen, see [which games are supported?](/docs/games)
 
-![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/2.3helpgif.gif)
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/2.3setup1.png?raw=true)
 
 * Click on the handler cover and be sure to read through the guide or info for the game.
 
-* When Nucleus asks to add the game, click Yes and browse to the game executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
+* Click on `Install` or `Download Handler` and when Nucleus asks you to add the game, click Yes and browse to the game's executable. Most Steam games will be in `C:\Program Files(x86)\Steam\steamapps\common\`. Some games will have their real .exe stashed away in a folder called `bin` or `binaries`.
 
-* If you already have the game handler (.js) inside Nucleus Co-op handlers folder you can click `Search Game` to add the game to Nucleus Co-op.
+* If you already have the handler (.js) inside Nucleus Co-op handlers folder you can click on the `Search Game` icon to add the game to Nucleus Co-op.
 
 * You can also download the handlers from the [website handlers hub](https://hub.splitscreen.me/), then in Nucleus Co-op select `Extract Handler` or `Extract Existing`, choose the .nc file you downloaded and add the game.
 
@@ -29,4 +29,4 @@ title: How to use
 
 * Wait a bit for the games to start and their windows to be resized and positioned. If you are using multiple keyboards and mice, you may have to press the `End` key to lock the input after the games are set up for the keyboards/mice to work correctly.
 
-* Follow the game handler notes to connect the games together.
+* Follow the handler notes to connect the games together.
