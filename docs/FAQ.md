@@ -249,6 +249,8 @@ Yes, if you run the game via Nucleus Co-op in different PCs you can connect all 
 
 ### 30.- This project is amazing, where can I donate?
 
-We don't have an unified donation platform yet but you can support the developers individually here: [Mikou27](https://www.paypal.com/donate/?hosted_button_id=P3NVBYRQ4Z45L), [Ilyaki](https://www.paypal.com/donate/?hosted_button_id=TB6DNGVSNXS2E).
+Nucleus Co-op now has a Patreon: https://www.patreon.com/nucleus_coop
 
-You can also donate to our main handler developer that makes the game handlers for Nucleus to support even more games: [Talos91](https://ko-fi.com/talos91).
+If you’ve enjoyed using Nucleus Co-op and appreciate the incredible amount of work that has been done, please consider becoming a patron, your support means the world to us and it's the reason Nucleus Co-op will remain free and open source forever and for everyone. 
+
+In return, you’ll get access to a bunch of perks like access to Patreon only posts and updates on the project’s progress with behind the scenes development sneak peeks at new Nucleus Co-op features and handlers and even access to Nucleus Co-op releases and handlers before anyone.
