@@ -21,7 +21,7 @@ title: How to use
 
 * Once your game is added, select it in the Nucleus Co-op UI and assign the input devices to parts of the screen by dragging the devices. The input devices icons will show and light up when they receive input (maintain a button press for controllers). Change the layout of each screen by clicking the icon in the top-left corner of each screen, if you have multiple monitors connected they will show in the UI.
 
-![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/dragg.png?raw=true)
+![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/dragstep.png?raw=true)
 
 * Read the handler author's notes below the game cover, read them carefully as they contain important information related to the handler functionality.
 
