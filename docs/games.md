@@ -3,7 +3,7 @@ id: games
 title: Which games are supported?
 ---
 
-There are currently more than 650 supported games! you can see all in the [handlers hub](https://hub.splitscreen.me/) and in the [list of supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/). 
+There are currently more than 700 supported games! you can see all in the [handlers hub](https://hub.splitscreen.me/) and in the [list of supported games](https://www.reddit.com/r/nucleuscoop/comments/opu0eg/list_of_nucleus_coop_supported_games/). 
 
 In the [game handlers hub](https://hub.splitscreen.me/) you will be able to explore all the available Nucleus Co-op [handlers](/docs/handlers) very easily and download the handlers directly without using the app, you will also be able to see the handler code, its version history, extra information related to the handler and game and give each handler points (hotness).
 
