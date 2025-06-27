@@ -4,7 +4,7 @@ title: Installation
 sidebar_label: Installation
 ---
 
-* Download latest Nucleus Co-op 2.3.2 from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
+* Download latest Nucleus Co-op from the [Github releases page](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases):
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/releases.png?raw=true)
 
@@ -14,7 +14,7 @@ sidebar_label: Installation
 
 * When it asks you for a password write `nucleus` and extract.
 
-Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected by windows defender and other anti-viruses and web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118). You may have to allow Nucleus as an exception before extracting. Do not overwrite old Nucleus Co-op versions files with new ones, make a clean install.
+Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as potential treats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You may have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Do not overwrite older Nucleus Co-op versions files with new ones, make a clean install.
 
 * Move the Nucleus Co-op folder to wherever you like, and run NucleusCoop.exe
 
