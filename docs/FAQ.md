@@ -38,7 +38,7 @@ Nucleus Co-op has support for more than 700 games! see [which games are supporte
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.3.2 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.3.3 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
@@ -74,9 +74,9 @@ Here are a few things you can try:
 
 ### 8.- Does Nucleus Co-op have any malware?
 
-Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected by Microsoft Defender and some other anti-viruses and web browsers, this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. 
+Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as potential treats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. 
 
-You may have to allow Nucleus Co-op as an exception before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). If you got a detection you can help by [reporting the file(s) to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission) as incorrectly classified as malware.
+You may have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). If you got a detection you can help by [reporting the file(s) to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission) as incorrectly classified as malware.
 
 ### 9.- What controllers/input devices does Nucleus Co-op support?
 
