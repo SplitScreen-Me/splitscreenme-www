@@ -38,7 +38,7 @@ Nucleus Co-op has support for more than 700 games! see [which games are supporte
 
 ### 4.- Where do I download Nucleus Co-op?
 
-You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Version 2.3.3 is the latest version recent handlers are created for, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
+You can download latest version from [Github](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). Download the compiled .zip release, don't download the source code zip if you just want to use the app. Always use the latest version of Nucleus Co-op as newest handlers are created for it, please avoid using older versions (like Alpha 8 and Alpha 10) as they are outdated now.
 
 ### 5.- How do I use Nucleus Co-op?
 
@@ -62,13 +62,11 @@ Here are a few things you can try:
 
 * Try updating your Microsoft .NET Framework, and [install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" that means your antivirus or Microsoft Defender deleted or blocked the file, to fix exclude Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) and extract again to get the missing file. 
+* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" that means your antivirus or Microsoft Defender deleted or blocked the file, to fix exclude your Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) and extract again to get the missing file. 
 
 * Extract Nucleus Co-op with [7-Zip](https://www.7-zip.org/) as the default Windows extraction tool can sometimes fail to extract the files correctly.
 
 * Install the [DirectX End-User Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=35) if you are on Windows 11.
-
-* If the app gets stuck on the splashscreen when opening you can just click on the splashscreen to dismiss it, you can also disable it in Nucleus Co-op UI settings.
 
 * Restart your PC, and try again.
 
@@ -151,39 +149,43 @@ Keep in mind most handlers are made and tested using the latest legit Steam vers
 
 ### 19.- A Nucleus Co-op handler doesn't launch/is not working, why?
 
-Make sure you are using latest [Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases) version and the handler latest version. Here are other things you can try:
+Make sure you are using the latest [Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases) version and the handler latest version. Here are other things you can try:
 
-1. Read the game handler author's notes that appear under the game cover, read them carefully as they contain important information related to the handler functionality.
+1. Try a clean download/install of Nucleus Co-op: download the latest NucleusApp.zip and create a folder named "NucleusCo-op" or similar in the root of your C:/ drive, then add it to the Microsoft Defender exclusions list, copy the NucleusApp.zip to this folder then right click -> unblock the zip and extract the files there using 7zip (password: nucleus), don't use the default Windows extraction tool as it can cause issues.
 
-2. Check that your antivirus program or Microsoft Defender is not deleting or blocking any Nucleus Co-op files. If you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26).  
+2. If you get a "Win32Exception the operation was canceled by the user" error when launching a handler in Nucleus Co-op files run every .exe file in there (like StartGame.exe for example) and accept the UAC prompts if they show.
+   
+3. Read the game handler author's notes in Nucleus UI that appear under the game cover, read them carefully as they contain important information related to the handler functionality.
 
-3. [Install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
+4. Check that your antivirus program or Microsoft Defender is not deleting or blocking any Nucleus Co-op files. If you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" exclude your Nucleus Co-op folder from Microsoft Defender [like this](https://learn.microsoft.com/en-us/answers/questions/3187645/how-to-add-an-exception-to-windows-defender?forum=windows-all&referrer=answers).  
 
-4. Check your drive file format, the exFAT format does not support symlinking which most Nucleus Co-op handlers use. 
+5. [Install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-5. Try launching your main game without Nucleus Co-op and change some graphics settings, apply then close.
+6. Check your drive file format, the exFAT format does not support symlinking which most Nucleus Co-op handlers use. 
 
-6. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
+7. Try launching your main game without Nucleus Co-op and change some graphics settings, apply then close.
 
-7. Move Nucleus Co-op outside any user or protected folders, placing it in C:/NucleusCo-op is recommended.
+8. Delete Nucleus Co-op content folder, open Nucleus Co-op and [add the game](/docs/usage) again.
 
-8. Move Nucleus Co-op to the same drive as your game but don't place Nucleus Co-op inside the game files you wish to run.
+9. Move Nucleus Co-op outside any user or protected folders, placing it in C:/NucleusCo-op is recommended.
 
-9. Move Nucleus Co-op and your game files to your main C: drive but never place Nucleus Co-op inside the game files you wish to run.
+10. Move Nucleus Co-op to the same drive as your game but don't place Nucleus Co-op inside the game files you wish to run.
 
-10. Run Nucleus Co-op as admin if the handler requires it.
+11. Move Nucleus Co-op and your game files to your main C: drive but never place Nucleus Co-op inside the game files you wish to run.
 
-11. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Xbox Game Pass games are currently not supported because of their DRM.
+12. Run Nucleus Co-op as admin if the handler requires it.
 
-12. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere. To know for sure you are using a clean vanilla install of a game uninstall your game via Steam then go to your Steam installation folder (default in `C:\Program Files(x86)\Steam\steamapps\common\`) and delete the game folder manually there in case any extra files remained, then install the game again. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes. 
+13. Most handlers are made and tested using the latest legit Steam versions of games, so you need the Steam version unless the game handler notes or description mention it works with other versions too (GoG, EGS). Xbox Game Pass games are currently not supported because of their DRM.
 
-13. If you can not connect the instances to the same game make sure your firewall or antivirus is not blocking the connection.
+14. Verify the integrity of your game files via Steam and make sure they are the clean vanilla files, installed mods that change the game files could interfere. To know for sure you are using a clean vanilla install of a game uninstall your game via Steam then go to your Steam installation folder (default in `C:\Program Files(x86)\Steam\steamapps\common\`) and delete the game folder manually there in case any extra files remained, then install the game again. Some handlers require Steam to be running and others require Steam to be closed, always refer to the handler notes. 
+
+15. If you can not connect the instances to the same game make sure your firewall or antivirus is not blocking the connection. Make sure the Nucleus instances a handler launches are fully allowed in your firewall settings.
+
+16. Disabling/fully closing external overlays (Discord, Nvidia, MSI etc.) can fix some issues like the instances crashing on launch.
  
-14. If you are using a handler that creates different temporary windows users like the Halo: The Master Chief Collection handler when using the online mode UI option or the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created windows users, if they remained after a crash, before running the handler again. Delete them via windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
+17. If you are using a handler that creates different temporary Windows users like the State of Decay 2 handler, Nucleus Co-op needs to be installed outside any user or protected folders, you need to have Nucleus installed in the root of your drive, for example C:/NucleusCo-op. Make sure you close Nucleus using CTRL+Q and make sure to delete any Nucleus created Windows users, if they remained after a crash, before running the handler again. Delete them via Windows control panel and delete any Nucleus user folders in C:/Users/ too, restart your PC if you can't delete the folders.
 
-15. Disabling exernal overlays (Discord, Nvidia, MSI etc..) can fix some issues.
-
-16. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case please report the issue so we can fix it if possible.
+18. It is also possible that a handler stops working if a game gets an update that adds big changes like cross-platform play, if you think that is the case please report the issue so we can fix it if possible.
 
 ### 20.- My PlayStation/generic PC controller isn't being detected/has double input, how do I fix this?
 
