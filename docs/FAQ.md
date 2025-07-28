@@ -46,15 +46,13 @@ See [Installation](/docs/installation) and [How to use](/docs/usage).
 
 ### 6.- Where should I place the Nucleus Co-op folder?
 
-You can place the folder wherever you like as long as you keep the following in mind:
-
 * **DO NOT** place it inside a folder containing files for a game you wish to play.
 
 * Avoid placing it inside a folder that has security settings applied to it, such as program files, program files (x86).
 
 * Some game handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
 
-* If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op.
+* If you are still unsure where to place the folder, the root of your main drive (C:/NucleusCo-op) is usually the best option.
 
 ### 7.- Nucleus Co-op doesn't launch/crashes, how do I fix it?
 
