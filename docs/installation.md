@@ -8,28 +8,28 @@ sidebar_label: Installation
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/releases.png?raw=true)
 
-* Extract the file with [7-Zip](https://www.7-zip.org/) inside a folder you want:
+* Create a folder named "NucleusCo-op" or similar in the root of your C:/ drive, then add it to the Microsoft defender exclusions list.
 
-![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/extracthere.png?raw=true)
+* Copy the NucleusApp.zip to this folder then right click -> unblock the zip and extract the files there using [7-Zip](https://www.7-zip.org/) (password: `nucleus`), don't use the default Windows extraction tool as it can cause issues.
 
-* When it asks you for a password write `nucleus` and extract.
+* Alternatively you can use the Installer.exe to extract the Nucleus Co-op files to the correct folder.
 
-Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as potential treats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You may have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Do not overwrite older Nucleus Co-op versions files with new ones, make a clean install.
+Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as potential treats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Do not overwrite older Nucleus Co-op versions files with new ones, make a clean install.
 
-* Move the Nucleus Co-op folder to wherever you like, and run NucleusCoop.exe
+* Run NucleusCoop.exe, if you get a "Win32Exception the operation was canceled by the user" error when launching a handler in Nucleus Co-op files run every .exe file in there (like StartGame.exe for example) and accept the UAC prompts if they show.
 
-  * You can place the folder wherever you like as long as you keep the following in mind:
+  * Keep the following in mind about your Nucleus Co-op folder:
 
-    * DO NOT place it inside a folder containing files for a game you wish to play.
+    * DO NOT place Nucleus Co-op inside a folder containing files for a game you wish to play.
 
     * Avoid placing it inside a folder that has security settings applied to it, such as Program Files, Program Files (x86).
 
     * Some handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
 
-    * If you are still unsure where to place the folder, the root of the drive your games are installed on is usually the best option. For example C:/NucleusCo-op
+    * If you are still unsure where to place the folder, the root of your main drive is usually the best option. For example C:/NucleusCo-op
 
 :::tip How To Download Earlier Versions 
 You can download earlier versions of Nucleus Co-op from [Lucas's](https://github.com/lucasassislar/nucleuscoop)
 or [Zerofox's](https://github.com/ZeroFox5866/nucleuscoop/releases) GitHub repos. Note that these versions will not
-support as many games, and that we no longer provide support for earlier versions.
+support as many games and that we no longer provide support for earlier versions.
 :::
