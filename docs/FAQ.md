@@ -20,11 +20,13 @@ sidebar_label: FAQ
   </iframe>
 </div>
 
-[Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus) is a free and open source tool for Windows that allows split-screen play on many games that do not initially support it, the app purpose is to make it as easy as possible for the average user to play games locally using only one game copy and one PC. The app was originally created by [Lucas Assis](https://github.com/lucasassislar). The developer [Zerofox](https://github.com/ZeroFox5866) later took over and added a ton of new features and improvements to support a lot more games. [Ilyaki](https://github.com/Ilyaki) later joined in and brought multiple keyboards/mice support, extended hooks support and more great features to the table. Finally [Mikou27](https://github.com/Mikou27) added a new beautiful overhauled user interface with support for themes, game covers and screenshots, among other many quality of life improvements and several bug fixes.
+[Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus) is a free and open source tool for Windows that allows split-screen play on many games that do not initially support it, the app purpose is to make it as easy as possible for the average user to play games locally using only one game copy and one PC. 
+
+The app was originally created by [Lucas Assis](https://github.com/lucasassislar), developer [Zerofox](https://github.com/ZeroFox5866) later took over and added a ton of new features and improvements to support a lot more games. [Ilyaki](https://github.com/Ilyaki) later joined in and brought multiple keyboards/mice support, extended hooks support and more great features to the table. Finally [Mikou27](https://github.com/Mikou27) added a new beautiful overhauled user interface with support for themes, game covers and screenshots, among other many quality of life improvements and several bug fixes.
 
 [R-mach](https://github.com/r-mach) is the creator and developer of the SplitScreen.Me [website](https://www.splitscreen.me/) and [hub](https://hub.splitscreen.me/) that hosts all the available Nucleus Co-op game handlers.
 
-The further development of the app wouldn't have been possible without the amazing contributions and hard work from all the Split Screen Dreams Discord members (which include the devs mentioned above) that made all the new Nucleus Co-op game handlers and continue to test the app, making new discoveries and game handlers to support even more games, among them: [Talos91](https://hub.splitscreen.me/user/eeL7HAz8zJovChWw4), [PoundlandBacon](https://hub.splitscreen.me/user/AdiAjSyfZPMvu3a4M), [maxine64](https://hub.splitscreen.me/user/dPRj3q6kFtT4HvMGg), [Pizzo](https://hub.splitscreen.me/user/HEgozNi3MNvhAmWfi) and many more.
+The further development of the app wouldn't have been possible without the amazing contributions and hard work from all the Split Screen Dreams Discord members (which include the devs mentioned above) that made all the new Nucleus Co-op game handlers and continue to test the app, making new discoveries and handlers to support even more games, among them: [Talos91](https://hub.splitscreen.me/user/eeL7HAz8zJovChWw4), [PoundlandBacon](https://hub.splitscreen.me/user/AdiAjSyfZPMvu3a4M), [maxine64](https://hub.splitscreen.me/user/dPRj3q6kFtT4HvMGg), [Pizzo](https://hub.splitscreen.me/user/HEgozNi3MNvhAmWfi) and many more.
 
 ### 2.- How does Nucleus Co-op work?
 
@@ -34,7 +36,7 @@ Note that Nucleus Co-op does not add multiplayer or co-op to single player games
 
 ### 3.- Which games can be split-screened using Nucleus Co-op?
 
-Nucleus Co-op has support for more than 700 games! see [which games are supported?](/docs/games).
+Nucleus Co-op has support for more than 700 games! see [which games are supported?](/docs/games)
 
 ### 4.- Where do I download Nucleus Co-op?
 
@@ -52,7 +54,7 @@ See [Installation](/docs/installation) and [How to use](/docs/usage).
 
 * Some game handlers require the Nucleus Co-op folder to be located in the same drive as the game files.
 
-* If you are still unsure where to place the folder, the root of your main drive (C:/NucleusCo-op) is usually the best option.
+* If you are still unsure where to place the folder, the root of your main drive (C:/NucleusCo-op) is the best option.
 
 ### 7.- Nucleus Co-op doesn't launch/crashes, how do I fix it?
 
@@ -60,7 +62,7 @@ Here are a few things you can try:
 
 * Try updating your Microsoft .NET Framework, and [install/reinstall Visual C++](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist?view=msvc-170) 2010-2017, 2015-2019 Redistributable (both x86 and x64).
 
-* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" that means your antivirus or Microsoft Defender deleted or blocked the file, to fix exclude your Nucleus Co-op folder from Microsoft Defender Antivirus [like this](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) and extract again to get the missing file. 
+* Make sure your antivirus program or Microsoft Defender is not blocking Nucleus Co-op or deleting any of its files. You may have to allow Nucleus as an exception before extracting. On Nucleus Co-op launch if you get the error "ProtoInputHooks64.dll is missing from your Nucleus Co-op installation folder" that means your antivirus or Microsoft Defender deleted or blocked the file, to fix this exclude your Nucleus Co-op folder from Microsoft Defender [like this](https://learn.microsoft.com/en-us/answers/questions/3187645/how-to-add-an-exception-to-windows-defender?forum=windows-all&referrer=answers) and extract again to get the missing file. 
 
 * Extract Nucleus Co-op with [7-Zip](https://www.7-zip.org/) as the default Windows extraction tool can sometimes fail to extract the files correctly.
 
@@ -149,7 +151,7 @@ Keep in mind most handlers are made and tested using the latest legit Steam vers
 
 Make sure you are using the latest [Nucleus Co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases) version and the handler latest version. Here are other things you can try:
 
-1. Try a clean download/install of Nucleus Co-op: download the latest NucleusApp.zip and create a folder named "NucleusCo-op" or similar in the root of your C:/ drive, then add it to the Microsoft Defender exclusions list, copy the NucleusApp.zip to this folder then right click -> unblock the zip and extract the files there using 7zip (password: nucleus), don't use the default Windows extraction tool as it can cause issues.
+1. Try a clean download/install of Nucleus Co-op: download the latest NucleusApp.zip and create a folder named "NucleusCo-op" or similar in the root of your C:/ drive, then add it to the Microsoft Defender exclusions list, copy the NucleusApp.zip to this folder then right click, properties -> unblock the zip and extract the files there using 7zip (password: nucleus), don't use the default Windows extraction tool as it can cause issues.
 
 2. If you get a "Win32Exception the operation was canceled by the user" error when launching a handler in Nucleus Co-op files run every .exe file in there (like StartGame.exe for example) and accept the UAC prompts if they show.
    
@@ -209,7 +211,7 @@ If you are using Steam controllers try [this](https://www.youtube.com/watch?v=wy
 
 ### 21.- Why is my keyboard/gamepad not showing in the Nucleus Co-op UI?
 
-Since Nucleus Co-op v2.1 for handlers that support multiple keyboards/mice the mice and keyboards icons will only show in the UI if a key is pressed or a mouse moved. If you press a key in the keyboard or move the mouse their corresponding icons in the Nucleus Co-op UI will light up yellow. The app can detect keyboard macros that is why sometimes you will get multiple keyboard icons. If you maintain a controller button pressed the corresponding icon will light up yellow too. 
+For handlers that support multiple keyboards/mice the mice and keyboards icons will only show in the UI if a key is pressed or a mouse moved. If you press a key in the keyboard or move the mouse their corresponding icons in the Nucleus Co-op UI will light up yellow. The app can also detect keyboard macros, that is why sometimes you will get multiple keyboard icons. If you maintain a controller button pressed the corresponding icon will light up yellow too. 
 
 If a handler is only showing gamepads and not keyboards/mice icons that means the handler only supports gamepads and doesn't support keyboards/mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support. If you only see one big keyboard/mouse icon that means the handler only supports one keyboard and mouse with the instance focused.
 
@@ -219,11 +221,11 @@ Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\
 
 ### 23.- Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
 
-Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (for example if you are using a monitor resolution of 1920x1080 add custom resolutions like 1920x540, 960x1080, 960x540, etc.) that way most games will be able to see and use those custom resolutions and the split-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. If your graphics panel does not support adding custom resolutions using the app [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU) is recommended. Disable the Status Window in Nucleus UI settings if you have it enabled as it can cause resizing issues.
+Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (for example if you are using a monitor resolution of 1920x1080 add custom resolutions like 1920x540, 960x1080, 960x540, etc.) that way most games will be able to see and use those custom resolutions and the split-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. If your graphics panel does not support adding custom resolutions using the app [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU) is recommended.
 
 ### 24.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
 
-A lot of handlers edit a game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once, change some graphic settings and apply them before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op user interface, click on Game Options and select Delete UserProfile Config Path for all players. You can also try deleting Nucleus Co-op content folder and add the game again. Nucleus could also have issues finding a file if your Documents folder is inside OneDrive, to change it log out from the OneDrive app and right click your Documents folder in file explorer, go to properties, select path or location and set it to the default Windows one. 
+A lot of handlers edit a game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once, change some graphic settings and apply them before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op user interface, click on Game Options and select `Delete UserProfile Config Path` for all players. You can also try deleting Nucleus Co-op content folder and add the game again. Nucleus could also have issues finding a file if your Documents folder is inside OneDrive, to change it log out from the OneDrive app and right click your Documents folder in file explorer, go to properties, select path or location and set it to the default Windows one. 
 
 ### 25.- Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
 
@@ -231,21 +233,21 @@ Remember that Nucleus Co-op opens multiple instances of a game, so depending on 
 
 ### 26.- Why can't I exit Nucleus Co-op or move my cursor to close it?
 
-Some handlers that support multiple keyboards and mice lock the input, including the main mouse cursor in the corner and emulate multiple cursors that only show in the instances when you left click. To unlock the input press the END key in your keyboard when you finish playing, remember that locking the input with the END key is necessary to make multiple keyboards and mice work correctly in handlers that support them. You can also use CTRL+Q to close Nucleus and all its instances. Other Nucleus Co-op shortcuts are editable in the app UI settings.
+Some handlers that support multiple keyboards and mice lock the input, including the main mouse cursor in the corner and emulate multiple cursors that only show in the instances when you left click. To unlock the input press the END key in your keyboard when you finish playing, remember that locking the input with the END key is necessary to make multiple keyboards and mice work correctly in handlers that support them. You can also use CTRL+Q to close Nucleus and all its instances. The lock input key and other Nucleus Co-op shortcuts are editable in the app UI settings.
 
 ### 27.- Nucleus Co-op changed the location of my Documents folder, why?
 
 For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus Co-op, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), opening Nucleus again will revert the registry back to its original value (Nucleus Co-op v2.1 and up). Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%\Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
 
-The full registry path that may be effected is, the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
+The full registry path that may be effected is the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
 ### 28.- Can you use Nucleus Co-op and its handlers offline?
 
-Yes you can use Nucleus Co-op without internet connection, you only need internet connection to download handlers, covers and screenshots. Most game handlers also work fully offline as the game instances connect via real or emulated LAN, only few handlers require internet connection to connect the instances either because they connect to a game own servers or because they require multiple accounts.
+Yes you can use Nucleus Co-op without internet connection, you only need internet connection to download handlers, covers and screenshots. Most game handlers also work fully offline as the game instances connect via real or emulated LAN, only very few handlers require internet connection to connect the instances either because they connect to a game's own servers or because they require multiple accounts.
 
 ### 29.- Can you play Splitscreen+LAN in different PCs?
 
-Yes, if you run the game via Nucleus Co-op in different PCs you can connect all instances you launch via LAN, for example you can have 2 players playing vertical split-screen in one PC via Nucleus Co-op and connect to 2 other players using Nucleus Co-op split-screen in a different PC via LAN. If the handler uses steamworks online multiplayer emulation you'll have to change the instances Player Steam IDs in the other PCs you'll connect to, otherwise the instances launched by Nucleus Co-op will use the same Player Steam IDs and won't be able to connect to each other. Since Nucleus Co-op v2.1 you can change an instance Player Steam ID in the app UI settings (Players tab). You can also see the default Player Steam IDs Nucleus Co-op uses per instance there. There are games that tie save data to your Player Steam ID, so if you want to use your main save data you need to get your Player Steam ID, [here is the easiest way to get it](https://support.ubi.com/en-GB/Faqs/000027522/Finding-your-Steam-ID?fallback=en_GB).
+Yes, if you run the game via Nucleus Co-op in different PCs you can connect all instances you launch via LAN, for example you can have 2 players playing vertical split-screen in one PC via Nucleus Co-op and connect to 2 other players using Nucleus Co-op split-screen in a different PC via LAN. If the handler uses steamworks online multiplayer emulation you'll have to change the instances Player Steam IDs in the other PCs you'll connect to, otherwise the instances launched by Nucleus Co-op will use the same Player Steam IDs and won't be able to connect to each other. You can change an instance Player Steam ID in the app UI settings (Players tab). You can also see the default Player Steam IDs Nucleus Co-op uses per instance there. There are games that tie save data to your Player Steam ID, so if you want to use your main save data you need to get your Player Steam ID, [here is the easiest way to get it](https://support.ubi.com/en-GB/Faqs/000027522/Finding-your-Steam-ID?fallback=en_GB).
 
 ### 30.- This project is amazing, where can I donate?
 
