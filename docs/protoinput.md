@@ -3,21 +3,21 @@ id: proto
 title: Proto Input
 sidebar_label: Proto Input
 ---
-This page serves as a guide to how Proto Input works, and how to use it to setup a Nucleus handler.
+This page serves as a guide to how Proto Input works, and how to use it to setup a [Nucleus Co-op](/docs/faq) handler.
 
 ## What is Proto Input?
 
-[Proto Input](https://github.com/ilyaki/protoinput) is the set of libraries used by Nucleus Co-Op to inject games with hooks for input (mainly multiple keyboards/mice) as well as window focus faking, etc. Proto Input is a massive improvement over the original hooks inside Nucleus and Universal Split Screen. It's highly recommended to update any handlers using the old mouse/keyboard hooks to Proto Input as input will work much more reliably.
+[Proto Input](https://github.com/ilyaki/protoinput) is the set of libraries used by Nucleus Co-op to inject games with hooks for input (mainly multiple keyboards/mice) as well as window focus faking, etc. Proto Input is a massive improvement over the original hooks inside Nucleus Co-op and Universal Split Screen. It's highly recommended to update any handlers using the old mouse/keyboard hooks to Proto Input as input will work much more reliably.
 
 ## How it works
 
-The main code for Proto Input is inside ProtoInputHooks32/64.dll. This needs to be injected into the game process. The main API, inside ProtoInputLoader32/64.dll, contains two methods of injection. First is EasyHook startup injection, which creates the game process and immediately injects into it. This is necessary for games that call a function at startup which needs to be hooked (e.g. creating a mutex). The other method is runtime inejction, which injects into an existing process. The API (in ProtoInputLoader) is then called from a "host" process, e.g. Nucleus or ProtoInputHost. In principle, the hooks can be injected from any dll injector.
+The main code for Proto Input is inside ProtoInputHooks32/64.dll. This needs to be injected into the game process. The main API, inside ProtoInputLoader32/64.dll, contains two methods of injection. First is EasyHook startup injection, which creates the game process and immediately injects into it. This is necessary for games that call a function at startup which needs to be hooked (e.g. creating a mutex). The other method is runtime injection, which injects into an existing process. The API (in ProtoInputLoader) is then called from a "host" process, e.g. Nucleus or ProtoInputHost. In principle, the hooks can be injected from any dll injector.
 
 Before the dll is injected, ProtoInputLoader will open a named pipe (a tunnel used for communication) with a name related to the injected process ID, e.g. ProtoInput1234. Once the dll is injected, it will connect to the pipe. All data sent to the dll is done through this pipe. At this point, the dll will not have injected any hooks. Commands to inject hooks (or set data, etc) are then done by calling the API in ProtoInputLoader. For example, in Nucleus, it would now inject all the hooks set in the handler.
 
 ## How to use Proto Input
 
-Proto Input is standalone from Nucleus Co-op, so it's usually fastest to setup the options for a game first using the GUI, then make it into a Nucleus handler.
+Proto Input is standalone from Nucleus Co-op, so it's usually fastest to setup the options for a game first using the GUI, then make it into a Nucleus Co-op [handler](/docs/handlers).
 
 ### Proto Input Host
 
@@ -26,7 +26,7 @@ Proto Input is standalone from Nucleus Co-op, so it's usually fastest to setup t
 Run ProtoInputHost.exe
 
 There are 3 methods to select a process to inject:
-* First is (2), for startup injection: browse the the game executable. This will then add an instance to the instances list (1).
+* First is (2), for startup injection: browse the game executable. This will then add an instance to the instances list (1).
 * Second is (3): focus onto the running game's window, e.g. by alt+tab or clicking on it, then go back into the GUI. Focused process should display the name of the process, then click the button to add it to the instance list.
 * Third is (4): searching through all running processes
 
