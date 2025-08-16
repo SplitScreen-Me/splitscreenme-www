@@ -16,7 +16,7 @@ sidebar_label: Installation
 
 ![alt text](https://github.com/SplitScreen-Me/splitscreenme-www/blob/master/static/img/Nucleusins.png?raw=true)
 
-Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as potential treats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Do not overwrite older Nucleus Co-op versions files with new ones, make a clean install.
+Note: Some Nucleus Co-op hook dlls and Goldberg emulator, used by Nucleus, can sometimes be detected as potential threats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. You have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Do not overwrite older Nucleus Co-op versions files with new ones, make a clean install.
 
 * Run NucleusCoop.exe, if you get a "Win32Exception the operation was canceled by the user" error when launching a handler in Nucleus Co-op files run every .exe file in there (like StartGame.exe for example) and accept the UAC prompts if they show.
 
