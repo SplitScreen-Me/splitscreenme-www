@@ -72,7 +72,7 @@ Here are a few things you can try:
 
 ### 8.- Does Nucleus Co-op have any malware?
 
-Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as potential treats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. 
+Absolutely not. Some Nucleus Co-op hook files and Goldberg emulator, used by Nucleus, can sometimes be detected as potential threats by Microsoft Defender and other anti-viruses or web browsers: this is 100% a false positive see [here](https://www.reddit.com/r/nucleuscoop/comments/g2k8j7/is_there_any_viruses/fnmfhbp/) and [here](https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/issues/118) for more information. 
 
 You may have to allow Nucleus Co-op as an exception in Microsoft Defender before extracting. Nucleus Co-op is fully open source and 100% guaranteed safe if you downloaded it from the official [github link](https://github.com/SplitScreen-Me/splitscreenme-nucleus/releases). If you got a detection you can help by [reporting the file(s) to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission) as incorrectly classified as malware.
 
