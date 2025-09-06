@@ -80,7 +80,7 @@ module.exports = {
             },
             {
               label: 'Steam Curator Page',
-              href: 'https://store.steampowered.com/curator/39181474-Nucleus-Coop-Recommends/',
+              href: 'https://store.steampowered.com/curator/26348881-Nucleus-Coop/',
             },
           ],
         },
