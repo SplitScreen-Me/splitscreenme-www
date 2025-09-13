@@ -215,31 +215,33 @@ For handlers that support multiple keyboards/mice the mice and keyboards icons w
 
 If a handler is only showing gamepads and not keyboards/mice icons that means the handler only supports gamepads and doesn't support keyboards/mice in split-screen yet. If a handler is only showing keyboards/mice icons that generally means that the game itself has no gamepad support or very limited gamepad support. If you only see one big keyboard/mouse icon that means the handler only supports one keyboard and mouse with the instance focused.
 
-### 22.- Where are my Nucleus Co-op save files located?
-
-Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\YourUser\NucleusCoop`, you can access each game save file via the Nucleus Co-op UI too, select a game, click on Game Options and select Open UserProfile Save/Config Path. Other handlers just save in the same file path your regular game saves to. The [PC Gaming Wiki](https://www.pcgamingwiki.com/wiki/Home) is a great place to know where exactly a game saves to.
-
-### 23.- Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
+### 22.- Why is Nucleus Co-op resizing the game instances incorrectly/the instances look stretched?
 
 Try setting your monitor scale to 100% in your monitor/TV resolution settings. It is also highly recommended that you add custom resolutions to all your monitors from your AMD/[Nvidia](https://www.nvidia.com/en-us/drivers/custom-resolutions/)/[Intel](https://i.imgur.com/WQcGCK1.png) panel (for example if you are using a monitor resolution of 1920x1080 add custom resolutions like 1920x540, 960x1080, 960x540, etc.) that way most games will be able to see and use those custom resolutions and the split-screen will not look stretched ([Example](https://i.imgur.com/RI8Qg3n.png)). Note that not all games support custom or ultra widescreen resolutions. If your graphics panel does not support adding custom resolutions using the app [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU) is recommended. You can also use the Nucleus shortcut Ctrl+R to resize the instances without having to close the app.
-
-### 24.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
-
-A lot of handlers edit a game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once, change some graphic settings and apply them before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op user interface, click on Game Options and select `Delete UserProfile Config Path` for all players. You can also try deleting Nucleus Co-op content folder and add the game again. Nucleus could also have issues finding a file if your Documents folder is inside OneDrive, to change it log out from the OneDrive app and right click your Documents folder in file explorer, go to properties, select path or location and set it to the default Windows one. 
-
-### 25.- Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
+ 
+### 23.- Why are my in-game frames per second low/better in one instance than in the others when using Nucleus Co-op?
 
 Remember that Nucleus Co-op opens multiple instances of a game, so depending on the game this can be quite demanding for your PC, to improve performance and FPS try reducing graphic settings like textures and shadows, limit the FPS and unfocus all the game windows so they get equal priority and the FPS even out, you can do this by Alt-Tabbing to a different window, like to the Nucleus Co-op app window, the game windows will still remain on top, you can also use the Ctrl+H Nucleus Co-op shortcut to quickly unfocus all the instances or press the Windows key+b in your keyboard. Forcing Vsync via your graphics panel can sometimes also help.
 
-### 26.- Why can't I exit Nucleus Co-op or move my cursor to close it?
+### 24.- Where are my Nucleus Co-op save files located?
+
+Some handlers save to the Nucleus Co-op environment folder located in `C:\Users\YourUser\NucleusCoop`, you can access each game save file via the Nucleus Co-op UI too, select a game, click on Game Options and select Open UserProfile Save/Config Path. Other handlers just save in the same file path your regular game saves to. The [PC Gaming Wiki](https://www.pcgamingwiki.com/wiki/Home) is a great place to know where exactly a game saves to.
+
+### 25.- Why is Nucleus Co-op showing an error message that it can not find a file when launching a handler?
+
+A lot of handlers edit a game's .ini or .cfg files to force windowed and to adjust the game's resolution to the window size, so make you sure you run your game at least once, change some graphic settings and apply them before running it via Nucleus Co-op, that way you make sure the proper config files are getting generated first. If you are still getting the error after doing that, select the game in the Nucleus Co-op user interface, click on Game Options and select `Delete UserProfile Config Path` for all players. You can also try deleting Nucleus Co-op content folder and adding the game again.
+
+### 26.- Nucleus Co-op shows an OneDrive error message/changed the location of my Documents folder, why?
+
+For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. If your Documents folder is inside OneDrive this can break easily and cause issues, to change it log out from the OneDrive app and right click your Documents folder in file explorer, go to properties, select path or location and set it to the default Windows one. If this does not work to change it you may have to change the [Personal key](https://raw.githubusercontent.com/SplitScreen-Me/splitscreenme-www/refs/heads/master/static/img/registrykeydoc.png) to `%USERPROFILE%\Documents` using the Windows Registry Editor app.
+
+After running a handler that edits the Documents folder registry key properly closing Nucleus Co-op should restore the registry key to its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), opening Nucleus again will revert the registry back to its original value (Nucleus Co-op v2.1 and up). Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Worst case, the 'Personal' key [needs to be changed back](https://raw.githubusercontent.com/SplitScreen-Me/splitscreenme-www/refs/heads/master/static/img/registrykeydoc.png) to `%USERPROFILE%\Documents` or if using a custom Documents folder, whatever the path to that is. 
+
+The full registry path to the key is: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`.
+
+### 27.- Why can't I exit Nucleus Co-op or move my cursor to close it?
 
 Some handlers that support multiple keyboards and mice lock the input, including the main mouse cursor in the corner and emulate multiple cursors that only show in the instances when you left click. To unlock the input press the END key in your keyboard when you finish playing, remember that locking the input with the END key is necessary to make multiple keyboards and mice work correctly in handlers that support them. You can also use CTRL+Q to close Nucleus and all its instances. The lock input key and other Nucleus Co-op shortcuts are editable in the app UI settings.
-
-### 27.- Nucleus Co-op changed the location of my Documents folder, why?
-
-For some games that save in the default Documents folder Nucleus Co-op will edit the path registry key so that each instance can have a different save or config file. Properly closing Nucleus Co-op, should restore its original value (whatever it was prior to Nucleus). If it doesn't (due to the app crashing for example), opening Nucleus again will revert the registry back to its original value (Nucleus Co-op v2.1 and up). Just in case, Nucleus will keep an original copy of the registry key in your Nucleus folder > utils > backup > User Shell Folders.reg. Worst case, the 'Personal' key [needs to be changed back](https://imgur.com/a/VpmCIbs) to `%USERPROFILE%\Documents` or if using a custom documents folder, whatever the path to that is. Use the Windows Registry Editor app to change it back.
-
-The full registry path that may be effected is the Personal key: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 
 ### 28.- Can you use Nucleus Co-op and its handlers offline?
 
