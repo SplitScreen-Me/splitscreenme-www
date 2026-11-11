@@ -153,7 +153,7 @@ Game.HandlerInterval = 100; | The interval in milliseconds the Handler should be
 
 Line | Description
 ---- | ----------
-Game.PauseBetweenStarts = 20; | Pause between game intances starts in milliseconds.
+Game.PauseBetweenStarts = 20; | Pause between game instance starts, in seconds.
 
 ### Focus
 
@@ -238,7 +238,8 @@ This is used to restrict each controller to a specific instance. Disable other a
 
 Line | Description
 ---- | ----------
-Game.Hook.CustomDllEnabled = false; | Game.Hook.XInputNames = [ "xinput1_3.dll"]; //This line specify which DLLS CustomDll will use. DInput dlls are not supported.
+Game.Hook.CustomDllEnabled = false; | Turns the custom XInput DLL off. It is on by default.
+Game.Hook.XInputNames = [ "xinput1_3.dll"]; | Which XInput DLLs the custom DLL replaces. DInput DLLs are not supported.
 
 This is used to restrict each controller to a specific instance. Disable other alternatives if you are using this one. For XInputPlusDll, remove or comment the line by using // for disable it.
 
